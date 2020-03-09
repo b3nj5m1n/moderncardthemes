@@ -1,0 +1,1 @@
+This is largely based on the work of [u/TrainOfPotatoes](https://www.reddit.com/user/TrainOfPotatoes/), see his [original comment](https://www.reddit.com/r/Anki/comments/4n6cbf/does_anyone_have_a_goodlooking_anki_css_template/d41xugx/) and his [updated post](https://www.reddit.com/r/Anki/comments/ffs0ir/theme_an_update_to_my_previous_anki_template/).
