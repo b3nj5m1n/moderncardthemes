@@ -1,0 +1,23 @@
+<div class="body-upper" style="border-radius: 5px 5px 0px 0px;">
+    <div class="soundFront" onclick="playAudio()"></div>
+    {{Front}}
+</div>
+
+<div class="body-lower" style="border-radius: 0px 0px 5px 5px;">
+
+    <div class="notes">
+        {{Back}}
+    </div>
+
+    <script>
+        function playAudio() {
+            var audioDiv = document.getElementById('audio');
+            var audio = audioDiv.getElementsByTagName("*");
+            audio[0].click();
+        }
+        function playSenAudio() {
+            var audioDiv = document.getElementById('senaudio');
+            var audio = audioDiv.getElementsByTagName("*");
+            audio[0].click();
+        }
+    </script>

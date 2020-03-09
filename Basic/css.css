@@ -1,0 +1,48 @@
+u {
+  text-decoration-style: wavy;
+  text-underline-position: under;
+  color: white;
+  padding: 1px;
+}
+
+.card {
+  font-family: UD Digi Kyokasho N-R;
+  font-size: 20px;
+  text-align: center;
+  background-color: #fdf8e9;
+  padding: 10px;
+}
+
+.body-upper {
+  font-family: Noto Sans Black;
+  font-size: 30px;
+  color: #eee;
+  background-color: #555555;
+  padding: 30px 10px 30px;
+}
+
+.body-lower {
+  text-align: left;
+  color: #555555;
+  background-color: #9fdbdb;
+  padding: 25px 10px 25px;
+}
+
+.soundFront {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  font-size: 18px;
+  content: url("play.png");
+  width: 6%;
+}
+
+.notes {
+  font-family: Noto Sans Regular;
+  font-size: 20px;
+  border: 2px dashed rgba(85, 85, 85, 0.75);
+  padding: 10px;
+  margin: 3px 20px 3px 20px;
+  text-align: center;
+  font-weight: bold;
+}
