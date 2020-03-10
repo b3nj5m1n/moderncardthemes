@@ -1,0 +1,33 @@
+<div id="mask">
+    <div class="" id="wrapper" onload="">
+        <div class="body-upper">
+            <div class="soundFront" onclick="playAudio()"></div>
+            {{Front}}
+        </div>
+
+        <div class="body-lower" id="solution">
+            <div class="notes">
+                <div id="answer_div">{{Back}}</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        var text = document.getElementById("answer_div").innerHTML;
+        document.getElementById("answer_div").innerHTML = "?";
+        setTimeout(function () {
+            document.getElementById("answer_div").innerHTML = text;
+        }, 150);
+
+        function playAudio() {
+            var audioDiv = document.getElementById('audio');
+            var audio = audioDiv.getElementsByTagName("*");
+            audio[0].click();
+        }
+        function playSenAudio() {
+            var audioDiv = document.getElementById('senaudio');
+            var audio = audioDiv.getElementsByTagName("*");
+            audio[0].click();
+        }
+    </script>
