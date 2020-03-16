@@ -1,0 +1,107 @@
+:root {
+  --main-bg-color: #555;
+  --main-fg-color: #eee;
+  --card-front-bg-color: #222;
+  --card-back-bg-color: #333;
+}
+
+/* Replace with .card in anki */
+.card {
+  font-family: arial;
+  font-size: 20px;
+  text-align: center;
+  background-color: var(--main-bg-color);
+  color: var(--main-fg-color);
+  margin: auto;
+}
+
+.card-container {
+  color: var(--main-fg-color);
+  width: 100%;
+  padding: 10px;
+  margin: auto;
+  margin-top: 2%;
+}
+/* Contains everything on the front of the card */
+.card-front {
+  background-color: var(--card-front-bg-color);
+  border-radius: 5px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+/* 
+  Container for floated divs
+  Contains word in mother tounge and part of speech
+  */
+.float-container {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  font-weight: bold;
+  padding: 50px;
+}
+/* Part-of-speech */
+.word-pos {
+  display: inline-block;
+  border: 2px solid var(--main-fg-color);
+  float: left;
+  color: var(--card-front-bg-color);
+  background-color: white;
+  padding: 10px;
+  transition: all 0.1s ease-in-out;
+}
+.word-pos:hover {
+  padding: 12px;
+}
+/* Word-Mother-Tounge */
+.word-mt {
+  display: inline-block;
+  border: 2px solid var(--main-fg-color);
+  border-left: 0;
+  float: left;
+  padding: 10px;
+  transition: all 0.1s ease-in-out;
+}
+.word-mt:hover {
+  padding: 12px;
+}
+
+/* Contains everything on the back of the card */
+.card-back {
+  background-color: var(--card-back-bg-color);
+  border-radius: 5px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.word-article {
+  margin: auto;
+  margin-right: 7px;
+  font-style: italic;
+}
+
+.word-tl {
+  margin: auto;
+  margin-left: 7px;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.underlined {
+  text-decoration: underline dotted rgba(0, 0, 0, 0);
+  transition: text-decoration 0.1s ease-in-out;
+}
+.underlined:hover {
+  text-decoration: underline dotted rgba(0, 0, 0, 0.3);
+}
+
+.word-ex {
+  padding: 20px;
+}
+
+.word-def {
+  display: none;
+}
