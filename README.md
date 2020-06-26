@@ -11,10 +11,10 @@
 
 # How to import
 
-Download this repository, open anki and click on "File" -> "CrowdAnki: Import from disk".
-Select the correct directory and click import.
+Download this repository (Export it if you download as zip), open anki and click on "File" -> "CrowdAnki: Import from disk".
+Select the correct directory (🧪_Test_Deck) and click import.
 
-Note types (Not all of them are in this repo):
+Note types:
 * Basic-Pretty - A pretty basic card with front and back
 * Basic-Pretty-Animated - A pretty basic card with front and back, animated using css
 * Cloze-Pretty - Pretty cloze card, also has a title and an extra field
