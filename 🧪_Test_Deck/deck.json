@@ -1,0 +1,1002 @@
+{
+    "__type__": "Deck",
+    "children": [],
+    "crowdanki_uuid": "3d2479f0-b7ae-11ea-b976-40b076dccfad",
+    "deck_config_uuid": "4d179a78-b7b2-11ea-b18e-40b076dccfad",
+    "deck_configurations": [
+        {
+            "__type__": "DeckConfig",
+            "autoAgain": 0,
+            "autoAlert": 0,
+            "autoAnswer": 0,
+            "autoplay": true,
+            "crowdanki_uuid": "4d179a78-b7b2-11ea-b18e-40b076dccfad",
+            "dyn": false,
+            "lapse": {
+                "delays": [
+                    10.0
+                ],
+                "leechAction": 0,
+                "leechFails": 8,
+                "minInt": 1,
+                "mult": 0.0
+            },
+            "maxTaken": 60,
+            "name": "Paused",
+            "new": {
+                "bury": false,
+                "delays": [
+                    1.0,
+                    10.0
+                ],
+                "initialFactor": 2500,
+                "ints": [
+                    1,
+                    4,
+                    7
+                ],
+                "order": 1,
+                "perDay": 1,
+                "separate": true
+            },
+            "replayq": true,
+            "rev": {
+                "bury": false,
+                "ease4": 1.3,
+                "fuzz": 0.05,
+                "hardFactor": 1.2,
+                "ivlFct": 1.0,
+                "maxIvl": 36500,
+                "minSpace": 1,
+                "perDay": 1
+            },
+            "timer": 0
+        }
+    ],
+    "desc": "",
+    "dyn": 0,
+    "extendNew": 10,
+    "extendRev": 50,
+    "media_files": [
+        "1.gif",
+        "2.gif",
+        "3.gif",
+        "4.gif",
+        "5.gif",
+        "china-162389.svg",
+        "germany-flag-1783774.svg",
+        "macau-162346.svg",
+        "spain-162428.svg",
+        "union-jack-26119.svg",
+        "zheng4zai4.mp3"
+    ],
+    "mid": "1585068302590",
+    "name": "🧪 Test Deck",
+    "note_models": [
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "3d262e6c-b7ae-11ea-b976-40b076dccfad",
+            "css": "/* Font imports */\n@import url('https://fonts.googleapis.com/css?family=Bellota+Text|Roboto+Condensed|Roboto:400,500,700,900|Space+Mono:400,400i,700,700i&display=swap');\n\n* {  \n  word-wrap: break-word;  \n}\n\n.card {\n  background-color: #222;\n  color: #eee;\n}\n\nul {\n  list-style-position: inside;\n  padding-top: 10px;\n}\nul li {\n  margin: auto;\n  margin-top: 10px;\n  padding: 10px;\n  width: 20%;\n  padding-left: 10%;\n  padding-right: 10%;\n  display: table;\n  background-color: #444;\n  font-family: 'Roboto Condensed', sans-serif;\n}\n\nol {\n  list-style-position: inside;\n  padding: 2%;\n  padding-top: 0;\n}\n\n.word_homophone_container {\n  margin: auto;\n  margin-top: 2%;\n  width: 100%;\n  text-align: center;\n  display: grid;\n}\n\n/* Word Header */\n.word_header {\n  display: flex;\n  font-family: \"Roboto\", sans-serif;\n  font-weight: bold;\n  font-size: 50px;\n  overflow: hidden;\n  margin: auto;\n}\n.word_type {\n  border: 3px solid #eee;\n  border-left: none;\n  padding: 5px;\n  background-color: #eee;\n  color: #222;\n  text-align: center;\n  margin: auto;\n  margin-right: 0;\n}\n.word_word {\n  border: 3px solid #eee;\n  padding: 5px;\n  vertical-align:top;\n  text-align: center;\n  margin: auto;\n  margin-left: 0;\n}\n\n/* Short definition */\n.shortdef_container {\n  align: center;\n}\n\n/* Long definition */\n.word_long_definition {\n  margin: auto;\n  width: 50%;\n  background-color: transparent;\n}\n\n.word_long_definition_list_container {\n  display: none;\n  background-color: #333;\n  font-family: 'Roboto Condensed', sans-serif;\n}\n\n.word_long_definition_list_container li {\n  padding-top: 20px;\n}\n\n/* Long definition buttons */\n.word_long_definition_toggle_button {\n  margin: auto;\n  width: 20%;\n  padding: 1%;\n  background-color: rgba(50, 50, 50, 1);\n  border-radius: 25px;\n  font-family: 'Bellota Text', cursive;\n}\n\n.word_long_definition_hide_button {\n  display: none;\n}\n",
+            "flds": [
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Word",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Front",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Back",
+                    "ord": 2,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "Merriam-Webster-Word",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        1
+                    ]
+                ]
+            ],
+            "sortf": 1,
+            "tags": [],
+            "tmpls": [
+                {
+                    "afmt": "<script>\nfunction showhomophone(sender) {\n  var homophones = document.getElementsByClassName(\"word_homophone_container\");\n  // Hide all homophones\n  var i_;\n  for (i_ = 0; i_ < homophones.length; i_++) {\n    homophones[i_].getElementsByClassName(\"word_not_header\")[0].style.display =\n      \"none\";\n  }\n  // Show itself\n  sender.getElementsByClassName(\"word_not_header\")[0].style.display = \"block\";\n}\n\nfunction showextra() {\n  // Loop over all long definition containers\n  var elements = document.getElementsByClassName(\n    \"word_long_definition_list_container\"\n  );\n  var i = 0;\n  for (i = 0; i < elements.length; i++) {\n    elements[i].style.display = \"block\";\n  }\n  \n  // Loop over all show buttons\n  var elements = document.getElementsByClassName(\n    \"word_long_definition_show_button\"\n  );\n  var i = 0;\n  for (i = 0; i < elements.length; i++) {\n    elements[i].style.display = \"none\";\n  }\n  \n  // Loop over all hide buttons\n  var elements = document.getElementsByClassName(\n    \"word_long_definition_hide_button\"\n  );\n  var i = 0;\n  for (i = 0; i < elements.length; i++) {\n    elements[i].style.display = \"block\";\n  }\n}\n\nfunction hideextra() {\n  // Loop over all long definition containers\n  var elements = document.getElementsByClassName(\n    \"word_long_definition_list_container\"\n  );\n  var i = 0;\n  for (i = 0; i < elements.length; i++) {\n    elements[i].style.display = \"none\";\n  }\n  \n  // Loop over all show buttons\n  var elements = document.getElementsByClassName(\n    \"word_long_definition_show_button\"\n  );\n  var i = 0;\n  for (i = 0; i < elements.length; i++) {\n    elements[i].style.display = \"block\";\n  }\n  \n  // Loop over all hide buttons\n  var elements = document.getElementsByClassName(\n    \"word_long_definition_hide_button\"\n  );\n  var i = 0;\n  for (i = 0; i < elements.length; i++) {\n    elements[i].style.display = \"none\";\n  }\n}\n</script>\n\n{{Back}}\n\n<script>\n\n  var current_text = document.getElementsByClassName(\"word_word\")[0].innerHTML;\n  var new_text = current_text.split(\"*\").join(\"\");\n  document.getElementsByClassName(\"word_word\")[0].innerHTML = new_text;\n\n  // Loop over all homophones\n  // First get all homophones\n  var homophones = document.getElementsByClassName(\"word_homophone_container\");\n  // Loop over all except for the first one and set display to none\n  var i;\n  for (i = 1; i < homophones.length; i++) {\n    homophones[i].getElementsByClassName(\"word_not_header\")[0].style.display =\n      \"none\";\n  }\n</script>",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Card 1",
+                    "ord": 0,
+                    "qfmt": "{{Front}}\n\n<script>\n\n  var current_text = document.getElementsByClassName(\"word_word\")[0].innerHTML;\n  var new_text = current_text.split(\"*\").join(\"\");\n  document.getElementsByClassName(\"word_word\")[0].innerHTML = new_text;\n\n  // Loop over all homophones\n  // First get all homophones\n  var homophones = document.getElementsByClassName(\"word_homophone_container\");\n  // Loop over all except for the first one and set display to none\n  var i;\n  for (i = 1; i < homophones.length; i++) {\n    homophones[i].getElementsByClassName(\"word_not_header\")[0].style.display =\n      \"none\";\n  }\n</script>"
+                }
+            ],
+            "type": 0,
+            "vers": []
+        },
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "3d263d1c-b7ae-11ea-b976-40b076dccfad",
+            "css": "* {\nword-wrap: break-word;\n}\n\nu {\n  text-decoration-style: wavy;\n  text-underline-position: under;\n  color: white;\n  padding: 1px;\n}\n\n.card {\n  font-family: UD Digi Kyokasho N-R;\n  font-size: 20px;\n  text-align: center;\n  background-color: #fdf8e9;\n  padding: 10px;\n}\n\n.body-upper {\n  font-family: Noto Sans;\n  font-size: 30px;\n  color: #eee;\n  background-color: #555555;\n  padding: 30px 10px 30px;\n}\n\n.body-lower {\n  text-align: left;\n  color: #555555;\n  background-color: #9fdbdb;\n  padding: 25px 10px 25px;\n}\n\n.soundFront {\n  position: absolute;\n  top: 40px;\n  right: 40px;\n  font-size: 18px;\n  content: url(\"play.png\");\n  width: 6%;\n}\n\n.notes {\n  font-family: Noto Sans Regular;\n  font-size: 20px;\n  border: 2px dashed rgba(85, 85, 85, 0.75);\n  padding: 10px;\n  margin: 3px 20px 3px 20px;\n  text-align: center;\n  font-weight: bold;\n}",
+            "flds": [
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Front",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Back",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "Basic-Pretty",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tags": [],
+            "tmpls": [
+                {
+                    "afmt": "<div class=\"body-upper\" style=\"border-radius: 5px 5px 0px 0px;\">\n    <div class=\"soundFront\" onclick=\"playAudio()\"></div>\n    {{Front}}\n</div>\n\n<div class=\"body-lower\" style=\"border-radius: 0px 0px 5px 5px;\">\n\n    <div class=\"notes\">\n        {{Back}}\n    </div>\n\n    <script>\n        function playAudio() {\n            var audioDiv = document.getElementById('audio');\n            var audio = audioDiv.getElementsByTagName(\"*\");\n            audio[0].click();\n        }\n        function playSenAudio() {\n            var audioDiv = document.getElementById('senaudio');\n            var audio = audioDiv.getElementsByTagName(\"*\");\n            audio[0].click();\n        }\n    </script>",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Card 1",
+                    "ord": 0,
+                    "qfmt": "<div class=\"body-upper\" style=\"border-radius: 5px 5px 0px 0px;\">\n    <div class=\"soundFront\" onclick=\"playAudio()\"></div>\n    {{Front}}\n</div>\n\n<div class=\"body-lower\" style=\"border-radius: 0px 0px 5px 5px;\">\n\n    <div class=\"notes\">\n        ?\n    </div>\n\n    <script>\n        function playAudio() {\n            var audioDiv = document.getElementById('audio');\n            var audio = audioDiv.getElementsByTagName(\"*\");\n            audio[0].click();\n        }\n    </script>"
+                }
+            ],
+            "type": 0,
+            "vers": []
+        },
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "3d26485c-b7ae-11ea-b976-40b076dccfad",
+            "css": "* {  \n  word-wrap: break-word;  \n}\n\nu {\n  text-decoration-style: wavy;\n  text-underline-position: under;\n  color: white;\n  padding: 1px;\n}\n\n.card {\n  font-family: UD Digi Kyokasho N-R;\n  font-size: 20px;\n  text-align: center;\n  background-color: #fdf8e9;\n  padding: 10px;\n}\n\n.body-upper {\n  border-radius: 5px 5px 0px 0px;\n  font-family: Noto Sans;\n  font-size: 30px;\n  color: #eee;\n  background-color: #555555;\n  padding: 30px 10px 30px;\n}\n\n.body-lower {\n  border-radius: 0px 0px 5px 5px;\n  text-align: left;\n  color: #555555;\n  background-color: #9fdbdb;\n  padding: 25px 10px 25px;\n}\n\n.soundFront {\n  position: absolute;\n  top: 40px;\n  right: 40px;\n  font-size: 18px;\n  content: url(\"play.png\");\n  width: 6%;\n}\n\n.notes {\n  font-family: Noto Sans Regular;\n  font-size: 20px;\n  border: 2px dashed rgba(85, 85, 85, 0.75);\n  padding: 10px;\n  margin: 3px 20px 3px 20px;\n  text-align: center;\n  font-weight: bold;\n}\n\n#mask {\n  clip-path: inset(0% 0% 0% 0%);\n}\n\n@keyframes slideInFromRight {\n  0% {\n    left: 100%;\n  }\n  100% {\n    left: 0%;\n  }\n}\n\n.container {\n  position: relative;\n  animation: 0.3s ease-out 0s 1 slideInFromRight;\n}\n\n#mask:hover > .container {\n  left: 0%;\n}\n\n@keyframes flip {\n  0% {\n    transform: rotateX(180deg);\n  }\n  100% {\n  }\n}\n\n#solution {\n  animation: 0.3s ease-out 0s 1 flip;\n}",
+            "flds": [
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Front",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Back",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "Basic-Pretty-Animated",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tags": [],
+            "tmpls": [
+                {
+                    "afmt": "<div id=\"mask\">\n    <div class=\"\" id=\"wrapper\" onload=\"\">\n        <div class=\"body-upper\">\n            <div class=\"soundFront\" onclick=\"playAudio()\"></div>\n            {{Front}}\n        </div>\n\n        <div class=\"body-lower\" id=\"solution\">\n            <div class=\"notes\">\n                <div id=\"answer_div\">{{Back}}</div>\n            </div>\n        </div>\n    </div>\n\n    <script>\n\n        var text = document.getElementById(\"answer_div\").innerHTML;\n        document.getElementById(\"answer_div\").innerHTML = \"?\";\n        setTimeout(function () {\n            document.getElementById(\"answer_div\").innerHTML = text;\n        }, 150);\n\n        function playAudio() {\n            var audioDiv = document.getElementById('audio');\n            var audio = audioDiv.getElementsByTagName(\"*\");\n            audio[0].click();\n        }\n        function playSenAudio() {\n            var audioDiv = document.getElementById('senaudio');\n            var audio = audioDiv.getElementsByTagName(\"*\");\n            audio[0].click();\n        }\n    </script>",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Card 1",
+                    "ord": 0,
+                    "qfmt": "<div id=\"mask\">\n    <div class=\"container\" id=\"wrapper\" onload=\"\">\n        <div class=\"body-upper\">\n            <div class=\"soundFront\" onclick=\"playAudio()\"></div>\n            {{Front}}\n        </div>\n\n        <div class=\"body-lower\">\n\n            <div class=\"notes\">\n                ?\n            </div>\n        </div>\n    </div>\n\n    <script>\n        function playAudio() {\n            var audioDiv = document.getElementById('audio');\n            var audio = audioDiv.getElementsByTagName(\"*\");\n            audio[0].click();\n        }\n        function playSenAudio() {\n            var audioDiv = document.getElementById('senaudio');\n            var audio = audioDiv.getElementsByTagName(\"*\");\n            audio[0].click();\n        }\n    </script>"
+                }
+            ],
+            "type": 0,
+            "vers": []
+        },
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "3d2653d8-b7ae-11ea-b976-40b076dccfad",
+            "css": "* {\n\tword-wrap: break-word;\n}\n\nu {\n text-decoration-style: wavy;\n text-underline-position: under;\n color: white;\n padding: 1px;\n}\n\n.card {\n font-family: UD Digi Kyokasho N-R;\n font-size: 20px;\n text-align: center;\n background-color: #FDF8E9;\n padding: 10px;\n}\n\n.body-upper {\n font-family: Noto Sans Black;\n font-size: 30px;\n color: #EEE;\n background-color: #555555;\n padding: 30px 10px 30px;\n}\n\n.body-lower {\n text-align: left;\n color: #555555;\n background-color: #9FDBDB;\n padding: 25px 10px 25px;\n}\n\n.soundFront {\n position: absolute;\n top: 40px;\n right: 40px;\n font-size: 18px;\n content: url(\"play.png\");\n width: 6%;\n}\n\n\n.notes {\n font-family: Noto Sans Regular;\n font-size: 20px;\n border: 4px dashed rgba(85,85,85,0.75);\n padding: 10px;\n margin: 3px 20px 3px 20px;\n text-align: center;\n font-weight: bold;\n}\n\n.extra_toggle {\n display: block;\n font-family: Noto Sans Regular;\n font-size: 15px;\n color: rgba(85,85,85,0.55);\n background-color: rgba(85,85,85,0.15);\n border-radius: 10px;\n padding: 5px;\n width: 50%;\n text-align: center;\n font-weight: 500;\n margin: auto;\n margin-top: 20px;\n transition: background-color 0.15s ease-out;\n}\n\n.extra_toggle:hover {\n background-color: rgba(85,85,85,0.35);\n}\n\n.extra {\n display: none;\n font-family: Noto Sans Regular;\n font-size: 15px;\n border: 2px dashed rgba(85,85,85,0.55);\n color: rgba(85,85,85,0.55);\n padding: 20px;\n margin: 30px 20px 3px 20px;\n text-align: center;\n font-weight: 500;\n}\n",
+            "flds": [
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Text",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Title",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Extra",
+                    "ord": 2,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "Cloze-Pretty",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0,
+                        1
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tags": [],
+            "tmpls": [
+                {
+                    "afmt": "\n<div class=\"soundFront\" onclick=\"playAudio()\"></div>\n{{#Title}}\n<div class=\"body-upper\" style=\"border-radius: 5px 5px 0px 0px;\">\n{{Title}}\n{{/Title}}\n</div>\n\n<div class=\"body-lower\" style=\"border-radius: 0px 0px 5px 5px;\">\n\n<div class=\"notes\">\n{{cloze:Text}}\n</div>\n\n<script>\n function showextra() {\n  document.getElementById(\"extrafield\").style.display = \"block\";\n  document.getElementById(\"extra_toggle_on_button\").style.display = \"none\";\n}\n function hideextra() {\n  document.getElementById(\"extrafield\").style.display = \"none\";\n  document.getElementById(\"extra_toggle_on_button\").style.display = \"block\";\n}\n</script>\n\n{{#Extra}}\n<div class=\"extra_toggle\" id=\"extra_toggle_on_button\" onclick=\"showextra()\">\nShow Extra\n</div>\n<div class=\"extra\" id=\"extrafield\">\n{{Extra}}\n<div class=\"extra_toggle\" id=\"extra_toggle_off_button\" onclick=\"hideextra()\">\nHide Extra\n</div>\n</div>\n{{/Extra}}\n\n<script>\n    function playAudio(){\n        var audioDiv = document.getElementById('audio');\n        var audio = audioDiv.getElementsByTagName(\"*\");\n        audio[0].click();\n    }\n   function playSenAudio(){\n        var audioDiv = document.getElementById('senaudio');\n        var audio = audioDiv.getElementsByTagName(\"*\");\n        audio[0].click();\n    }\n</script>",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Cloze",
+                    "ord": 0,
+                    "qfmt": "<div class=\"soundFront\" onclick=\"playAudio()\"></div>\n{{#Title}}\n<div class=\"body-upper\" style=\"border-radius: 5px 5px 0px 0px;\">\n{{Title}}\n{{/Title}}\n</div>\n\n<div class=\"body-lower\" style=\"border-radius: 0px 0px 5px 5px;\">\n\n<div class=\"notes\">\n{{cloze:Text}}\n</div>\n\n<script>\n    function playAudio(){\n        var audioDiv = document.getElementById('audio');\n        var audio = audioDiv.getElementsByTagName(\"*\");\n        audio[0].click();\n    }\n</script>\n\n\n"
+                }
+            ],
+            "type": 1,
+            "vers": []
+        },
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "3d265f04-b7ae-11ea-b976-40b076dccfad",
+            "css": ":root {\n  --main-bg-color: #555;\n  --main-fg-color: #eee;\n  --card-front-bg-color: #222;\n  --card-back-bg-color: #333;\n}\n\n* {  \n  word-wrap: break-word;  \n}\n\n/* Replace with .card in anki */\n.card {\n  font-family: arial;\n  font-size: 20px;\n  text-align: center;\n  background-color: var(--main-bg-color);\n  color: var(--main-fg-color);\n  margin: auto;\n}\n\n.card-container {\n  color: var(--main-fg-color);\n  width: 100%;\n  padding: 10px;\n  margin: auto;\n  margin-top: 2%;\n}\n/* Contains everything on the front of the card */\n.card-front {\n  background-color: var(--card-front-bg-color);\n  border-radius: 5px;\n  border-bottom-right-radius: 0;\n  border-bottom-left-radius: 0;\n}\n/* \nContainer for floated divs\nContains word in mother tounge and part of speech\n*/\n.float-container {\n  overflow: hidden;\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: center;\n  font-size: 60px;\n  font-weight: bold;\n  padding: 50px;\n}\n/* Part-of-speech */\n.word-pos {\n  display: inline-block;\n  border: 2px solid var(--main-fg-color);\n  float: left;\n  color: var(--card-front-bg-color);\n  background-color: white;\n  padding: 10px;\n  transition: all 0.1s ease-in-out;\n}\n.word-pos:hover {\n  padding: 12px;\n}\n/* Word-Mother-Tounge */\n.word-mt {\n  display: inline-block;\n  border: 2px solid var(--main-fg-color);\n  border-left: 0;\n  float: left;\n  padding: 10px;\n  transition: all 0.1s ease-in-out;\n}\n.word-mt:hover {\n  padding: 12px;\n}\n\n/* Contains everything on the back of the card */\n.card-back {\n  background-color: var(--card-back-bg-color);\n  border-radius: 5px;\n  border-top-right-radius: 0;\n  border-top-left-radius: 0;\n}\n\n.word-article {\n  margin: auto;\n  margin-right: 7px;\n  font-style: italic;\n}\n\n.word-tl {\n  margin: auto;\n  margin-left: 7px;\n  font-style: normal;\n  font-weight: bold;\n}\n\n.underlined {\n  text-decoration: underline dotted rgba(0,0,0,0);\n  transition: text-decoration 0.1s ease-in-out;\n}\n.underlined:hover {\n  text-decoration: underline dotted rgba(0,0,0,0.3);\n}\n\n.word-ex {\n  padding: 20px;\n}\n\n.word-def {\n  display: none;\n}",
+            "flds": [
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Word-Mother-Tounge",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Part-of-speech",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Word-Target-Language",
+                    "ord": 2,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Article",
+                    "ord": 3,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Example-Sentence",
+                    "ord": 4,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Definition",
+                    "ord": 5,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "Modern-Vocabulary",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0,
+                        1
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tags": [],
+            "tmpls": [
+                {
+                    "afmt": "<!-- Actual card -->\n<div class=\"card-container\">\n  <!-- Front of the card -->\n  <div class=\"card-front\">\n    <!-- -->\n    <div class=\"float-container\">\n      <!-- Part-of-speech -->\n      <div class=\"word-pos\">{{Part-of-speech}}</div>\n      <!-- Word-Mother-Tounge -->\n      <div class=\"word-mt\">{{Word-Mother-Tounge}}</div>\n    </div>\n  </div>\n  <!-- Back of the card -->\n  <div class=\"card-back\">\n    <!-- Article -->\n    <div class=\"float-container\">\n      <div class=\"word-article underlined\">{{Article}}</div>\n      <!-- Word-Target-Language -->\n      <div class=\"word-tl underlined\">{{Word-Target-Language}}</div>\n    </div>\n    <!-- Example-Sentence -->\n    <div class=\"word-ex\">{{Example-Sentence}}</div>\n    <!-- Definition -->\n    <div class=\"word-def\">{{Definition}}</div>\n  </div>\n</div>\n\n</div>\n\n<!--\nWord-Mother-Tounge\nPart-of-speech\nWord-Target-Language\nArticle\nExample-Sentence\nDefinition\n-->",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Card 1",
+                    "ord": 0,
+                    "qfmt": "<!-- Actual card -->\n<div class=\"card-container\">\n  <!-- Front of the card -->\n  <div class=\"card-front\">\n    <!-- -->\n    <div class=\"float-container\">\n      <!-- Part-of-speech -->\n      <div class=\"word-pos\">{{Part-of-speech}}</div>\n      <!-- Word-Mother-Tounge -->\n      <div class=\"word-mt\">{{Word-Mother-Tounge}}</div>\n    </div>\n  </div>\n  <!-- Back of the card -->\n  <div class=\"card-back\">\n    <!-- Article -->\n    <div class=\"float-container\">\n      <div class=\"word-article underlined\"></div>\n      <!-- Word-Target-Language -->\n      <div class=\"word-tl underlined\">?</div>\n    </div>\n    <!-- Example-Sentence -->\n    <div class=\"word-ex\"></div>\n    <!-- Definition -->\n    <div class=\"word-def\"></div>\n  </div>\n</div>\n\n</div>\n\n<!--\nWord-Mother-Tounge\nPart-of-speech\nWord-Target-Language\nArticle\nExample-Sentence\nDefinition\n-->"
+                }
+            ],
+            "type": 0,
+            "vers": []
+        },
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "3d266bca-b7ae-11ea-b976-40b076dccfad",
+            "css": "* {  \n  word-wrap: break-word;  \n}\n\nu {\n text-decoration-style: wavy;\ntext-underline-position: under;\n color: white;\n padding: 1px;\n}\n\n.card {\n font-family: Roboto Medium;\n font-size: 20px;\n text-align: center;\n background-color: #FDF8E9;\n padding: 10px;\n}\n\n.body-upper {\n font-family: Noto Sans Black;\n font-size: 40px;\n color: #EEE;\n background-color: #555555;\n padding: 40px 10px 10px;\n}\n\n.body-lower {\n text-align: left;\n color: #555555;\n background-color: #9FDBDB;\n padding: 20px;\n}\n\n.level {\n position: absolute;\n background-color: #9FDBDB;\n color: #555555;\n font-size: 15px;\n padding: 5px;\n margin-top: -30px;\n}\n\n.meaning {\n width: fit-content;\n font-family: Bree Serif;\n font-size: 15px;\n border: 1px solid #555555;\n padding: 5px;\n margin-bottom: 15px;\n max-width: 100%;\n display: inline-table;\n}\n\n.type {\n width: fit-content;\n display: inline-table;\n border: 1px solid #555555;\n background-color: #555555;\n font-family: Bree Serif;\n font-size: 15px;\n color: #9FDBDB;\n padding: 5px;\n padding-left: 7px;\n}\n\n.soundFront {\n position: absolute;\n top: 40px;\n right: 40px;\n font-size: 18px;\n content: url(\"play.png\");\n width: 6%;\n}\n\n.sentence {\n}\n\n.notes {\n font-family: Noto Sans Regular;\n font-size: 16px;\n border: 1.5px dashed #555555;\n padding: 10px;\n margin-top: 20px;\n}",
+            "flds": [
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Front",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Meaning",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "WordType",
+                    "ord": 2,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Sentence",
+                    "ord": 3,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Frequency",
+                    "ord": 4,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "FrontSound",
+                    "ord": 5,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "SentenceSound",
+                    "ord": 6,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Notes",
+                    "ord": 7,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "#",
+                    "ord": 8,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "Vocabulary",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0,
+                        4,
+                        5
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tags": [],
+            "tmpls": [
+                {
+                    "afmt": "<div class=\"body-upper\" style=\"border-radius: 5px 5px 0px 0px;\">\n<div class=\"level\">{{Frequency}}</div>\n<div id=\"audio\" style=\"display:none\">{{FrontSound}}</div>\n<div class=\"soundFront\" onclick=\"playAudio()\"></div>\n{{Front}}\n</div>\n\n<div class=\"body-lower\" style=\"border-radius: 0px 0px 5px 5px;\">\n\n<div class=\"type\">{{WordType}}</div><div class=\"meaning\"> {{Meaning}}</div>\n\n<div id=\"senaudio\" style=\"display:none\">{{SentenceSound}}</div>\n\n<div class=\"sentence\">\n{{Sentence}} <i class=\"fas fa-comment-dots\" onclick=\"playSenAudio()\"></i>\n</div>\n\n\n{{#Notes}}<div class=\"notes\">\n{{Notes}}\n</div>{{/Notes}}\n\n</div>\n\n\n\n<script src=\"https://kit.fontawesome.com/589102338b.js\" crossorigin=\"anonymous\"></script>\n\n<script>\n    function playAudio(){\n        var audioDiv = document.getElementById('audio');\n        var audio = audioDiv.getElementsByTagName(\"*\");\n        audio[0].click();\n    }\n   function playSenAudio(){\n        var audioDiv = document.getElementById('senaudio');\n        var audio = audioDiv.getElementsByTagName(\"*\");\n        audio[0].click();\n    }\n</script>",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Card 1",
+                    "ord": 0,
+                    "qfmt": "<div class=\"body-upper\" style=\"border-radius: 5px;\">\n<div class=\"level\">{{Frequency}}</div>\n<div id=\"audio\" style=\"display:none\">{{FrontSound}}</div>\n<div class=\"soundFront\" onclick=\"playAudio()\"></div>\n{{Front}}\n</div>\n\n<script>\n    function playAudio(){\n        var audioDiv = document.getElementById('audio');\n        var audio = audioDiv.getElementsByTagName(\"*\");\n        audio[0].click();\n    }\n</script>"
+                }
+            ],
+            "type": 0,
+            "vers": []
+        },
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "3d267c32-b7ae-11ea-b976-40b076dccfad",
+            "css": "* {  \n  word-wrap: break-word;  \n}\n\nu {\n  text-decoration-style: wavy;\n  text-underline-position: under;\n  color: white;\n  padding: 1px;\n}\n\nul {\nlist-style-position: inside;\n}\nol {\nlist-style-position: inside;\n}\n\na {\ncolor: #eee;\ntext-decoration: none;\n}\n\n /* unvisited link */\na:link {\ncolor: #eee;\ntext-decoration: none;\n}\n\n/* visited link */\na:visited {\ncolor: #eee;\ntext-decoration: none;\n}\n\n/* mouse over link */\na:hover {\ncolor: #eee;\ntext-decoration: none;\n}\n\n/* selected link */\na:active {\ncolor: #eee;\ntext-decoration: none;\n} \n\n.card {\n  font-family: UD Digi Kyokasho N-R;\n  font-size: 20px;\n  text-align: center;\n  background-color: #fdf8e9;\n  padding: 10px;\n}\n\n.body-upper {\n  font-family: Noto Sans Black;\n  font-size: 30px;\n  color: #eee;\n  background-color: #555555;\n  padding: 30px 10px 30px;\n}\n\n.body-lower {\n  text-align: left;\n  color: #555555;\n  background-color: #9fdbdb;\n  padding: 25px 10px 25px;\n}\n\n.soundFront {\n  position: absolute;\n  top: 40px;\n  right: 40px;\n  font-size: 18px;\n  content: url(\"play.png\");\n  width: 6%;\n}\n\n.notes {\n  font-family: Noto Sans Regular;\n  font-size: 20px;\n  border: 4px dashed rgba(85, 85, 85, 0.75);\n  padding: 10px;\n  margin: 3px 20px 3px 20px;\n  text-align: center;\n  font-weight: bold;\n}\n\n.extra_toggle {\n  display: block;\n  font-family: Noto Sans Regular;\n  font-size: 15px;\n  color: rgba(85, 85, 85, 0.55);\n  background-color: rgba(85, 85, 85, 0.15);\n  border-radius: 10px;\n  padding: 5px;\n  width: 50%;\n  text-align: center;\n  font-weight: 500;\n  margin: auto;\n  margin-top: 20px;\n  transition: background-color 0.15s ease-out;\n}\n\n.extra_toggle:hover {\n  background-color: rgba(85, 85, 85, 0.35);\n}\n\n.extra {\n  display: none;\n  font-family: Noto Sans Regular;\n  font-size: 15px;\n  border: 2px dashed rgba(85, 85, 85, 0.55);\n  color: rgba(85, 85, 85, 0.55);\n  padding: 20px;\n  margin: 30px 20px 3px 20px;\n  text-align: center;\n  font-weight: 500;\n}\n.extra a {\n color: rgba(85, 85, 85, 0.7);\ntext-decoration: underline;\n}\n\n.wordtype {\nfont-size: 25px;\npadding: 5px;\nmargin: auto;\nborder: 3px solid #eee;\ndisplay: inline-block;\nvertical-align: middle;\ncolor: #555555;\nbackground-color: #eee;\n}\n\n.word {\nfont-size: 25px;\npadding: 5px;\nmargin: auto;\ndisplay: inline-block;\nvertical-align: middle;\nborder: 3px solid #eee;\nborder-left: none;\n}\n\n.wordandtypecontainer {\ndisplay: inline-block;\n}\n\n",
+            "flds": [
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Word",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "WordType",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Definiton",
+                    "ord": 2,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "LongDefiniton",
+                    "ord": 3,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "JsonDump",
+                    "ord": 4,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "Word-Definition",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0,
+                        1
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tags": [],
+            "tmpls": [
+                {
+                    "afmt": "<div class=\"body-upper\" style=\"border-radius: 5px 5px 0px 0px;\">\n<div class=\"wordandtypecontainer\">\n    <div class=\"wordtype\">{{WordType}}</div><div class=\"word\">{{Word}}</div>\n</div>\n</div>\n\n<div class=\"body-lower\" style=\"border-radius: 0px 0px 5px 5px;\">\n    <div class=\"notes\">\n        {{Definiton}}\n    </div>\n</div>\n\n    <script>\n        function showextra() {\n            document.getElementById(\"extrafield\").style.display = \"block\";\n            document.getElementById(\"extra_toggle_on_button\").style.display = \"none\";\n        }\n        function hideextra() {\n            document.getElementById(\"extrafield\").style.display = \"none\";\n            document.getElementById(\"extra_toggle_on_button\").style.display = \"block\";\n        }\n    </script>\n\n    {{#LongDefiniton}}\n    <div class=\"extra_toggle\" id=\"extra_toggle_on_button\" onclick=\"showextra()\">\n        Show Long Definition\n    </div>\n    <div class=\"extra\" id=\"extrafield\">\n        {{LongDefiniton}}\n        <div class=\"extra_toggle\" id=\"extra_toggle_off_button\" onclick=\"hideextra()\">\n            Hide Long Definition\n        </div>\n    </div>\n    {{/LongDefiniton}}",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Card 1",
+                    "ord": 0,
+                    "qfmt": "<div class=\"body-upper\" style=\"border-radius: 5px 5px 0px 0px;\">\n<div class=\"wordandtypecontainer\">\n    <div class=\"wordtype\">{{WordType}}</div><div class=\"word\">{{Word}}</div>\n</div>\n</div>\n\n<div class=\"body-lower\" style=\"border-radius: 0px 0px 5px 5px;\">\n    <div class=\"notes\">\n        ?\n    </div>\n</div>\n"
+                }
+            ],
+            "type": 0,
+            "vers": []
+        },
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "3d268c54-b7ae-11ea-b976-40b076dccfad",
+            "css": "* {  \n  word-wrap: break-word;  \n}\n\n.card {\n  font-family: UD Digi Kyokasho N-R;\n  font-size: 20px;\n  text-align: center;\n  padding: 10px;\n}\n\n.cont-body {\n  opacity: 0.9;\n  width: 80%;\n  margin: auto;\n}\n\n.wordlevel {\n  display: inline;\n  font-weight: bold;\n  /* border: 3px solid #eee; */\n  padding: 4px;\n}\n\n.level {\n  display: inline;\n  background-color: #eee;\n  color: #555555;\n  font-weight: bold;\n  border: 3px solid #eee;\n  padding: 4px;\n  float: left;\n}\n\n.lang {\n  display: inline;\n  background-color: #eee;\n  color: #555555;\n  font-weight: bold;\n  border-radius: 5px;\n  padding: 4px;\n  float: right;\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n  color: transparent;\n  display: table;\n  width: 5%;\n}\n\n.bg {\n  position: fixed;\n  top: 0px;\n  bottom: 0px;\n  left: 0px;\n  right: 0px;\n  background-image: url(\"4.gif\");\n  background-position: center;\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-size: cover;\n  z-index: -1;\n  padding: 10px;\n  overflow: auto;\n}\n\nu {\n  text-decoration-style: wavy;\n  text-underline-position: under;\n  color: white;\n  padding: 1px;\n}\n\n.notes hr {\n  border: 1px solid rgba(85, 85, 85, 0.75);\n}\n\n.body-upper {\n  font-family: Noto Sans Black;\n  font-size: 30px;\n  color: #eee;\n  background-color: #555555;\n  padding: 30px 10px 30px;\n}\n\n.body-lower {\n  text-align: left;\n  color: #555555;\n  background-color: #9fdbdb;\n  padding: 25px 10px 25px;\n}\n\n.soundFront {\n  position: absolute;\n  top: 40px;\n  right: 40px;\n  font-size: 18px;\n  content: url(\"play.png\");\n  width: 6%;\n}\n\n.notes {\n  font-family: Noto Sans Regular;\n  font-size: 20px;\n  border: 2px dashed rgba(85, 85, 85, 0.75);\n  padding: 10px;\n  margin: 3px 20px 3px 20px;\n  text-align: center;\n  font-weight: bold;\n}\n\n.symbol-container {\n  font-size: 10vh;\n}\n\n.card.night_mode {\n  color: white;\n  background-color: #303030;\n}\n\n.extra_toggle {\n  display: block;\n  font-family: Noto Sans Regular;\n  font-size: 15px;\n  color: rgba(85, 85, 85, 0.55);\n  background-color: rgba(85, 85, 85, 0.15);\n  border-radius: 10px;\n  padding: 5px;\n  width: 50%;\n  text-align: center;\n  font-weight: 500;\n  margin: auto;\n  margin-top: 20px;\n  transition: background-color 0.15s ease-out;\n}\n\n.extra_toggle:hover {\n  background-color: rgba(85, 85, 85, 0.35);\n}\n\n.extra {\n  display: none;\n  font-family: Noto Sans Regular;\n  font-size: 15px;\n  border: 2px dashed rgba(85, 85, 85, 0.55);\n  color: rgba(85, 85, 85, 0.55);\n  padding: 20px;\n  margin: 30px 20px 3px 20px;\n  text-align: center;\n  font-weight: 500;\n}\n.mnemonic {\n  text-align: center;\n  border: 2px dashed rgba(85, 85, 85, 0.5);\n  color: rgba(85, 85, 85, 0.5);\n  padding: 10px;\n  margin: 15px 20px 3px 20px;\n}\n.sentencehr hr {\n  border: 0.5px solid rgba(85, 85, 85, 0.4);\n}\n.mobile .level {\n  display: none;\n  font-size: 10px;\n}\n.mobile .lang {\n  float: left;\n  color: transparent;\n  display: block;\n  width: 15%;\n}\n.mobile .wordlevel {\n  border: none;\n}\n\n.mobile .cont-body {\n  width: 100%;\n}\n",
+            "flds": [
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Id",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Word",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Word-Symbol",
+                    "ord": 2,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Word-Symbol-2",
+                    "ord": 3,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Back",
+                    "ord": 4,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Level",
+                    "ord": 5,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Mnemonic",
+                    "ord": 6,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Audio",
+                    "ord": 7,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Sentence",
+                    "ord": 8,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Sentence-Meaning",
+                    "ord": 9,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "lang",
+                    "ord": 10,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "Pretty-Word",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        1,
+                        5,
+                        10
+                    ]
+                ]
+            ],
+            "sortf": 1,
+            "tags": [],
+            "tmpls": [
+                {
+                    "afmt": "<img src onerror='setFlag();'>\n<div class=\"bg\">\n    <script>\n\tfunction setFlag() {\n        var image = \"4.gif\";\n        if (\"{{lang}}\" == \"en\") {\n            image = \"union-jack-26119.svg\";\n        }\n        else if (\"{{lang}}\" == \"de\") {\n            image = \"germany-flag-1783774.svg\";\n        }\n        else if (\"{{lang}}\" == \"es\") {\n            image = \"spain-162428.svg\";\n        }\n        else if (\"{{lang}}\" == \"zh\") {\n            image = \"china-162389.svg\";\n        }\n        else {\n            document.getElementById(\"language_flag\").style.display = \"none\";\n        }\n        document.getElementById(\"language_flag\").style.backgroundImage = \"url(\" + image + \")\"; \n\t}\n    </script>\n    <div class=\"cont-body\">\n        <div class=\"body-upper\" style=\"border-radius: 5px 5px 0px 0px;\">\n            <div class=\"soundFront\" onclick=\"playAudio()\"></div>\n            {{#Level}}\n            <div class=\"level\">\n                {{Level}}\n            </div>\n            {{/Level}}\n            {{#lang}}\n            <div id=\"language_flag\" class=\"lang\">\n                {{lang}}\n            </div>\n            {{/lang}}\n            <div class=\"wordlevel\">{{Word}}</div>\n\n        </div>\n\n        <div class=\"body-lower\" style=\"border-radius: 0px 0px 5px 5px;\">\n\n            <div class=\"notes\">\n                {{#Word-Symbol}}\n                <div class=\"symbol-container\">\n                    {{Word-Symbol}}\n                </div>\n                <hr>\n                {{/Word-Symbol}}\n                {{Back}}\n                {{Audio}}\n            </div>\n\n            {{#Mnemonic}}\n            <div class=\"mnemonic\">\n                {{Mnemonic}}\n            </div>\n            {{/Mnemonic}}\n\n            {{#Sentence}}\n            <div class=\"extra_toggle\" id=\"extra_toggle_on_button\" onclick=\"showextra()\">\n                Show Extra\n            </div>\n            <div class=\"extra\" id=\"extrafield\">\n                {{Sentence}}\n                {{#Sentence-Meaning}}\n                <div class=\"sentencehr\">\n                    <hr>\n                </div>\n                {{Sentence-Meaning}}\n                {{/Sentence-Meaning}}\n                <div class=\"extra_toggle\" id=\"extra_toggle_off_button\" onclick=\"hideextra()\">\n                    Hide Extra\n                </div>\n            </div>\n            {{/Sentence}}\n        </div>\n    </div>\n</div>\n<script>\n    function playAudio() {\n        var audioDiv = document.getElementById('audio');\n        var audio = audioDiv.getElementsByTagName(\"*\");\n        audio[0].click();\n    }\n    function playSenAudio() {\n        var audioDiv = document.getElementById('senaudio');\n        var audio = audioDiv.getElementsByTagName(\"*\");\n        audio[0].click();\n    }\n</script>\n<script>\n    function showextra() {\n        document.getElementById(\"extrafield\").style.display = \"block\";\n        document.getElementById(\"extra_toggle_on_button\").style.display = \"none\";\n    }\n    function hideextra() {\n        document.getElementById(\"extrafield\").style.display = \"none\";\n        document.getElementById(\"extra_toggle_on_button\").style.display = \"block\";\n    }\n</script>",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Card 1",
+                    "ord": 0,
+                    "qfmt": "<img src onerror='setFlag();'>\n    <script>\n\tfunction setFlag() {\n        var image = \"4.gif\";\n        if (\"{{lang}}\" == \"en\") {\n            image = \"union-jack-26119.svg\";\n        }\n        else if (\"{{lang}}\" == \"de\") {\n            image = \"germany-flag-1783774.svg\";\n        }\n        else if (\"{{lang}}\" == \"es\") {\n            image = \"spain-162428.svg\";\n        }\n        else if (\"{{lang}}\" == \"zh\") {\n            image = \"china-162389.svg\";\n        }\n        else {\n            document.getElementById(\"language_flag\").style.display = \"none\";\n        }\n        document.getElementById(\"language_flag\").style.backgroundImage = \"url(\" + image + \")\"; \n\t}\n    </script>\n<div class=\"bg\">\n    <div class=\"cont-body\">\n        <div class=\"body-upper\" style=\"border-radius: 5px 5px 0px 0px;\">\n            <div class=\"soundFront\" onclick=\"playAudio()\"></div>\n            {{#Level}}\n            <div class=\"level\">\n                {{Level}}\n            </div>\n            {{/Level}}\n            {{#lang}}\n            <div id=\"language_flag\" class=\"lang\">\n                {{lang}}\n            </div>\n            {{/lang}}\n            <div class=\"wordlevel\">{{Word}}</div>\n\n        </div>\n\n        <div class=\"body-lower\" style=\"border-radius: 0px 0px 5px 5px;\">\n\n            <div class=\"notes\">\n                {{#Word-Symbol}}\n                ?\n                <hr>\n                {{/Word-Symbol}}\n                ?\n            </div>\n        </div>\n    </div>\n</div>\n<script>\n    function playAudio() {\n        var audioDiv = document.getElementById('audio');\n        var audio = audioDiv.getElementsByTagName(\"*\");\n        audio[0].click();\n    }\n</script>"
+                }
+            ],
+            "type": 0,
+            "vers": []
+        },
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "3d26da24-b7ae-11ea-b976-40b076dccfad",
+            "css": "* {  \n  word-wrap: break-word;  \n}\n\n.card {\n font-family: arial;\n font-size: 20px;\n text-align: center;\n color: black;\n background-color: white;\n}\n",
+            "flds": [
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Backgrounds",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Flags",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "MediaSaver",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tags": [],
+            "tmpls": [
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Flags}}",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Card 1",
+                    "ord": 0,
+                    "qfmt": "{{Backgrounds}}"
+                }
+            ],
+            "type": 0,
+            "vers": []
+        }
+    ],
+    "notes": [
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "megalomania",
+                "<div class=\"word_header\">\n <div class=\"word_type\">\n  noun\n </div>\n <div class=\"word_word\">\n  meg*a*lo*ma*nia\n </div>\n</div>",
+                "<div class=\"word_container\">\n <div class=\"word_homophone_container\" onclick=\"showhomophone(this);\">\n  <div class=\"word_header\">\n   <div class=\"word_type\">\n    noun\n   </div>\n   <div class=\"word_word\">\n    meg*a*lo*ma*nia\n   </div>\n  </div>\n  <div class=\"word_not_header\">\n   <div class=\"shortdef_container\">\n    <ul>\n     <li>\n      a mania for great or grandiose performance\n     </li>\n     <li>\n      a delusional mental illness that is marked by feelings of personal omnipotence and grandeur\n     </li>\n    </ul>\n   </div>\n   <div class=\"word_date\" style=\"display: none\">\n    1885{ds||1||}\n   </div>\n   <div class=\"word_offensive\" style=\"display: none\">\n    False\n   </div>\n   <div class=\"word_long_definition\">\n    <div class=\"word_long_definition_toggle_button word_long_definition_show_button\" onclick=\"showextra()\">\n     Show full definition\n    </div>\n    <ol class=\"word_long_definition_list_container\" type=\"1\">\n     <li>\n      <ol class=\"word_long_definition_defi_container\" type=\"a\">\n       <li>\n        {bc}a mania {dx_def}see {dxt|mania||2a}{/dx_def} for great or grandiose performance\n       </li>\n      </ol>\n     </li>\n     <li>\n      <ol class=\"word_long_definition_defi_container\" type=\"a\">\n       <li>\n        {bc}a delusional {d_link|mental illness|mental illness} that is marked by feelings of personal {d_link|omnipotence|omnipotence} and {d_link|grandeur|grandeur}\n       </li>\n      </ol>\n     </li>\n    </ol>\n    <div class=\"word_long_definition_toggle_button word_long_definition_hide_button\" onclick=\"hideextra()\">\n     Hide full definition\n    </div>\n   </div>\n  </div>\n </div>\n</div>"
+            ],
+            "flags": 0,
+            "guid": "r+b=SG`yR+",
+            "note_model_uuid": "3d262e6c-b7ae-11ea-b976-40b076dccfad",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "This is the basic pretty card.",
+                "It has a front and a back."
+            ],
+            "flags": 0,
+            "guid": "pu<#FaIs(U",
+            "note_model_uuid": "3d263d1c-b7ae-11ea-b976-40b076dccfad",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "This is also a basic card.",
+                "But it is animated."
+            ],
+            "flags": 0,
+            "guid": "MV%|=Q8|`*",
+            "note_model_uuid": "3d26485c-b7ae-11ea-b976-40b076dccfad",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "This is a pretty {{c1::cloze}} card.",
+                "You can set a title.&nbsp;",
+                "And provide extra information."
+            ],
+            "flags": 0,
+            "guid": "tQZr+J]XgJ",
+            "note_model_uuid": "3d2653d8-b7ae-11ea-b976-40b076dccfad",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "word",
+                "noun",
+                "Wort",
+                "das",
+                "This card is for vocabulary.",
+                ""
+            ],
+            "flags": 0,
+            "guid": "D.[^>#rDb*",
+            "note_model_uuid": "3d265f04-b7ae-11ea-b976-40b076dccfad",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Word",
+                "Also a card for vocabulary",
+                "noun",
+                "A word is used in a sentence",
+                "1",
+                "",
+                "",
+                "Notes notes notes.",
+                "1"
+            ],
+            "flags": 0,
+            "guid": "rf`}:Awcd#",
+            "note_model_uuid": "3d266bca-b7ae-11ea-b976-40b076dccfad",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Definition",
+                "noun",
+                "This card is for words and their definitions.",
+                "This is for a much longer definition.",
+                "don't mind me"
+            ],
+            "flags": 0,
+            "guid": "eL^J8$P8K1",
+            "note_model_uuid": "3d267c32-b7ae-11ea-b976-40b076dccfad",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "01",
+                "in the process of (doing something); currently",
+                "正在",
+                "正在",
+                "zhèngzài",
+                "HSK2",
+                "Young Tsai (Will Tsai)",
+                "[sound:zheng4zai4.mp3]",
+                "Wǒ zhèngzài shàngbān.",
+                "I'm at work now.",
+                "zh"
+            ],
+            "flags": 0,
+            "guid": "k!nJ:3C0sg",
+            "note_model_uuid": "3d268c54-b7ae-11ea-b976-40b076dccfad",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "02",
+                "Car",
+                "",
+                "",
+                "Auto",
+                "",
+                "",
+                "",
+                "Ich habe ein Auto gekauft.",
+                "I bought a car.",
+                "de"
+            ],
+            "flags": 0,
+            "guid": "EEXXtX|,0d",
+            "note_model_uuid": "3d268c54-b7ae-11ea-b976-40b076dccfad",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "03",
+                "Cat",
+                "",
+                "",
+                "Gato",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "es"
+            ],
+            "flags": 0,
+            "guid": "dg1Rw/$b7C",
+            "note_model_uuid": "3d268c54-b7ae-11ea-b976-40b076dccfad",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "04",
+                "Megalomania",
+                "",
+                "",
+                "a delusional mental illness that is marked by feelings of personal omnipotence and grandeur",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "en"
+            ],
+            "flags": 0,
+            "guid": "H;7.dGf*w(",
+            "note_model_uuid": "3d268c54-b7ae-11ea-b976-40b076dccfad",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"1.gif\"><img src=\"2.gif\"><img src=\"3.gif\"><img src=\"4.gif\"><img src=\"5.gif\">",
+                "<img src=\"china-162389.svg\"><img src=\"germany-flag-1783774.svg\"><img src=\"macau-162346.svg\"><img src=\"spain-162428.svg\"><img src=\"union-jack-26119.svg\">"
+            ],
+            "flags": 0,
+            "guid": "JfRwK54vkN",
+            "note_model_uuid": "3d26da24-b7ae-11ea-b976-40b076dccfad",
+            "tags": []
+        }
+    ]
+}
