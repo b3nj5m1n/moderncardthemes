@@ -2,7 +2,7 @@
     "__type__": "Deck",
     "children": [],
     "crowdanki_uuid": "3d2479f0-b7ae-11ea-b976-40b076dccfad",
-    "deck_config_uuid": "21787000-f5c3-11ea-9db4-40b076dccfad",
+    "deck_config_uuid": "ff2784b8-fa91-11ea-9281-40b076dccfad",
     "deck_configurations": [
         {
             "__type__": "DeckConfig",
@@ -10,7 +10,7 @@
             "autoAlert": 0,
             "autoAnswer": 0,
             "autoplay": true,
-            "crowdanki_uuid": "21787000-f5c3-11ea-9db4-40b076dccfad",
+            "crowdanki_uuid": "ff2784b8-fa91-11ea-9281-40b076dccfad",
             "dyn": false,
             "lapse": {
                 "delays": [
@@ -19,10 +19,10 @@
                 "leechAction": 0,
                 "leechFails": 8,
                 "minInt": 1,
-                "mult": 0.0
+                "mult": 0.7
             },
             "maxTaken": 60,
-            "name": "Paused",
+            "name": "Default",
             "new": {
                 "bury": false,
                 "delays": [
@@ -36,7 +36,7 @@
                     7
                 ],
                 "order": 1,
-                "perDay": 0,
+                "perDay": 5,
                 "separate": true
             },
             "replayq": true,
@@ -46,9 +46,9 @@
                 "fuzz": 0.05,
                 "hardFactor": 1.2,
                 "ivlFct": 1.0,
-                "maxIvl": 200,
+                "maxIvl": 365,
                 "minSpace": 1,
-                "perDay": 1
+                "perDay": 200
             },
             "timer": 0
         }
@@ -57,20 +57,14 @@
     "dyn": 0,
     "extendNew": 1,
     "extendRev": 50,
-    "media_files": [
-        "china-162389.svg",
-        "germany-flag-1783774.svg",
-        "macau-162346.svg",
-        "spain-162428.svg",
-        "union-jack-26119.svg"
-    ],
+    "media_files": [],
     "mid": "1585068302590",
     "name": "🧪 Test Deck",
     "note_models": [
         {
             "__type__": "NoteModel",
             "crowdanki_uuid": "3d263d1c-b7ae-11ea-b976-40b076dccfad",
-            "css": ":root {\n\t--main-bg-color: #434343;\n\t--upper-bg-color: #555555;\n\t--lower-bg-color: #transparent;\n\t--upper-fg-color: #eeeeee;\n\t--lower-fg-color: #555555;\n\t--primary-color: #9370db;\n}\n\nhtml,\nbody {\n\tword-wrap: normal;\n}\n\nu {\n\ttext-decoration-style: wavy;\n\ttext-underline-position: under;\n\tcolor: white;\n\tpadding: 1px;\n}\n\n.card {\n\tfont-family: UD Digi Kyokasho N-R;\n\tfont-size: 0px;\n\ttext-align: center;\n}\n\n.stripe {\n\theight: 5px;\n\tbackground-color: var(--primary-color);\n}\n\n.kard {\n\theight: 100vh;\n\tbackground-color: var(--main-bg-color);\n}\n\n.body-upper {\n\tfont-family: Noto Sans;\n\tfont-size: 30px;\n\tcolor: var(--upper-fg-color);\n\tbackground-color: var(--upper-bg-color);\n\tpadding: 30px 10px 30px;\n\t{\n\t\t{\n\t\t\t/Title\n\t\t}\n\t}\n\tborder-radius: 0px 0px 0px 0px;\n}\n\n.body-lower {\n\ttext-align: left;\n\tcolor: var(--lower-fg-color);\n\tcolor: var(--lower-bg-color);\n\theight: 50%;\n\tpadding: 25px 10px 25px 10px;\n\tborder-radius: 0px 0px 0px 0px;\n}\n\n.soundFront {\n\tposition: absolute;\n\ttop: 40px;\n\tright: 40px;\n\tfont-size: 18px;\n\tcontent: url(\"play.png\") {\n\t\t{\n\t\t\t/Title\n\t\t}\n\t}\n\t;\n\twidth: 6%;\n}\n\n.notes {\n\tfont-family: Noto Sans Regular;\n\tfont-size: 20px;\n\t/*\n  border: 2px dashed rgba(85, 85, 85, 0.75);\n  padding: 10px;\n  margin: 3px 20px 3px 20px;\n  */\n\ttext-align: center;\n\tfont-weight: bold;\n}\n\n.extra_toggle {\n\tdisplay: block;\n\tfont-family: Noto Sans Regular;\n\tfont-size: 15px;\n\tcolor: var(--upper-fg-color);\n\tbackground-color: var(--upper-bg-color);\n\tborder-radius: 0px;\n\tpadding: 5px;\n\twidth: 50%;\n\ttext-align: center;\n\tfont-weight: 500;\n\tmargin: auto;\n\tmargin-top: 20px;\n\ttransition: all 0.15s ease-out;\n}\n\n.extra_toggle:hover {\n\tfilter: brightness(90%);\n}\n\n.extra {\n\tdisplay: none;\n\tfont-family: Noto Sans Regular;\n\tfont-size: 15px;\n\tborder: 3px dashed var(--primary-color);\n\tcolor: var(--upper-fg-color);\n\tpadding: 20px;\n\tmargin: 30px 20px 3px 20px;\n\ttext-align: center;\n\tfont-weight: 500;\n}\n\n.cloze {\n\tbackground-color: var(--primary-color);\n}\n\n.stripe.night_mode {\n\tbackground-color: var(--primary-color);\n}\n\n.kard.night_mode {\n\tbackground-color: var(--main-bg-color);\n}\n\n.body-upper.night_mode {\n\tcolor: var(--upper-fg-color);\n\tbackground-color: var(--upper-bg-color);\n}\n\n.body-lower.night_mode {\n\tcolor: var(--lower-fg-color);\n\tcolor: var(--lower-bg-color);\n}\n\n.cloze.night_mode {\n\tbackground-color: var(--primary-color);\n}\n\n",
+            "css": "\n\nimg {\n\twidth: 20%;\n}\n\n:root {\n\t--main-bg-color: #434343;\n\t--upper-bg-color: #555555;\n\t--lower-bg-color: #434343;\n\t--upper-fg-color: #eeeeee;\n\t--lower-fg-color: #eeeeee;\n\t--colorPrimary-h: 260;\n\t--colorPrimary-s: 60%;\n\t--colorPrimary-l: 65%;\n\t--primary-color: hsl(var(--colorPrimary-h), var(--colorPrimary-s), var(--colorPrimary-l));\n\t--secondary-color: hsl(calc(var(--colorPrimary-h) + 240), var(--colorPrimary-s), var(--colorPrimary-l));\n\t--tertiary-color: hsl(calc(var(--colorPrimary-h) + 120), var(--colorPrimary-s), var(--colorPrimary-l));\n}\n\nhtml,\nbody {\n\tword-wrap: normal;\n\tbackground-color: var(--main-bg-color);\n\tpadding: 0;\n\tmargin: 0;\n}\n\nu {\n\ttext-decoration-style: wavy;\n\ttext-underline-position: under;\n\tcolor: white;\n\tpadding: 1px;\n}\n\n.card {\n\tfont-family: UD Digi Kyokasho N-R;\n\tfont-size: 0px;\n\ttext-align: center;\n}\n\n.stripe {\n\theight: 5px;\n\tbackground-color: var(--primary-color);\n}\n\n.kard {\n\theight: 100%;\n\tbackground-color: var(--main-bg-color);\n}\n\n.body-upper {\n\tfont-family: Noto Sans;\n\tfont-size: 30px;\n\tcolor: var(--upper-fg-color);\n\tbackground-color: var(--upper-bg-color);\n\tpadding: 30px 10px 30px;\n\t{\n\t\t{\n\t\t\t/Title\n\t\t}\n\t}\n\tborder-radius: 0px 0px 0px 0px;\n}\n\n.body-lower {\n\ttext-align: left;\n\tcolor: var(--lower-fg-color);\n\theight: 100%;\n\tpadding: 25px 10px 25px 10px;\n\tborder-radius: 0px 0px 0px 0px;\n}\n\n.soundFront {\n\tposition: absolute;\n\ttop: 40px;\n\tright: 40px;\n\tfont-size: 18px;\n\tcontent: url(\"play.png\") {\n\t\t{\n\t\t\t/Title\n\t\t}\n\t}\n\t;\n\twidth: 6%;\n}\n\n.notes {\n\tfont-family: Noto Sans Regular;\n\tfont-size: 20px;\n\t/*\n  border: 2px dashed rgba(85, 85, 85, 0.75);\n  padding: 10px;\n  margin: 3px 20px 3px 20px;\n  */\n\ttext-align: center;\n\tfont-weight: bold;\n}\n\n.extra_toggle {\n\tdisplay: block;\n\tfont-family: Noto Sans Regular;\n\tfont-size: 15px;\n\tcolor: var(--upper-fg-color);\n\tbackground-color: var(--upper-bg-color);\n\tborder-radius: 0px;\n\tpadding: 5px;\n\twidth: 50%;\n\ttext-align: center;\n\tfont-weight: 500;\n\tmargin: auto;\n\tmargin-top: 20px;\n\ttransition: all 0.15s ease-out;\n}\n\n.extra_toggle:hover {\n\tfilter: brightness(90%);\n}\n\n.extra {\n\tdisplay: none;\n\tfont-family: Noto Sans Regular;\n\tfont-size: 15px;\n\tborder: 3px dashed var(--primary-color);\n\tcolor: var(--upper-fg-color);\n\tpadding: 20px;\n\tmargin: 30px 20px 3px 20px;\n\ttext-align: center;\n\tfont-weight: 500;\n}\n\n.hightlight-1 {\n\tbackground-color: var(--primary-color);\n}\n\n.hightlight-2 {\n\tbackground-color: var(--secondary-color);\n}\n\n.hightlight-3 {\n\tbackground-color: var(--tertiary-color);\n}\n\n.hightlight-1.night_mode {\n\tbackground-color: var(--primary-color);\n}\n\n.hightlight-2.night_mode {\n\tbackground-color: var(--secondary-color);\n}\n\n.hightlight-3.night_mode {\n\tbackground-color: var(--tertiary-color);\n}\n\n.cloze {\n\tbackground-color: var(--primary-color);\n}\n\n.stripe.night_mode {\n\tbackground-color: var(--primary-color);\n}\n\n.kard.night_mode {\n\tbackground-color: var(--main-bg-color);\n}\n\n.body-upper.night_mode {\n\tcolor: var(--upper-fg-color);\n\tbackground-color: var(--upper-bg-color);\n}\n\n.body-lower.night_mode {\n\tcolor: var(--lower-fg-color);\n\tcolor: var(--lower-bg-color);\n}\n\n.cloze.night_mode {\n\tbackground-color: var(--primary-color);\n}\n\n",
             "flds": [
                 {
                     "font": "Arial",
@@ -94,7 +88,7 @@
             "latexPost": "\\end{document}",
             "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
             "latexsvg": false,
-            "name": "Basic-Pretty",
+            "name": "prettyBasic",
             "req": [
                 [
                     0,
@@ -106,6 +100,8 @@
             ],
             "sortf": 0,
             "tags": [
+                "",
+                "Schule::Spanisch::Klausuren::Q1::1",
                 ""
             ],
             "tmpls": [
@@ -127,7 +123,7 @@
         {
             "__type__": "NoteModel",
             "crowdanki_uuid": "3d2653d8-b7ae-11ea-b976-40b076dccfad",
-            "css": ":root {\n\t--main-bg-color: #434343;\n\t--upper-bg-color: #555555;\n\t--lower-bg-color: #transparent;\n\t--upper-fg-color: #eeeeee;\n\t--lower-fg-color: #555555;\n\t--primary-color: #9370db;\n}\n\nhtml,\nbody {\n\tword-wrap: normal;\n}\n\nu {\n\ttext-decoration-style: wavy;\n\ttext-underline-position: under;\n\tcolor: white;\n\tpadding: 1px;\n}\n\n.card {\n\tfont-family: UD Digi Kyokasho N-R;\n\tfont-size: 0px;\n\ttext-align: center;\n}\n\n.stripe {\n\theight: 5px;\n\tbackground-color: var(--primary-color);\n}\n\n.kard {\n\theight: 100vh;\n\tbackground-color: var(--main-bg-color);\n}\n\n.body-upper {\n\tfont-family: Noto Sans;\n\tfont-size: 30px;\n\tcolor: var(--upper-fg-color);\n\tbackground-color: var(--upper-bg-color);\n\tpadding: 30px 10px 30px;\n\t{\n\t\t{\n\t\t\t/Title\n\t\t}\n\t}\n\tborder-radius: 0px 0px 0px 0px;\n}\n\n.body-lower {\n\ttext-align: left;\n\tcolor: var(--lower-fg-color);\n\tcolor: var(--lower-bg-color);\n\theight: 50%;\n\tpadding: 25px 10px 25px 10px;\n\tborder-radius: 0px 0px 0px 0px;\n}\n\n.soundFront {\n\tposition: absolute;\n\ttop: 40px;\n\tright: 40px;\n\tfont-size: 18px;\n\tcontent: url(\"play.png\") {\n\t\t{\n\t\t\t/Title\n\t\t}\n\t}\n\t;\n\twidth: 6%;\n}\n\n.notes {\n\tfont-family: Noto Sans Regular;\n\tfont-size: 20px;\n\t/*\n  border: 2px dashed rgba(85, 85, 85, 0.75);\n  padding: 10px;\n  margin: 3px 20px 3px 20px;\n  */\n\ttext-align: center;\n\tfont-weight: bold;\n}\n\n.extra_toggle {\n\tdisplay: block;\n\tfont-family: Noto Sans Regular;\n\tfont-size: 15px;\n\tcolor: var(--upper-fg-color);\n\tbackground-color: var(--upper-bg-color);\n\tborder-radius: 0px;\n\tpadding: 5px;\n\twidth: 50%;\n\ttext-align: center;\n\tfont-weight: 500;\n\tmargin: auto;\n\tmargin-top: 20px;\n\ttransition: all 0.15s ease-out;\n}\n\n.extra_toggle:hover {\n\tfilter: brightness(90%);\n}\n\n.extra {\n\tdisplay: none;\n\tfont-family: Noto Sans Regular;\n\tfont-size: 15px;\n\tborder: 3px dashed var(--primary-color);\n\tcolor: var(--upper-fg-color);\n\tpadding: 20px;\n\tmargin: 30px 20px 3px 20px;\n\ttext-align: center;\n\tfont-weight: 500;\n}\n\n.cloze {\n\tbackground-color: var(--primary-color);\n}\n\n.stripe.night_mode {\n\tbackground-color: var(--primary-color);\n}\n\n.kard.night_mode {\n\tbackground-color: var(--main-bg-color);\n}\n\n.body-upper.night_mode {\n\tcolor: var(--upper-fg-color);\n\tbackground-color: var(--upper-bg-color);\n}\n\n.body-lower.night_mode {\n\tcolor: var(--lower-fg-color);\n\tcolor: var(--lower-bg-color);\n}\n\n.cloze.night_mode {\n\tbackground-color: var(--primary-color);\n}\n\n",
+            "css": "\n\nimg {\n\twidth: 20%;\n}\n\n:root {\n\t--main-bg-color: #434343;\n\t--upper-bg-color: #555555;\n\t--lower-bg-color: #434343;\n\t--upper-fg-color: #eeeeee;\n\t--lower-fg-color: #eeeeee;\n\t--colorPrimary-h: 260;\n\t--colorPrimary-s: 60%;\n\t--colorPrimary-l: 65%;\n\t--primary-color: hsl(var(--colorPrimary-h), var(--colorPrimary-s), var(--colorPrimary-l));\n\t--secondary-color: hsl(calc(var(--colorPrimary-h) + 240), var(--colorPrimary-s), var(--colorPrimary-l));\n\t--tertiary-color: hsl(calc(var(--colorPrimary-h) + 120), var(--colorPrimary-s), var(--colorPrimary-l));\n}\n\nhtml,\nbody {\n\tword-wrap: normal;\n\tbackground-color: var(--main-bg-color);\n\tpadding: 0;\n\tmargin: 0;\n}\n\nu {\n\ttext-decoration-style: wavy;\n\ttext-underline-position: under;\n\tcolor: white;\n\tpadding: 1px;\n}\n\n.card {\n\tfont-family: UD Digi Kyokasho N-R;\n\tfont-size: 0px;\n\ttext-align: center;\n}\n\n.stripe {\n\theight: 5px;\n\tbackground-color: var(--primary-color);\n}\n\n.kard {\n\theight: 100%;\n\tbackground-color: var(--main-bg-color);\n}\n\n.body-upper {\n\tfont-family: Noto Sans;\n\tfont-size: 30px;\n\tcolor: var(--upper-fg-color);\n\tbackground-color: var(--upper-bg-color);\n\tpadding: 30px 10px 30px;\n\t{\n\t\t{\n\t\t\t/Title\n\t\t}\n\t}\n\tborder-radius: 0px 0px 0px 0px;\n}\n\n.body-lower {\n\ttext-align: left;\n\tcolor: var(--lower-fg-color);\n\theight: 100%;\n\tpadding: 25px 10px 25px 10px;\n\tborder-radius: 0px 0px 0px 0px;\n}\n\n.soundFront {\n\tposition: absolute;\n\ttop: 40px;\n\tright: 40px;\n\tfont-size: 18px;\n\tcontent: url(\"play.png\") {\n\t\t{\n\t\t\t/Title\n\t\t}\n\t}\n\t;\n\twidth: 6%;\n}\n\n.notes {\n\tfont-family: Noto Sans Regular;\n\tfont-size: 20px;\n\t/*\n  border: 2px dashed rgba(85, 85, 85, 0.75);\n  padding: 10px;\n  margin: 3px 20px 3px 20px;\n  */\n\ttext-align: center;\n\tfont-weight: bold;\n}\n\n.extra_toggle {\n\tdisplay: block;\n\tfont-family: Noto Sans Regular;\n\tfont-size: 15px;\n\tcolor: var(--upper-fg-color);\n\tbackground-color: var(--upper-bg-color);\n\tborder-radius: 0px;\n\tpadding: 5px;\n\twidth: 50%;\n\ttext-align: center;\n\tfont-weight: 500;\n\tmargin: auto;\n\tmargin-top: 20px;\n\ttransition: all 0.15s ease-out;\n}\n\n.extra_toggle:hover {\n\tfilter: brightness(90%);\n}\n\n.extra {\n\tdisplay: none;\n\tfont-family: Noto Sans Regular;\n\tfont-size: 15px;\n\tborder: 3px dashed var(--primary-color);\n\tcolor: var(--upper-fg-color);\n\tpadding: 20px;\n\tmargin: 30px 20px 3px 20px;\n\ttext-align: center;\n\tfont-weight: 500;\n}\n\n.hightlight-1 {\n\tbackground-color: var(--primary-color);\n}\n\n.hightlight-2 {\n\tbackground-color: var(--secondary-color);\n}\n\n.hightlight-3 {\n\tbackground-color: var(--tertiary-color);\n}\n\n.hightlight-1.night_mode {\n\tbackground-color: var(--primary-color);\n}\n\n.hightlight-2.night_mode {\n\tbackground-color: var(--secondary-color);\n}\n\n.hightlight-3.night_mode {\n\tbackground-color: var(--tertiary-color);\n}\n\n.cloze {\n\tbackground-color: var(--primary-color);\n}\n\n.stripe.night_mode {\n\tbackground-color: var(--primary-color);\n}\n\n.kard.night_mode {\n\tbackground-color: var(--main-bg-color);\n}\n\n.body-upper.night_mode {\n\tcolor: var(--upper-fg-color);\n\tbackground-color: var(--upper-bg-color);\n}\n\n.body-lower.night_mode {\n\tcolor: var(--lower-fg-color);\n\tcolor: var(--lower-bg-color);\n}\n\n.cloze.night_mode {\n\tbackground-color: var(--primary-color);\n}\n\n",
             "flds": [
                 {
                     "font": "Arial",
@@ -160,7 +156,7 @@
             "latexPost": "\\end{document}",
             "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
             "latexsvg": false,
-            "name": "Cloze-Pretty",
+            "name": "prettyCloze",
             "req": [
                 [
                     0,
@@ -191,6 +187,146 @@
                 }
             ],
             "type": 1,
+            "vers": []
+        },
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "3d268c54-b7ae-11ea-b976-40b076dccfad",
+            "css": "\n\nimg {\n\twidth: 20%;\n}\n\n:root {\n\t--main-bg-color: #434343;\n\t--upper-bg-color: #555555;\n\t--lower-bg-color: #434343;\n\t--upper-fg-color: #eeeeee;\n\t--lower-fg-color: #eeeeee;\n\t--colorPrimary-h: 260;\n\t--colorPrimary-s: 60%;\n\t--colorPrimary-l: 65%;\n\t--primary-color: hsl(var(--colorPrimary-h), var(--colorPrimary-s), var(--colorPrimary-l));\n\t--secondary-color: hsl(calc(var(--colorPrimary-h) + 240), var(--colorPrimary-s), var(--colorPrimary-l));\n\t--tertiary-color: hsl(calc(var(--colorPrimary-h) + 120), var(--colorPrimary-s), var(--colorPrimary-l));\n}\n\nhtml,\nbody {\n\tword-wrap: normal;\n\tbackground-color: var(--main-bg-color);\n\tpadding: 0;\n\tmargin: 0;\n}\n\nu {\n\ttext-decoration-style: wavy;\n\ttext-underline-position: under;\n\tcolor: white;\n\tpadding: 1px;\n}\n\n.card {\n\tfont-family: UD Digi Kyokasho N-R;\n\tfont-size: 0px;\n\ttext-align: center;\n}\n\n.stripe {\n\theight: 5px;\n\tbackground-color: var(--primary-color);\n}\n\n.kard {\n\theight: 100%;\n\tbackground-color: var(--main-bg-color);\n}\n\n.body-upper {\n\tfont-family: Noto Sans;\n\tfont-size: 30px;\n\tcolor: var(--upper-fg-color);\n\tbackground-color: var(--upper-bg-color);\n\tpadding: 30px 10px 30px;\n\t{\n\t\t{\n\t\t\t/Title\n\t\t}\n\t}\n\tborder-radius: 0px 0px 0px 0px;\n}\n\n.body-lower {\n\ttext-align: left;\n\tcolor: var(--lower-fg-color);\n\theight: 100%;\n\tpadding: 25px 10px 25px 10px;\n\tborder-radius: 0px 0px 0px 0px;\n}\n\n.soundFront {\n\tposition: absolute;\n\ttop: 40px;\n\tright: 40px;\n\tfont-size: 18px;\n\tcontent: url(\"play.png\") {\n\t\t{\n\t\t\t/Title\n\t\t}\n\t}\n\t;\n\twidth: 6%;\n}\n\n.notes {\n\tfont-family: Noto Sans Regular;\n\tfont-size: 20px;\n\t/*\n  border: 2px dashed rgba(85, 85, 85, 0.75);\n  padding: 10px;\n  margin: 3px 20px 3px 20px;\n  */\n\ttext-align: center;\n\tfont-weight: bold;\n}\n\n.extra_toggle {\n\tdisplay: block;\n\tfont-family: Noto Sans Regular;\n\tfont-size: 15px;\n\tcolor: var(--upper-fg-color);\n\tbackground-color: var(--upper-bg-color);\n\tborder-radius: 0px;\n\tpadding: 5px;\n\twidth: 50%;\n\ttext-align: center;\n\tfont-weight: 500;\n\tmargin: auto;\n\tmargin-top: 20px;\n\ttransition: all 0.15s ease-out;\n}\n\n.extra_toggle:hover {\n\tfilter: brightness(90%);\n}\n\n.extra {\n\tdisplay: none;\n\tfont-family: Noto Sans Regular;\n\tfont-size: 15px;\n\tborder: 3px dashed var(--primary-color);\n\tcolor: var(--upper-fg-color);\n\tpadding: 20px;\n\tmargin: 30px 20px 3px 20px;\n\ttext-align: center;\n\tfont-weight: 500;\n}\n\n.hightlight-1 {\n\tbackground-color: var(--primary-color);\n}\n\n.hightlight-2 {\n\tbackground-color: var(--secondary-color);\n}\n\n.hightlight-3 {\n\tbackground-color: var(--tertiary-color);\n}\n\n.hightlight-1.night_mode {\n\tbackground-color: var(--primary-color);\n}\n\n.hightlight-2.night_mode {\n\tbackground-color: var(--secondary-color);\n}\n\n.hightlight-3.night_mode {\n\tbackground-color: var(--tertiary-color);\n}\n\n.cloze {\n\tbackground-color: var(--primary-color);\n}\n\n.stripe.night_mode {\n\tbackground-color: var(--primary-color);\n}\n\n.kard.night_mode {\n\tbackground-color: var(--main-bg-color);\n}\n\n.body-upper.night_mode {\n\tcolor: var(--upper-fg-color);\n\tbackground-color: var(--upper-bg-color);\n}\n\n.body-lower.night_mode {\n\tcolor: var(--lower-fg-color);\n\tcolor: var(--lower-bg-color);\n}\n\n.cloze.night_mode {\n\tbackground-color: var(--primary-color);\n}\n\n",
+            "flds": [
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "Id",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Word",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Word-Symbol",
+                    "ord": 2,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Word-Symbol-2",
+                    "ord": 3,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "Translation",
+                    "ord": 4,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Level",
+                    "ord": 5,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Mnemonic",
+                    "ord": 6,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Audio",
+                    "ord": 7,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Sentence",
+                    "ord": 8,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Sentence-Meaning",
+                    "ord": 9,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "lang",
+                    "ord": 10,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "prettyWord",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        1,
+                        5,
+                        10
+                    ]
+                ]
+            ],
+            "sortf": 1,
+            "tags": [
+                ""
+            ],
+            "tmpls": [
+                {
+                    "afmt": "<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\">\n        <div class=\"soundFront\" onclick=\"playAudio()\"></div>\n\n        <div class=\"main-top\">{{Word}}</div>\n        <div style=\"height: 5px;\"></div>\n\n        <div class=\"top-container\" style=\"display: flex; justify-content: center; font-size: 75%;\">\n            {{#Level}}\n            <div class=\"extra-top-left\" style=\"margin-right: 5px;\">\n                {{Level}}\n            </div>\n            {{/Level}} {{#lang}}\n            <div class=\"extra-top-right\" style=\"margin-right: 5px;\">\n                {{lang}}\n            </div>\n            {{/lang}}\n        </div>\n\n    </div>\n\n    <div class=\"body-lower\">\n\n        <div class=\"notes\">\n            {{#Word-Symbol}}\n            <div class=\"symbol-container\">\n                {{Word-Symbol}}\n            </div>\n            <hr> {{/Word-Symbol}} {{Translation}} {{Audio}}\n        </div>\n\n        {{#Mnemonic}}\n        <div class=\"mnemonic\">\n            {{Mnemonic}}\n        </div>\n        {{/Mnemonic}} {{#Sentence}}\n        <div class=\"extra_toggle\" id=\"extra_toggle_on_button\" onclick=\"showextra()\">\n            Show Extra\n        </div>\n        <div class=\"extra\" id=\"extrafield\">\n            {{Sentence}} {{#Sentence-Meaning}}\n            <div class=\"sentencehr\">\n                <hr>\n            </div>\n            {{Sentence-Meaning}} {{/Sentence-Meaning}}\n            <div class=\"extra_toggle\" id=\"extra_toggle_off_button\" onclick=\"hideextra()\">\n                Hide Extra\n            </div>\n        </div>\n        {{/Sentence}}\n    </div>\n</div>\n<script>\n    function playAudio() {\n        var audioDiv = document.getElementById('audio');\n        var audio = audioDiv.getElementsByTagName(\"*\");\n        audio[0].click();\n    }\n    function playSenAudio() {\n        var audioDiv = document.getElementById('senaudio');\n        var audio = audioDiv.getElementsByTagName(\"*\");\n        audio[0].click();\n    }\n</script>\n<script>\n    function showextra() {\n        document.getElementById(\"extrafield\").style.display = \"block\";\n        document.getElementById(\"extra_toggle_on_button\").style.display = \"none\";\n    }\n    function hideextra() {\n        document.getElementById(\"extrafield\").style.display = \"none\";\n        document.getElementById(\"extra_toggle_on_button\").style.display = \"block\";\n    }\n</script>",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Card 1",
+                    "ord": 0,
+                    "qfmt": "<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\">\n        <div class=\"soundFront\" onclick=\"playAudio()\"></div>\n\n        <div class=\"main-top\">{{Word}}</div>\n        <div style=\"height: 5px;\"></div>\n\n        <div class=\"top-container\" style=\"display: flex; justify-content: center; font-size: 75%;\">\n            {{#Level}}\n            <div class=\"extra-top-left\" style=\"margin-right: 5px;\">\n                {{Level}}\n            </div>\n            {{/Level}} {{#lang}}\n            <div class=\"extra-top-right\" style=\"margin-right: 5px;\">\n                {{lang}}\n            </div>\n            {{/lang}}\n        </div>\n\n    </div>\n\n    <div class=\"body-lower\">\n\n        <div class=\"notes\">\n            {{#Word-Symbol}} ?\n            <hr> {{/Word-Symbol}} ?\n        </div>\n    </div>\n</div>\n<script>\n    function playAudio() {\n        var audioDiv = document.getElementById('audio');\n        var audio = audioDiv.getElementsByTagName(\"*\");\n        audio[0].click();\n    }\n</script>"
+                }
+            ],
+            "type": 0,
             "vers": []
         }
     ],
@@ -224,11 +360,34 @@
             "__type__": "Note",
             "data": "",
             "fields": [
-                "Media Saver",
-                "<img src=\"china-162389.svg\"><img src=\"germany-flag-1783774.svg\"><img src=\"macau-162346.svg\"><img src=\"spain-162428.svg\"><img src=\"union-jack-26119.svg\">"
+                "95472f650a2b647ff8fa66450c77b281ac2846cbe9d8df6354cbcd8c5e589455",
+                "Hilfe",
+                "",
+                "",
+                "help",
+                "",
+                "",
+                "",
+                "Ich brauche Hilfe.",
+                "I need help.",
+                "de"
             ],
             "flags": 0,
-            "guid": "JfRwK54vkN",
+            "guid": "P@Qj#?~kI@",
+            "note_model_uuid": "3d268c54-b7ae-11ea-b976-40b076dccfad",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Das Veilchen",
+                "Ein Veilchen auf der Wiese stand,<br>\ngebückt in sich und unbekannt;<br>\nes war ein herzigs Veilchen.<br>\nDa kam ein' junge Schäferin<br>\nmit leichtem Schritt und munterm Sinn<br>\ndaher, daher,<br>\ndie Wiese her und sang.<br>\n<br>\nAch! denkt das Veilchen, wär' ich nur<br>\ndie schönste Blume der Natur,<br>\nach, nur ein kleines Weilchen,<br>\nbis mich das Liebchen abgepflückt<br>\nund an dem Busen matt gedrückt,<br>\nach, nur, ach nur<br>\nein Viertelstündchen lang!<br>\n<br>\nAch, aber ach! Das Mädchen kam<br>\nund nicht in acht das Veilchen nahm,<br>\nertrat das arme Veilchen.<br>\nEs sank und starb, und freut' sich noch:<br>\nund sterb' ich denn, so sterb' ich doch<br>\ndurch sie, durch sie,<br>\nzu ihren Füßen doch!<br>",
+                "Johann Wolfgang von Goethe",
+                "1774"
+            ],
+            "flags": 0,
+            "guid": "O35TUpdD=_",
             "note_model_uuid": "3d263d1c-b7ae-11ea-b976-40b076dccfad",
             "tags": []
         }
