@@ -6,10 +6,12 @@ Select the correct directory (🧪_Test_Deck) and click import.
 
 # Note Types
 
-I've made some major changes to the available note types in this deck. (I removed most of them, since I found I never actually used them)
+I've made some major changes to the available note types in this deck. (I removed most of the old ones, since I found I never actually used them)
 
-* Basic-Pretty - A pretty basic card with front and back
-* Cloze-Pretty - Pretty cloze card, also has a title and an extra field
+* pretttyBasic - A pretty basic card with front and back
+* prettyCloze - Pretty cloze card, also has a title and an extra field
+* prettyPoem - A card for memorizing poems or quotes
+* prettyWord - A card for memorizing vocabulary
 
 
 ![](media/basicPrettyBack.jpg)
