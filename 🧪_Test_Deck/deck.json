@@ -2,15 +2,15 @@
     "__type__": "Deck",
     "children": [],
     "crowdanki_uuid": "3d2479f0-b7ae-11ea-b976-40b076dccfad",
-    "deck_config_uuid": "ff2784b8-fa91-11ea-9281-40b076dccfad",
+    "deck_config_uuid": "70116206-fb4c-11ea-b291-40b076dccfad",
     "deck_configurations": [
         {
             "__type__": "DeckConfig",
             "autoAgain": 0,
             "autoAlert": 0,
             "autoAnswer": 0,
-            "autoplay": true,
-            "crowdanki_uuid": "ff2784b8-fa91-11ea-9281-40b076dccfad",
+            "autoplay": false,
+            "crowdanki_uuid": "70116206-fb4c-11ea-b291-40b076dccfad",
             "dyn": false,
             "lapse": {
                 "delays": [
@@ -57,14 +57,20 @@
     "dyn": 0,
     "extendNew": 1,
     "extendRev": 50,
-    "media_files": [],
-    "mid": "1585068302590",
+    "media_files": [
+        "266065.mp3",
+        "368205.mp3",
+        "De-Hilfe.ogg",
+        "En-us-help.ogg",
+        "flag_de.svg"
+    ],
+    "mid": 1584744468371,
     "name": "🧪 Test Deck",
     "note_models": [
         {
             "__type__": "NoteModel",
             "crowdanki_uuid": "3d263d1c-b7ae-11ea-b976-40b076dccfad",
-            "css": "\n\nimg {\n\twidth: 20%;\n}\n\n:root {\n\t--main-bg-color: #434343;\n\t--upper-bg-color: #555555;\n\t--lower-bg-color: #434343;\n\t--upper-fg-color: #eeeeee;\n\t--lower-fg-color: #eeeeee;\n\t--colorPrimary-h: 260;\n\t--colorPrimary-s: 60%;\n\t--colorPrimary-l: 65%;\n\t--primary-color: hsl(var(--colorPrimary-h), var(--colorPrimary-s), var(--colorPrimary-l));\n\t--secondary-color: hsl(calc(var(--colorPrimary-h) + 240), var(--colorPrimary-s), var(--colorPrimary-l));\n\t--tertiary-color: hsl(calc(var(--colorPrimary-h) + 120), var(--colorPrimary-s), var(--colorPrimary-l));\n}\n\nhtml,\nbody {\n\tword-wrap: normal;\n\tbackground-color: var(--main-bg-color);\n\tpadding: 0;\n\tmargin: 0;\n}\n\nu {\n\ttext-decoration-style: wavy;\n\ttext-underline-position: under;\n\tcolor: white;\n\tpadding: 1px;\n}\n\n.card {\n\tfont-family: UD Digi Kyokasho N-R;\n\tfont-size: 0px;\n\ttext-align: center;\n}\n\n.stripe {\n\theight: 5px;\n\tbackground-color: var(--primary-color);\n}\n\n.kard {\n\theight: 100%;\n\tbackground-color: var(--main-bg-color);\n}\n\n.body-upper {\n\tfont-family: Noto Sans;\n\tfont-size: 30px;\n\tcolor: var(--upper-fg-color);\n\tbackground-color: var(--upper-bg-color);\n\tpadding: 30px 10px 30px;\n\t{\n\t\t{\n\t\t\t/Title\n\t\t}\n\t}\n\tborder-radius: 0px 0px 0px 0px;\n}\n\n.body-lower {\n\ttext-align: left;\n\tcolor: var(--lower-fg-color);\n\theight: 100%;\n\tpadding: 25px 10px 25px 10px;\n\tborder-radius: 0px 0px 0px 0px;\n}\n\n.soundFront {\n\tposition: absolute;\n\ttop: 40px;\n\tright: 40px;\n\tfont-size: 18px;\n\tcontent: url(\"play.png\") {\n\t\t{\n\t\t\t/Title\n\t\t}\n\t}\n\t;\n\twidth: 6%;\n}\n\n.notes {\n\tfont-family: Noto Sans Regular;\n\tfont-size: 20px;\n\t/*\n  border: 2px dashed rgba(85, 85, 85, 0.75);\n  padding: 10px;\n  margin: 3px 20px 3px 20px;\n  */\n\ttext-align: center;\n\tfont-weight: bold;\n}\n\n.extra_toggle {\n\tdisplay: block;\n\tfont-family: Noto Sans Regular;\n\tfont-size: 15px;\n\tcolor: var(--upper-fg-color);\n\tbackground-color: var(--upper-bg-color);\n\tborder-radius: 0px;\n\tpadding: 5px;\n\twidth: 50%;\n\ttext-align: center;\n\tfont-weight: 500;\n\tmargin: auto;\n\tmargin-top: 20px;\n\ttransition: all 0.15s ease-out;\n}\n\n.extra_toggle:hover {\n\tfilter: brightness(90%);\n}\n\n.extra {\n\tdisplay: none;\n\tfont-family: Noto Sans Regular;\n\tfont-size: 15px;\n\tborder: 3px dashed var(--primary-color);\n\tcolor: var(--upper-fg-color);\n\tpadding: 20px;\n\tmargin: 30px 20px 3px 20px;\n\ttext-align: center;\n\tfont-weight: 500;\n}\n\n.hightlight-1 {\n\tbackground-color: var(--primary-color);\n}\n\n.hightlight-2 {\n\tbackground-color: var(--secondary-color);\n}\n\n.hightlight-3 {\n\tbackground-color: var(--tertiary-color);\n}\n\n.hightlight-1.night_mode {\n\tbackground-color: var(--primary-color);\n}\n\n.hightlight-2.night_mode {\n\tbackground-color: var(--secondary-color);\n}\n\n.hightlight-3.night_mode {\n\tbackground-color: var(--tertiary-color);\n}\n\n.cloze {\n\tbackground-color: var(--primary-color);\n}\n\n.stripe.night_mode {\n\tbackground-color: var(--primary-color);\n}\n\n.kard.night_mode {\n\tbackground-color: var(--main-bg-color);\n}\n\n.body-upper.night_mode {\n\tcolor: var(--upper-fg-color);\n\tbackground-color: var(--upper-bg-color);\n}\n\n.body-lower.night_mode {\n\tcolor: var(--lower-fg-color);\n\tcolor: var(--lower-bg-color);\n}\n\n.cloze.night_mode {\n\tbackground-color: var(--primary-color);\n}\n\n",
+            "css": "/* Variables for frequently used values */\n:root {\n    /* Main background color of the card */\n    --main-bg-color: #434343;\n    --upper-bg-color: #555555;\n    --lower-bg-color: #434343;\n    --upper-fg-color: #eeeeee;\n    --lower-fg-color: #eeeeee;\n    /* Primary Accent Color, broken up into individual hsl values */\n    --colorPrimary-h: 260;\n    --colorPrimary-s: 60%;\n    --colorPrimary-l: 65%;\n    /* Set primary color variable from previously defined hsl values */\n    --primary-color: hsl(var(--colorPrimary-h), var(--colorPrimary-s), var(--colorPrimary-l));\n    /* Calculate Secondary and Tertiary Colors from the hsl values of the Primary Color */\n    --secondary-color: hsl(calc(var(--colorPrimary-h) + 240), var(--colorPrimary-s), var(--colorPrimary-l));\n    --tertiary-color: hsl(calc(var(--colorPrimary-h) + 120), var(--colorPrimary-s), var(--colorPrimary-l));\n    /* How big the stripe at the top should be */\n    --stripe-height: 5px;\n    /* How far elements such as flags should be away from the stripe */\n    --margin-from-stripe: 5px;\n}\n\nhtml,\nbody {\n    word-wrap: break-word;\n    background-color: var(--main-bg-color);\n    padding: 0;\n    margin: 0;\n}\nu {\n    text-decoration-style: wavy;\n    text-underline-position: under;\n    color: white;\n    padding: 1px;\n}\n\n/* Hide the default play button anki provides */\n.replay-button svg {\n    display: none;\n}\n.hidden {\n    display: none;\n}\n#answer {\n    font-size: 50px;\n}\n\n/* Main skeleton of an anki card */\n.card {\n    font-family: UD Digi Kyokasho N-R;\n    font-size: 0px;\n    text-align: center;\n}\n/* Div around all of the visible content of the card */\n.kard {\n    height: 100%;\n    background-color: var(--main-bg-color);\n}\n.kard.night_mode {\n    background-color: var(--main-bg-color);\n}\n/* Stripe at the top of the card */\n.stripe {\n    height: var(--stripe-height);\n    background-color: var(--primary-color);\n}\n.stripe.night_mode {\n    background-color: var(--primary-color);\n}\n\n/* Upper part of the card (Question) */\n.body-upper {\n    font-family: Noto Sans;\n    font-size: 30px;\n    color: var(--upper-fg-color);\n    background-color: var(--upper-bg-color);\n    padding: 30px 10px 30px;\n    border-radius: 0px 0px 0px 0px;\n}\n.body-upper.night_mode {\n    color: var(--upper-fg-color);\n    background-color: var(--upper-bg-color);\n}\n/* Lower part of the card (Answer) */\n.body-lower {\n    text-align: left;\n    color: var(--lower-fg-color);\n    height: 100%;\n    padding: 25px 10px 25px 10px;\n    border-radius: 0px 0px 0px 0px;\n}\n.body-lower.night_mode {\n    color: var(--lower-fg-color);\n    color: var(--lower-bg-color);\n}\n\n.notes {\n    font-family: Noto Sans Regular;\n    font-size: 20px;\n    text-align: center;\n    font-weight: bold;\n}\n\n/* Show extra information button */\n.extra_toggle {\n    display: block;\n    font-family: Noto Sans Regular;\n    font-size: 15px;\n    color: var(--upper-fg-color);\n    background-color: var(--upper-bg-color);\n    border-radius: 0px;\n    padding: 5px;\n    width: 50%;\n    text-align: center;\n    font-weight: 500;\n    margin: auto;\n    margin-top: 20px;\n    transition: all 0.15s ease-out;\n}\n.extra_toggle:hover {\n    filter: brightness(90%);\n}\n\n/* Div containing extra information, hidden by default */\n.extra {\n    display: none;\n    font-family: Noto Sans Regular;\n    font-size: 15px;\n    border: 3px dashed var(--primary-color);\n    color: var(--upper-fg-color);\n    padding: 20px;\n    margin: 30px 20px 3px 20px;\n    text-align: center;\n    font-weight: 500;\n}\n/* Div containing mnemonics or notes, situated inside the extra div */\n.mnemonic {\n    display: block;\n    margin-bottom: 2%;\n    border-color: var(--secondary-color);\n}\n\n/* Contains extra elements at the top, e.g. flags */\n.top-container {\n    width: 100%;\n    position: absolute;\n    top: calc(var(--stripe-height) + var(--margin-from-stripe));\n    left: 0;\n}\n.extra-top-right {\n    position: absolute;\n    right: var(--margin-from-stripe);\n}\n.extra-top-left {\n    position: absolute;\n    left: var(--margin-from-stripe);\n}\n.extra-top-right img {\n    float: right;\n    width: 25%;\n    border-radius: 10%;\n}\n.extra-top-left img {\n    float: left;\n    width: 25%;\n    border-radius: 10%;\n}\n\n/* Style cloze to use the primary color as the background color to make the cloze deletion easier to spot */\n.cloze {\n    background-color: var(--primary-color);\n}\n.cloze.night_mode {\n    background-color: var(--primary-color);\n}\n\n/* Highlighting classes */\n.hightlight-1 {\n    background-color: var(--primary-color);\n}\n\n.hightlight-2 {\n    background-color: var(--secondary-color);\n}\n\n.hightlight-3 {\n    background-color: var(--tertiary-color);\n}\n\n.hightlight-1.night_mode {\n    background-color: var(--primary-color);\n}\n\n.hightlight-2.night_mode {\n    background-color: var(--secondary-color);\n}\n\n.hightlight-3.night_mode {\n    background-color: var(--tertiary-color);\n}\n",
             "flds": [
                 {
                     "font": "Arial",
@@ -100,13 +106,11 @@
             ],
             "sortf": 0,
             "tags": [
-                "",
-                "Schule::Spanisch::Klausuren::Q1::1",
                 ""
             ],
             "tmpls": [
                 {
-                    "afmt": "<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\">\n        <div class=\"soundFront\" onclick=\"playAudio()\"></div>\n        {{Front}}\n    </div>\n\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n            {{Back}}\n        </div>\n\n        <script>\n            function playAudio() {\n                var audioDiv = document.getElementById(\"audio\");\n                var audio = audioDiv.getElementsByTagName(\"*\");\n                audio[0].click();\n            }\n            function playSenAudio() {\n                var audioDiv = document.getElementById(\"senaudio\");\n                var audio = audioDiv.getElementsByTagName(\"*\");\n                audio[0].click();\n            }\n        </script>\n    </div>\n</div>\n",
+                    "afmt": "<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\">\n        {{Front}}\n    </div>\n\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n            {{Back}}\n        </div>\n    </div>\n</div>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n",
                     "bafmt": "",
                     "bfont": "",
                     "bqfmt": "",
@@ -114,7 +118,7 @@
                     "did": null,
                     "name": "Card 1",
                     "ord": 0,
-                    "qfmt": "<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\">\n        <div class=\"soundFront\" onclick=\"playAudio()\"></div>\n        {{Front}}\n    </div>\n\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n            ?\n        </div>\n\n        <script>\n            function playAudio() {\n                var audioDiv = document.getElementById(\"audio\");\n                var audio = audioDiv.getElementsByTagName(\"*\");\n                audio[0].click();\n            }\n        </script>\n    </div>\n</div>\n"
+                    "qfmt": "<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\">\n        {{Front}}\n    </div>\n\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n            ?\n        </div>\n    </div>\n</div>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n"
                 }
             ],
             "type": 0,
@@ -123,7 +127,7 @@
         {
             "__type__": "NoteModel",
             "crowdanki_uuid": "3d2653d8-b7ae-11ea-b976-40b076dccfad",
-            "css": "\n\nimg {\n\twidth: 20%;\n}\n\n:root {\n\t--main-bg-color: #434343;\n\t--upper-bg-color: #555555;\n\t--lower-bg-color: #434343;\n\t--upper-fg-color: #eeeeee;\n\t--lower-fg-color: #eeeeee;\n\t--colorPrimary-h: 260;\n\t--colorPrimary-s: 60%;\n\t--colorPrimary-l: 65%;\n\t--primary-color: hsl(var(--colorPrimary-h), var(--colorPrimary-s), var(--colorPrimary-l));\n\t--secondary-color: hsl(calc(var(--colorPrimary-h) + 240), var(--colorPrimary-s), var(--colorPrimary-l));\n\t--tertiary-color: hsl(calc(var(--colorPrimary-h) + 120), var(--colorPrimary-s), var(--colorPrimary-l));\n}\n\nhtml,\nbody {\n\tword-wrap: normal;\n\tbackground-color: var(--main-bg-color);\n\tpadding: 0;\n\tmargin: 0;\n}\n\nu {\n\ttext-decoration-style: wavy;\n\ttext-underline-position: under;\n\tcolor: white;\n\tpadding: 1px;\n}\n\n.card {\n\tfont-family: UD Digi Kyokasho N-R;\n\tfont-size: 0px;\n\ttext-align: center;\n}\n\n.stripe {\n\theight: 5px;\n\tbackground-color: var(--primary-color);\n}\n\n.kard {\n\theight: 100%;\n\tbackground-color: var(--main-bg-color);\n}\n\n.body-upper {\n\tfont-family: Noto Sans;\n\tfont-size: 30px;\n\tcolor: var(--upper-fg-color);\n\tbackground-color: var(--upper-bg-color);\n\tpadding: 30px 10px 30px;\n\t{\n\t\t{\n\t\t\t/Title\n\t\t}\n\t}\n\tborder-radius: 0px 0px 0px 0px;\n}\n\n.body-lower {\n\ttext-align: left;\n\tcolor: var(--lower-fg-color);\n\theight: 100%;\n\tpadding: 25px 10px 25px 10px;\n\tborder-radius: 0px 0px 0px 0px;\n}\n\n.soundFront {\n\tposition: absolute;\n\ttop: 40px;\n\tright: 40px;\n\tfont-size: 18px;\n\tcontent: url(\"play.png\") {\n\t\t{\n\t\t\t/Title\n\t\t}\n\t}\n\t;\n\twidth: 6%;\n}\n\n.notes {\n\tfont-family: Noto Sans Regular;\n\tfont-size: 20px;\n\t/*\n  border: 2px dashed rgba(85, 85, 85, 0.75);\n  padding: 10px;\n  margin: 3px 20px 3px 20px;\n  */\n\ttext-align: center;\n\tfont-weight: bold;\n}\n\n.extra_toggle {\n\tdisplay: block;\n\tfont-family: Noto Sans Regular;\n\tfont-size: 15px;\n\tcolor: var(--upper-fg-color);\n\tbackground-color: var(--upper-bg-color);\n\tborder-radius: 0px;\n\tpadding: 5px;\n\twidth: 50%;\n\ttext-align: center;\n\tfont-weight: 500;\n\tmargin: auto;\n\tmargin-top: 20px;\n\ttransition: all 0.15s ease-out;\n}\n\n.extra_toggle:hover {\n\tfilter: brightness(90%);\n}\n\n.extra {\n\tdisplay: none;\n\tfont-family: Noto Sans Regular;\n\tfont-size: 15px;\n\tborder: 3px dashed var(--primary-color);\n\tcolor: var(--upper-fg-color);\n\tpadding: 20px;\n\tmargin: 30px 20px 3px 20px;\n\ttext-align: center;\n\tfont-weight: 500;\n}\n\n.hightlight-1 {\n\tbackground-color: var(--primary-color);\n}\n\n.hightlight-2 {\n\tbackground-color: var(--secondary-color);\n}\n\n.hightlight-3 {\n\tbackground-color: var(--tertiary-color);\n}\n\n.hightlight-1.night_mode {\n\tbackground-color: var(--primary-color);\n}\n\n.hightlight-2.night_mode {\n\tbackground-color: var(--secondary-color);\n}\n\n.hightlight-3.night_mode {\n\tbackground-color: var(--tertiary-color);\n}\n\n.cloze {\n\tbackground-color: var(--primary-color);\n}\n\n.stripe.night_mode {\n\tbackground-color: var(--primary-color);\n}\n\n.kard.night_mode {\n\tbackground-color: var(--main-bg-color);\n}\n\n.body-upper.night_mode {\n\tcolor: var(--upper-fg-color);\n\tbackground-color: var(--upper-bg-color);\n}\n\n.body-lower.night_mode {\n\tcolor: var(--lower-fg-color);\n\tcolor: var(--lower-bg-color);\n}\n\n.cloze.night_mode {\n\tbackground-color: var(--primary-color);\n}\n\n",
+            "css": "/* Variables for frequently used values */\n:root {\n    /* Main background color of the card */\n    --main-bg-color: #434343;\n    --upper-bg-color: #555555;\n    --lower-bg-color: #434343;\n    --upper-fg-color: #eeeeee;\n    --lower-fg-color: #eeeeee;\n    /* Primary Accent Color, broken up into individual hsl values */\n    --colorPrimary-h: 260;\n    --colorPrimary-s: 60%;\n    --colorPrimary-l: 65%;\n    /* Set primary color variable from previously defined hsl values */\n    --primary-color: hsl(var(--colorPrimary-h), var(--colorPrimary-s), var(--colorPrimary-l));\n    /* Calculate Secondary and Tertiary Colors from the hsl values of the Primary Color */\n    --secondary-color: hsl(calc(var(--colorPrimary-h) + 240), var(--colorPrimary-s), var(--colorPrimary-l));\n    --tertiary-color: hsl(calc(var(--colorPrimary-h) + 120), var(--colorPrimary-s), var(--colorPrimary-l));\n    /* How big the stripe at the top should be */\n    --stripe-height: 5px;\n    /* How far elements such as flags should be away from the stripe */\n    --margin-from-stripe: 5px;\n}\n\nhtml,\nbody {\n    word-wrap: break-word;\n    background-color: var(--main-bg-color);\n    padding: 0;\n    margin: 0;\n}\nu {\n    text-decoration-style: wavy;\n    text-underline-position: under;\n    color: white;\n    padding: 1px;\n}\n\n/* Hide the default play button anki provides */\n.replay-button svg {\n    display: none;\n}\n.hidden {\n    display: none;\n}\n#answer {\n    font-size: 50px;\n}\n\n/* Main skeleton of an anki card */\n.card {\n    font-family: UD Digi Kyokasho N-R;\n    font-size: 0px;\n    text-align: center;\n}\n/* Div around all of the visible content of the card */\n.kard {\n    height: 100%;\n    background-color: var(--main-bg-color);\n}\n.kard.night_mode {\n    background-color: var(--main-bg-color);\n}\n/* Stripe at the top of the card */\n.stripe {\n    height: var(--stripe-height);\n    background-color: var(--primary-color);\n}\n.stripe.night_mode {\n    background-color: var(--primary-color);\n}\n\n/* Upper part of the card (Question) */\n.body-upper {\n    font-family: Noto Sans;\n    font-size: 30px;\n    color: var(--upper-fg-color);\n    background-color: var(--upper-bg-color);\n    padding: 30px 10px 30px;\n    border-radius: 0px 0px 0px 0px;\n}\n.body-upper.night_mode {\n    color: var(--upper-fg-color);\n    background-color: var(--upper-bg-color);\n}\n/* Lower part of the card (Answer) */\n.body-lower {\n    text-align: left;\n    color: var(--lower-fg-color);\n    height: 100%;\n    padding: 25px 10px 25px 10px;\n    border-radius: 0px 0px 0px 0px;\n}\n.body-lower.night_mode {\n    color: var(--lower-fg-color);\n    color: var(--lower-bg-color);\n}\n\n.notes {\n    font-family: Noto Sans Regular;\n    font-size: 20px;\n    text-align: center;\n    font-weight: bold;\n}\n\n/* Show extra information button */\n.extra_toggle {\n    display: block;\n    font-family: Noto Sans Regular;\n    font-size: 15px;\n    color: var(--upper-fg-color);\n    background-color: var(--upper-bg-color);\n    border-radius: 0px;\n    padding: 5px;\n    width: 50%;\n    text-align: center;\n    font-weight: 500;\n    margin: auto;\n    margin-top: 20px;\n    transition: all 0.15s ease-out;\n}\n.extra_toggle:hover {\n    filter: brightness(90%);\n}\n\n/* Div containing extra information, hidden by default */\n.extra {\n    display: none;\n    font-family: Noto Sans Regular;\n    font-size: 15px;\n    border: 3px dashed var(--primary-color);\n    color: var(--upper-fg-color);\n    padding: 20px;\n    margin: 30px 20px 3px 20px;\n    text-align: center;\n    font-weight: 500;\n}\n/* Div containing mnemonics or notes, situated inside the extra div */\n.mnemonic {\n    display: block;\n    margin-bottom: 2%;\n    border-color: var(--secondary-color);\n}\n\n/* Contains extra elements at the top, e.g. flags */\n.top-container {\n    width: 100%;\n    position: absolute;\n    top: calc(var(--stripe-height) + var(--margin-from-stripe));\n    left: 0;\n}\n.extra-top-right {\n    position: absolute;\n    right: var(--margin-from-stripe);\n}\n.extra-top-left {\n    position: absolute;\n    left: var(--margin-from-stripe);\n}\n.extra-top-right img {\n    float: right;\n    width: 25%;\n    border-radius: 10%;\n}\n.extra-top-left img {\n    float: left;\n    width: 25%;\n    border-radius: 10%;\n}\n\n/* Style cloze to use the primary color as the background color to make the cloze deletion easier to spot */\n.cloze {\n    background-color: var(--primary-color);\n}\n.cloze.night_mode {\n    background-color: var(--primary-color);\n}\n\n/* Highlighting classes */\n.hightlight-1 {\n    background-color: var(--primary-color);\n}\n\n.hightlight-2 {\n    background-color: var(--secondary-color);\n}\n\n.hightlight-3 {\n    background-color: var(--tertiary-color);\n}\n\n.hightlight-1.night_mode {\n    background-color: var(--primary-color);\n}\n\n.hightlight-2.night_mode {\n    background-color: var(--secondary-color);\n}\n\n.hightlight-3.night_mode {\n    background-color: var(--tertiary-color);\n}\n",
             "flds": [
                 {
                     "font": "Arial",
@@ -175,7 +179,7 @@
             ],
             "tmpls": [
                 {
-                    "afmt": "<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    {{#Title}}\n    <div class=\"body-upper\">\n        {{Title}} {{/Title}}\n        <div class=\"soundFront\" onclick=\"playAudio()\"></div>\n    </div>\n\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n            {{cloze:Text}}\n        </div>\n\n        <script>\n            function showextra() {\n              document.getElementById(\"extrafield\").style.display = \"block\";\n              document.getElementById(\"extra_toggle_on_button\").style.display = \"none\";\n            }\n             function hideextra() {\n              document.getElementById(\"extrafield\").style.display = \"none\";\n              document.getElementById(\"extra_toggle_on_button\").style.display = \"block\";\n            }\n        </script>\n\n        {{#Extra}}\n        <div class=\"extra_toggle\" id=\"extra_toggle_on_button\" onclick=\"showextra()\">\n            Show Extra\n        </div>\n        <div class=\"extra\" id=\"extrafield\">\n            {{Extra}}\n            <div class=\"extra_toggle\" id=\"extra_toggle_off_button\" onclick=\"hideextra()\">\n                Hide Extra\n            </div>\n        </div>\n        {{/Extra}}\n\n        <script>\n            function playAudio(){\n                var audioDiv = document.getElementById('audio');\n                var audio = audioDiv.getElementsByTagName(\"*\");\n                audio[0].click();\n            }\n           function playSenAudio(){\n                var audioDiv = document.getElementById('senaudio');\n                var audio = audioDiv.getElementsByTagName(\"*\");\n                audio[0].click();\n            }\n        </script>",
+                    "afmt": "<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    {{#Title}}\n    <div class=\"body-upper\">\n        {{Title}} {{/Title}}\n    </div>\n\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n            {{cloze:Text}}\n        </div>\n\n        <script>\n            function showextra() {\n                document.getElementById(\"extrafield\").style.display = \"block\";\n                document.getElementById(\"extra_toggle_on_button\").style.display = \"none\";\n            }\n            function hideextra() {\n                document.getElementById(\"extrafield\").style.display = \"none\";\n                document.getElementById(\"extra_toggle_on_button\").style.display = \"block\";\n            }\n        </script>\n\n        {{#Extra}}\n        <div class=\"extra_toggle\" id=\"extra_toggle_on_button\" onclick=\"showextra()\">\n            Show Extra\n        </div>\n        <div class=\"extra\" id=\"extrafield\">\n            {{Extra}}\n            <div class=\"extra_toggle\" id=\"extra_toggle_off_button\" onclick=\"hideextra()\">\n                Hide Extra\n            </div>\n        </div>\n        {{/Extra}}\n    </div>\n</div>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n",
                     "bafmt": "",
                     "bfont": "",
                     "bqfmt": "",
@@ -183,7 +187,7 @@
                     "did": null,
                     "name": "Cloze",
                     "ord": 0,
-                    "qfmt": "<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    {{#Title}}\n    <div class=\"body-upper\">\n        {{Title}} {{/Title}}\n        <div class=\"soundFront\" onclick=\"playAudio()\"></div>\n    </div>\n\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n            {{cloze:Text}}\n        </div>\n\n        <script>\n            function playAudio() {\n                var audioDiv = document.getElementById(\"audio\");\n                var audio = audioDiv.getElementsByTagName(\"*\");\n                audio[0].click();\n            }\n        </script>\n    </div>\n</div>"
+                    "qfmt": "<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    {{#Title}}\n    <div class=\"body-upper\">\n        {{Title}} {{/Title}}\n    </div>\n\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n            {{cloze:Text}}\n        </div>\n    </div>\n</div>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n"
                 }
             ],
             "type": 1,
@@ -192,7 +196,7 @@
         {
             "__type__": "NoteModel",
             "crowdanki_uuid": "3d268c54-b7ae-11ea-b976-40b076dccfad",
-            "css": "\n\nimg {\n\twidth: 20%;\n}\n\n:root {\n\t--main-bg-color: #434343;\n\t--upper-bg-color: #555555;\n\t--lower-bg-color: #434343;\n\t--upper-fg-color: #eeeeee;\n\t--lower-fg-color: #eeeeee;\n\t--colorPrimary-h: 260;\n\t--colorPrimary-s: 60%;\n\t--colorPrimary-l: 65%;\n\t--primary-color: hsl(var(--colorPrimary-h), var(--colorPrimary-s), var(--colorPrimary-l));\n\t--secondary-color: hsl(calc(var(--colorPrimary-h) + 240), var(--colorPrimary-s), var(--colorPrimary-l));\n\t--tertiary-color: hsl(calc(var(--colorPrimary-h) + 120), var(--colorPrimary-s), var(--colorPrimary-l));\n}\n\nhtml,\nbody {\n\tword-wrap: normal;\n\tbackground-color: var(--main-bg-color);\n\tpadding: 0;\n\tmargin: 0;\n}\n\nu {\n\ttext-decoration-style: wavy;\n\ttext-underline-position: under;\n\tcolor: white;\n\tpadding: 1px;\n}\n\n.card {\n\tfont-family: UD Digi Kyokasho N-R;\n\tfont-size: 0px;\n\ttext-align: center;\n}\n\n.stripe {\n\theight: 5px;\n\tbackground-color: var(--primary-color);\n}\n\n.kard {\n\theight: 100%;\n\tbackground-color: var(--main-bg-color);\n}\n\n.body-upper {\n\tfont-family: Noto Sans;\n\tfont-size: 30px;\n\tcolor: var(--upper-fg-color);\n\tbackground-color: var(--upper-bg-color);\n\tpadding: 30px 10px 30px;\n\t{\n\t\t{\n\t\t\t/Title\n\t\t}\n\t}\n\tborder-radius: 0px 0px 0px 0px;\n}\n\n.body-lower {\n\ttext-align: left;\n\tcolor: var(--lower-fg-color);\n\theight: 100%;\n\tpadding: 25px 10px 25px 10px;\n\tborder-radius: 0px 0px 0px 0px;\n}\n\n.soundFront {\n\tposition: absolute;\n\ttop: 40px;\n\tright: 40px;\n\tfont-size: 18px;\n\tcontent: url(\"play.png\") {\n\t\t{\n\t\t\t/Title\n\t\t}\n\t}\n\t;\n\twidth: 6%;\n}\n\n.notes {\n\tfont-family: Noto Sans Regular;\n\tfont-size: 20px;\n\t/*\n  border: 2px dashed rgba(85, 85, 85, 0.75);\n  padding: 10px;\n  margin: 3px 20px 3px 20px;\n  */\n\ttext-align: center;\n\tfont-weight: bold;\n}\n\n.extra_toggle {\n\tdisplay: block;\n\tfont-family: Noto Sans Regular;\n\tfont-size: 15px;\n\tcolor: var(--upper-fg-color);\n\tbackground-color: var(--upper-bg-color);\n\tborder-radius: 0px;\n\tpadding: 5px;\n\twidth: 50%;\n\ttext-align: center;\n\tfont-weight: 500;\n\tmargin: auto;\n\tmargin-top: 20px;\n\ttransition: all 0.15s ease-out;\n}\n\n.extra_toggle:hover {\n\tfilter: brightness(90%);\n}\n\n.extra {\n\tdisplay: none;\n\tfont-family: Noto Sans Regular;\n\tfont-size: 15px;\n\tborder: 3px dashed var(--primary-color);\n\tcolor: var(--upper-fg-color);\n\tpadding: 20px;\n\tmargin: 30px 20px 3px 20px;\n\ttext-align: center;\n\tfont-weight: 500;\n}\n\n.hightlight-1 {\n\tbackground-color: var(--primary-color);\n}\n\n.hightlight-2 {\n\tbackground-color: var(--secondary-color);\n}\n\n.hightlight-3 {\n\tbackground-color: var(--tertiary-color);\n}\n\n.hightlight-1.night_mode {\n\tbackground-color: var(--primary-color);\n}\n\n.hightlight-2.night_mode {\n\tbackground-color: var(--secondary-color);\n}\n\n.hightlight-3.night_mode {\n\tbackground-color: var(--tertiary-color);\n}\n\n.cloze {\n\tbackground-color: var(--primary-color);\n}\n\n.stripe.night_mode {\n\tbackground-color: var(--primary-color);\n}\n\n.kard.night_mode {\n\tbackground-color: var(--main-bg-color);\n}\n\n.body-upper.night_mode {\n\tcolor: var(--upper-fg-color);\n\tbackground-color: var(--upper-bg-color);\n}\n\n.body-lower.night_mode {\n\tcolor: var(--lower-fg-color);\n\tcolor: var(--lower-bg-color);\n}\n\n.cloze.night_mode {\n\tbackground-color: var(--primary-color);\n}\n\n",
+            "css": "/* Variables for frequently used values */\n:root {\n    /* Main background color of the card */\n    --main-bg-color: #434343;\n    --upper-bg-color: #555555;\n    --lower-bg-color: #434343;\n    --upper-fg-color: #eeeeee;\n    --lower-fg-color: #eeeeee;\n    /* Primary Accent Color, broken up into individual hsl values */\n    --colorPrimary-h: 260;\n    --colorPrimary-s: 60%;\n    --colorPrimary-l: 65%;\n    /* Set primary color variable from previously defined hsl values */\n    --primary-color: hsl(var(--colorPrimary-h), var(--colorPrimary-s), var(--colorPrimary-l));\n    /* Calculate Secondary and Tertiary Colors from the hsl values of the Primary Color */\n    --secondary-color: hsl(calc(var(--colorPrimary-h) + 240), var(--colorPrimary-s), var(--colorPrimary-l));\n    --tertiary-color: hsl(calc(var(--colorPrimary-h) + 120), var(--colorPrimary-s), var(--colorPrimary-l));\n    /* How big the stripe at the top should be */\n    --stripe-height: 5px;\n    /* How far elements such as flags should be away from the stripe */\n    --margin-from-stripe: 5px;\n}\n\nhtml,\nbody {\n    word-wrap: break-word;\n    background-color: var(--main-bg-color);\n    padding: 0;\n    margin: 0;\n}\nu {\n    text-decoration-style: wavy;\n    text-underline-position: under;\n    color: white;\n    padding: 1px;\n}\n\n/* Hide the default play button anki provides */\n.replay-button svg {\n    display: none;\n}\n.hidden {\n    display: none;\n}\n#answer {\n    font-size: 50px;\n}\n\n/* Main skeleton of an anki card */\n.card {\n    font-family: UD Digi Kyokasho N-R;\n    font-size: 0px;\n    text-align: center;\n}\n/* Div around all of the visible content of the card */\n.kard {\n    height: 100%;\n    background-color: var(--main-bg-color);\n}\n.kard.night_mode {\n    background-color: var(--main-bg-color);\n}\n/* Stripe at the top of the card */\n.stripe {\n    height: var(--stripe-height);\n    background-color: var(--primary-color);\n}\n.stripe.night_mode {\n    background-color: var(--primary-color);\n}\n\n/* Upper part of the card (Question) */\n.body-upper {\n    font-family: Noto Sans;\n    font-size: 30px;\n    color: var(--upper-fg-color);\n    background-color: var(--upper-bg-color);\n    padding: 30px 10px 30px;\n    border-radius: 0px 0px 0px 0px;\n}\n.body-upper.night_mode {\n    color: var(--upper-fg-color);\n    background-color: var(--upper-bg-color);\n}\n/* Lower part of the card (Answer) */\n.body-lower {\n    text-align: left;\n    color: var(--lower-fg-color);\n    height: 100%;\n    padding: 25px 10px 25px 10px;\n    border-radius: 0px 0px 0px 0px;\n}\n.body-lower.night_mode {\n    color: var(--lower-fg-color);\n    color: var(--lower-bg-color);\n}\n\n.notes {\n    font-family: Noto Sans Regular;\n    font-size: 20px;\n    text-align: center;\n    font-weight: bold;\n}\n\n/* Show extra information button */\n.extra_toggle {\n    display: block;\n    font-family: Noto Sans Regular;\n    font-size: 15px;\n    color: var(--upper-fg-color);\n    background-color: var(--upper-bg-color);\n    border-radius: 0px;\n    padding: 5px;\n    width: 50%;\n    text-align: center;\n    font-weight: 500;\n    margin: auto;\n    margin-top: 20px;\n    transition: all 0.15s ease-out;\n}\n.extra_toggle:hover {\n    filter: brightness(90%);\n}\n\n/* Div containing extra information, hidden by default */\n.extra {\n    display: none;\n    font-family: Noto Sans Regular;\n    font-size: 15px;\n    border: 3px dashed var(--primary-color);\n    color: var(--upper-fg-color);\n    padding: 20px;\n    margin: 30px 20px 3px 20px;\n    text-align: center;\n    font-weight: 500;\n}\n/* Div containing mnemonics or notes, situated inside the extra div */\n.mnemonic {\n    display: block;\n    margin-bottom: 2%;\n    border-color: var(--secondary-color);\n}\n\n/* Contains extra elements at the top, e.g. flags */\n.top-container {\n    width: 100%;\n    position: absolute;\n    top: calc(var(--stripe-height) + var(--margin-from-stripe));\n    left: 0;\n}\n.extra-top-right {\n    position: absolute;\n    right: var(--margin-from-stripe);\n}\n.extra-top-left {\n    position: absolute;\n    left: var(--margin-from-stripe);\n}\n.extra-top-right img {\n    float: right;\n    width: 25%;\n    border-radius: 10%;\n}\n.extra-top-left img {\n    float: left;\n    width: 25%;\n    border-radius: 10%;\n}\n\n/* Style cloze to use the primary color as the background color to make the cloze deletion easier to spot */\n.cloze {\n    background-color: var(--primary-color);\n}\n.cloze.night_mode {\n    background-color: var(--primary-color);\n}\n\n/* Highlighting classes */\n.hightlight-1 {\n    background-color: var(--primary-color);\n}\n\n.hightlight-2 {\n    background-color: var(--secondary-color);\n}\n\n.hightlight-3 {\n    background-color: var(--tertiary-color);\n}\n\n.hightlight-1.night_mode {\n    background-color: var(--primary-color);\n}\n\n.hightlight-2.night_mode {\n    background-color: var(--secondary-color);\n}\n\n.hightlight-3.night_mode {\n    background-color: var(--tertiary-color);\n}\n",
             "flds": [
                 {
                     "font": "Nimbus Sans",
@@ -213,9 +217,9 @@
                     "sticky": false
                 },
                 {
-                    "font": "Liberation Sans",
+                    "font": "Nimbus Sans",
                     "media": [],
-                    "name": "Word-Symbol",
+                    "name": "Translation",
                     "ord": 2,
                     "rtl": false,
                     "size": 20,
@@ -224,7 +228,7 @@
                 {
                     "font": "Liberation Sans",
                     "media": [],
-                    "name": "Word-Symbol-2",
+                    "name": "Level",
                     "ord": 3,
                     "rtl": false,
                     "size": 20,
@@ -233,7 +237,7 @@
                 {
                     "font": "Nimbus Sans",
                     "media": [],
-                    "name": "Translation",
+                    "name": "Note/Mnemonic",
                     "ord": 4,
                     "rtl": false,
                     "size": 20,
@@ -242,44 +246,17 @@
                 {
                     "font": "Liberation Sans",
                     "media": [],
-                    "name": "Level",
+                    "name": "Sentence",
                     "ord": 5,
                     "rtl": false,
                     "size": 20,
                     "sticky": false
                 },
                 {
-                    "font": "Liberation Sans",
+                    "font": "Nimbus Sans",
                     "media": [],
-                    "name": "Mnemonic",
+                    "name": "SentenceTranslation",
                     "ord": 6,
-                    "rtl": false,
-                    "size": 20,
-                    "sticky": false
-                },
-                {
-                    "font": "Liberation Sans",
-                    "media": [],
-                    "name": "Audio",
-                    "ord": 7,
-                    "rtl": false,
-                    "size": 20,
-                    "sticky": false
-                },
-                {
-                    "font": "Liberation Sans",
-                    "media": [],
-                    "name": "Sentence",
-                    "ord": 8,
-                    "rtl": false,
-                    "size": 20,
-                    "sticky": false
-                },
-                {
-                    "font": "Liberation Sans",
-                    "media": [],
-                    "name": "Sentence-Meaning",
-                    "ord": 9,
                     "rtl": false,
                     "size": 20,
                     "sticky": false
@@ -288,7 +265,61 @@
                     "font": "Arial",
                     "media": [],
                     "name": "lang",
+                    "ord": 7,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "Word-Symbol",
+                    "ord": 8,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "Word-Symbol-2",
+                    "ord": 9,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "AudioWord",
                     "ord": 10,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "AudioWordTranslation",
+                    "ord": 11,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "AudioSentence",
+                    "ord": 12,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "AudioSentenceTranslation",
+                    "ord": 13,
                     "rtl": false,
                     "size": 20,
                     "sticky": false
@@ -304,8 +335,12 @@
                     "any",
                     [
                         1,
-                        5,
-                        10
+                        3,
+                        7,
+                        10,
+                        11,
+                        12,
+                        13
                     ]
                 ]
             ],
@@ -315,7 +350,7 @@
             ],
             "tmpls": [
                 {
-                    "afmt": "<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\">\n        <div class=\"soundFront\" onclick=\"playAudio()\"></div>\n\n        <div class=\"main-top\">{{Word}}</div>\n        <div style=\"height: 5px;\"></div>\n\n        <div class=\"top-container\" style=\"display: flex; justify-content: center; font-size: 75%;\">\n            {{#Level}}\n            <div class=\"extra-top-left\" style=\"margin-right: 5px;\">\n                {{Level}}\n            </div>\n            {{/Level}} {{#lang}}\n            <div class=\"extra-top-right\" style=\"margin-right: 5px;\">\n                {{lang}}\n            </div>\n            {{/lang}}\n        </div>\n\n    </div>\n\n    <div class=\"body-lower\">\n\n        <div class=\"notes\">\n            {{#Word-Symbol}}\n            <div class=\"symbol-container\">\n                {{Word-Symbol}}\n            </div>\n            <hr> {{/Word-Symbol}} {{Translation}} {{Audio}}\n        </div>\n\n        {{#Mnemonic}}\n        <div class=\"mnemonic\">\n            {{Mnemonic}}\n        </div>\n        {{/Mnemonic}} {{#Sentence}}\n        <div class=\"extra_toggle\" id=\"extra_toggle_on_button\" onclick=\"showextra()\">\n            Show Extra\n        </div>\n        <div class=\"extra\" id=\"extrafield\">\n            {{Sentence}} {{#Sentence-Meaning}}\n            <div class=\"sentencehr\">\n                <hr>\n            </div>\n            {{Sentence-Meaning}} {{/Sentence-Meaning}}\n            <div class=\"extra_toggle\" id=\"extra_toggle_off_button\" onclick=\"hideextra()\">\n                Hide Extra\n            </div>\n        </div>\n        {{/Sentence}}\n    </div>\n</div>\n<script>\n    function playAudio() {\n        var audioDiv = document.getElementById('audio');\n        var audio = audioDiv.getElementsByTagName(\"*\");\n        audio[0].click();\n    }\n    function playSenAudio() {\n        var audioDiv = document.getElementById('senaudio');\n        var audio = audioDiv.getElementsByTagName(\"*\");\n        audio[0].click();\n    }\n</script>\n<script>\n    function showextra() {\n        document.getElementById(\"extrafield\").style.display = \"block\";\n        document.getElementById(\"extra_toggle_on_button\").style.display = \"none\";\n    }\n    function hideextra() {\n        document.getElementById(\"extrafield\").style.display = \"none\";\n        document.getElementById(\"extra_toggle_on_button\").style.display = \"block\";\n    }\n</script>",
+                    "afmt": "<div class=\"hidden\" id=\"AudioWord\">{{AudioWord}}</div>\n<div class=\"hidden autoplay\" id=\"AudioWordTranslation\">{{AudioWordTranslation}}</div>\n<div class=\"hidden\" id=\"AudioSentence\">{{AudioSentence}}</div>\n<div class=\"hidden\" id=\"AudioSentenceTranslation\">{{AudioSentenceTranslation}}</div>\n\n<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\">\n        <div class=\"main-top\" onClick=\"playAudio('AudioWord')\">{{Word}}</div>\n        <div style=\"height: 5px;\"></div>\n\n        <div class=\"top-container\" style=\"display: flex; justify-content: center; font-size: 75%; width: 100%;\">\n            {{#Level}}\n            <div class=\"extra-top-left\" style=\"\">\n                {{Level}}\n            </div>\n            {{/Level}} {{#lang}}\n            <div class=\"extra-top-right\" style=\"\">\n                <img id=\"languageImg\" />\n            </div>\n            {{/lang}}\n        </div>\n    </div>\n\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n            {{#Word-Symbol}}\n            <div class=\"symbol-container\">\n                {{Word-Symbol}}\n            </div>\n            <hr />\n            {{/Word-Symbol}}\n            <div id=\"answer\" onClick=\"playAudio('AudioWordTranslation')\">{{Translation}}</div>\n        </div>\n\n        {{#Sentence}}\n        <div class=\"extra_toggle\" id=\"extra_toggle_on_button\" onClick=\"showextra();\">\n            Show Extra\n        </div>\n        <div class=\"extra\" id=\"extrafield\">\n            <div class=\"extra mnemonic\">\n                <h2>{{Note/Mnemonic}}</h2>\n            </div>\n            <h1 style=\"margin-bottom: 2%;\">Example Sentence:</h1>\n            <div onClick=\"playAudio('AudioSentence')\"><h3>{{Sentence}}</h3></div>\n            {{#SentenceTranslation}}\n            <hr />\n            <div onClick=\"playAudio('AudioSentenceTranslation')\"><h4>{{SentenceTranslation}}</h4></div>\n            {{/SentenceTranslation}}\n            <div class=\"extra_toggle\" id=\"extra_toggle_off_button\" onClick=\"hideextra();\">\n                Hide Extra\n            </div>\n        </div>\n        {{/Sentence}}\n    </div>\n</div>\n\n<div style=\"display: none;\" id=\"languageText\">{{lang}}</div>\n\n<script>\n    /* Convert the language field to a flag */\n    var lang = document.getElementById(\"languageText\").innerText;\n    var flag = \"flag_\" + lang + \".svg\";\n    document.getElementById(\"languageImg\").src = flag;\n\n    /* Play audio when clicking the respective element */\n    function playAudio(fieldToPlay) {\n        var elem = document.querySelector(\"#\" + fieldToPlay + \" .soundLink, #\" + fieldToPlay + \" .replaybutton\");\n        if (elem) {\n            elem.click();\n        }\n    }\n    /* Autoplay some elements */\n    var elem = document.querySelector(\".autoplay .soundLink, .autoplay .replaybutton\");\n    if (elem) {\n        elem.click();\n    }\n\n    /* Functions to show/hide the extra information */\n    function showextra() {\n        document.getElementById(\"extrafield\").style.display = \"block\";\n        document.getElementById(\"extra_toggle_on_button\").style.display = \"none\";\n    }\n    function hideextra() {\n        document.getElementById(\"extrafield\").style.display = \"none\";\n        document.getElementById(\"extra_toggle_on_button\").style.display = \"block\";\n    }\n</script>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n",
                     "bafmt": "",
                     "bfont": "",
                     "bqfmt": "",
@@ -323,7 +358,138 @@
                     "did": null,
                     "name": "Card 1",
                     "ord": 0,
-                    "qfmt": "<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\">\n        <div class=\"soundFront\" onclick=\"playAudio()\"></div>\n\n        <div class=\"main-top\">{{Word}}</div>\n        <div style=\"height: 5px;\"></div>\n\n        <div class=\"top-container\" style=\"display: flex; justify-content: center; font-size: 75%;\">\n            {{#Level}}\n            <div class=\"extra-top-left\" style=\"margin-right: 5px;\">\n                {{Level}}\n            </div>\n            {{/Level}} {{#lang}}\n            <div class=\"extra-top-right\" style=\"margin-right: 5px;\">\n                {{lang}}\n            </div>\n            {{/lang}}\n        </div>\n\n    </div>\n\n    <div class=\"body-lower\">\n\n        <div class=\"notes\">\n            {{#Word-Symbol}} ?\n            <hr> {{/Word-Symbol}} ?\n        </div>\n    </div>\n</div>\n<script>\n    function playAudio() {\n        var audioDiv = document.getElementById('audio');\n        var audio = audioDiv.getElementsByTagName(\"*\");\n        audio[0].click();\n    }\n</script>"
+                    "qfmt": "<div class=\"hidden autoplay\" id=\"AudioWord\">{{AudioWord}}</div>\n<div class=\"hidden\" id=\"AudioWordTranslation\">{{AudioWordTranslation}}</div>\n<div class=\"hidden\" id=\"AudioSentence\">{{AudioSentence}}</div>\n<div class=\"hidden\" id=\"AudioSentenceTranslation\">{{AudioSentenceTranslation}}</div>\n\n<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\">\n        <div class=\"main-top\" onClick=\"playAudio('AudioWord')\">{{Word}}</div>\n        <div style=\"height: 5px;\"></div>\n\n        <div class=\"top-container\" style=\"display: flex; justify-content: center; font-size: 75%; width: 100%;\">\n            {{#Level}}\n            <div class=\"extra-top-left\" style=\"\">\n                {{Level}}\n            </div>\n            {{/Level}} {{#lang}}\n            <div class=\"extra-top-right\" style=\"\">\n                <img id=\"languageImg\" />\n            </div>\n            {{/lang}}\n        </div>\n    </div>\n\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n            {{#Word-Symbol}} ?\n            <hr />\n            {{/Word-Symbol}}\n            <div id=\"answer\">?</div>\n        </div>\n    </div>\n</div>\n\n<div style=\"display: none;\" id=\"languageText\">{{lang}}</div>\n\n<script>\n    /* Convert the language field to a flag */\n    var lang = document.getElementById(\"languageText\").innerText;\n    var flag = \"flag_\" + lang + \".svg\";\n    document.getElementById(\"languageImg\").src = flag;\n\n    /* Play audio when clicking the respective element */\n    function playAudio(fieldToPlay) {\n        var elem = document.querySelector(\"#\" + fieldToPlay + \" .soundLink, #\" + fieldToPlay + \" .replaybutton\");\n        if (elem) {\n            elem.click();\n        }\n    }\n    /* Autoplay some elements */\n    var elem = document.querySelector(\".autoplay .soundLink, .autoplay .replaybutton\");\n    if (elem) {\n        elem.click();\n    }\n</script>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n"
+                }
+            ],
+            "type": 0,
+            "vers": []
+        },
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "7012404a-fb4c-11ea-b291-40b076dccfad",
+            "css": "/* Variables for frequently used values */\n:root {\n    /* Main background color of the card */\n    --main-bg-color: #434343;\n    --upper-bg-color: #555555;\n    --lower-bg-color: #434343;\n    --upper-fg-color: #eeeeee;\n    --lower-fg-color: #eeeeee;\n    /* Primary Accent Color, broken up into individual hsl values */\n    --colorPrimary-h: 260;\n    --colorPrimary-s: 60%;\n    --colorPrimary-l: 65%;\n    /* Set primary color variable from previously defined hsl values */\n    --primary-color: hsl(var(--colorPrimary-h), var(--colorPrimary-s), var(--colorPrimary-l));\n    /* Calculate Secondary and Tertiary Colors from the hsl values of the Primary Color */\n    --secondary-color: hsl(calc(var(--colorPrimary-h) + 240), var(--colorPrimary-s), var(--colorPrimary-l));\n    --tertiary-color: hsl(calc(var(--colorPrimary-h) + 120), var(--colorPrimary-s), var(--colorPrimary-l));\n    /* How big the stripe at the top should be */\n    --stripe-height: 5px;\n    /* How far elements such as flags should be away from the stripe */\n    --margin-from-stripe: 5px;\n}\n\nhtml,\nbody {\n    word-wrap: break-word;\n    background-color: var(--main-bg-color);\n    padding: 0;\n    margin: 0;\n}\nu {\n    text-decoration-style: wavy;\n    text-underline-position: under;\n    color: white;\n    padding: 1px;\n}\n\n/* Hide the default play button anki provides */\n.replay-button svg {\n    display: none;\n}\n.hidden {\n    display: none;\n}\n#answer {\n    font-size: 50px;\n}\n\n/* Main skeleton of an anki card */\n.card {\n    font-family: UD Digi Kyokasho N-R;\n    font-size: 0px;\n    text-align: center;\n}\n/* Div around all of the visible content of the card */\n.kard {\n    height: 100%;\n    background-color: var(--main-bg-color);\n}\n.kard.night_mode {\n    background-color: var(--main-bg-color);\n}\n/* Stripe at the top of the card */\n.stripe {\n    height: var(--stripe-height);\n    background-color: var(--primary-color);\n}\n.stripe.night_mode {\n    background-color: var(--primary-color);\n}\n\n/* Upper part of the card (Question) */\n.body-upper {\n    font-family: Noto Sans;\n    font-size: 30px;\n    color: var(--upper-fg-color);\n    background-color: var(--upper-bg-color);\n    padding: 30px 10px 30px;\n    border-radius: 0px 0px 0px 0px;\n}\n.body-upper.night_mode {\n    color: var(--upper-fg-color);\n    background-color: var(--upper-bg-color);\n}\n/* Lower part of the card (Answer) */\n.body-lower {\n    text-align: left;\n    color: var(--lower-fg-color);\n    height: 100%;\n    padding: 25px 10px 25px 10px;\n    border-radius: 0px 0px 0px 0px;\n}\n.body-lower.night_mode {\n    color: var(--lower-fg-color);\n    color: var(--lower-bg-color);\n}\n\n.notes {\n    font-family: Noto Sans Regular;\n    font-size: 20px;\n    text-align: center;\n    font-weight: bold;\n}\n\n/* Show extra information button */\n.extra_toggle {\n    display: block;\n    font-family: Noto Sans Regular;\n    font-size: 15px;\n    color: var(--upper-fg-color);\n    background-color: var(--upper-bg-color);\n    border-radius: 0px;\n    padding: 5px;\n    width: 50%;\n    text-align: center;\n    font-weight: 500;\n    margin: auto;\n    margin-top: 20px;\n    transition: all 0.15s ease-out;\n}\n.extra_toggle:hover {\n    filter: brightness(90%);\n}\n\n/* Div containing extra information, hidden by default */\n.extra {\n    display: none;\n    font-family: Noto Sans Regular;\n    font-size: 15px;\n    border: 3px dashed var(--primary-color);\n    color: var(--upper-fg-color);\n    padding: 20px;\n    margin: 30px 20px 3px 20px;\n    text-align: center;\n    font-weight: 500;\n}\n/* Div containing mnemonics or notes, situated inside the extra div */\n.mnemonic {\n    display: block;\n    margin-bottom: 2%;\n    border-color: var(--secondary-color);\n}\n\n/* Contains extra elements at the top, e.g. flags */\n.top-container {\n    width: 100%;\n    position: absolute;\n    top: calc(var(--stripe-height) + var(--margin-from-stripe));\n    left: 0;\n}\n.extra-top-right {\n    position: absolute;\n    right: var(--margin-from-stripe);\n}\n.extra-top-left {\n    position: absolute;\n    left: var(--margin-from-stripe);\n}\n.extra-top-right img {\n    float: right;\n    width: 25%;\n    border-radius: 10%;\n}\n.extra-top-left img {\n    float: left;\n    width: 25%;\n    border-radius: 10%;\n}\n\n/* Style cloze to use the primary color as the background color to make the cloze deletion easier to spot */\n.cloze {\n    background-color: var(--primary-color);\n}\n.cloze.night_mode {\n    background-color: var(--primary-color);\n}\n\n/* Highlighting classes */\n.hightlight-1 {\n    background-color: var(--primary-color);\n}\n\n.hightlight-2 {\n    background-color: var(--secondary-color);\n}\n\n.hightlight-3 {\n    background-color: var(--tertiary-color);\n}\n\n.hightlight-1.night_mode {\n    background-color: var(--primary-color);\n}\n\n.hightlight-2.night_mode {\n    background-color: var(--secondary-color);\n}\n\n.hightlight-3.night_mode {\n    background-color: var(--tertiary-color);\n}\n",
+            "flds": [
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "Name",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "Date of Birth",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "Date of Death",
+                    "ord": 2,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "Portrait",
+                    "ord": 3,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "Legacy",
+                    "ord": 4,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "DatesMnemonic",
+                    "ord": 5,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "prettyPerson",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        3
+                    ]
+                ],
+                [
+                    1,
+                    "all",
+                    [
+                        0,
+                        1
+                    ]
+                ],
+                [
+                    2,
+                    "all",
+                    [
+                        0,
+                        4
+                    ]
+                ]
+            ],
+            "sortf": 1,
+            "tags": [
+                ""
+            ],
+            "tmpls": [
+                {
+                    "afmt": "<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\">\n        {{Portrait}}\n    </div>\n\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n            <b>{{Name}}</b>\n        </div>\n    </div>\n</div>",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Portrait - Name",
+                    "ord": 0,
+                    "qfmt": "{{#Portrait}}\n<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\">\n        {{Portrait}}\n    </div>\n\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n            ?\n        </div>\n    </div>\n</div>\n{{/Portrait}}"
+                },
+                {
+                    "afmt": "<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\"><b class=\"hightlight-1\">{{Name}}</b> - Date of Birth{{#Date of Death}}/Death{{/Date of Death}}</div>\n\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n            <b class=\"hightlight-3\">{{Date of Birth}}</b>{{#Date of Death}} - <b class=\"hightlight-3\">{{Date of Death}}</b>{{/Date of Death}}\n            <br />\n            <p style=\"margin-top: 40px; font-style: italic; font-size: 18px;\">{{DatesMnemonic}}</p>\n        </div>\n    </div>\n</div>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Name - Dates",
+                    "ord": 1,
+                    "qfmt": "{{#Date of Birth}}\n<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\">\n        <b class=\"hightlight-1\">{{Name}}</b> - Date of Birth{{#Date of Death}}/Death{{/Date of Death}}\n    </div>\n\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n            <b class=\"hightlight-3\">?</b>{{#Date of Death}} - <b class=\"hightlight-3\">?</b>{{/Date of Death}}\n        </div>\n    </div>\n</div>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n{{/Date of Birth}}"
+                },
+                {
+                    "afmt": "<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\">\n        <b class=\"hightlight-1\">{{Name}}</b> - Partei\n    </div>\n\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n            <b>{{Legacy}}</b>\n        </div>\n    </div>\n</div>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Name - Legacy",
+                    "ord": 2,
+                    "qfmt": "{{#Legacy}}\n<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\">\n        <b class=\"hightlight-1\">{{Name}}</b> - Legacy\n    </div>\n\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n            <b>What was {{Name}} known for?</b>\n        </div>\n    </div>\n</div>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n{{/Legacy}}"
                 }
             ],
             "type": 0,
@@ -362,15 +528,18 @@
             "fields": [
                 "95472f650a2b647ff8fa66450c77b281ac2846cbe9d8df6354cbcd8c5e589455",
                 "Hilfe",
-                "",
-                "",
                 "help",
+                "A1",
+                "Don't scream this one in public.",
+                "Hilf mir.",
+                "Help me.",
+                "de",
                 "",
                 "",
-                "",
-                "Ich brauche Hilfe.",
-                "I need help.",
-                "de"
+                "[sound:De-Hilfe.ogg]",
+                "[sound:En-us-help.ogg]",
+                "[sound:368205.mp3]",
+                "[sound:266065.mp3]"
             ],
             "flags": 0,
             "guid": "P@Qj#?~kI@",
@@ -388,6 +557,34 @@
             ],
             "flags": 0,
             "guid": "O35TUpdD=_",
+            "note_model_uuid": "3d263d1c-b7ae-11ea-b976-40b076dccfad",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Alan Turing",
+                "23 June 1912",
+                "7 June 1954",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "Nnjd?p;z17",
+            "note_model_uuid": "7012404a-fb4c-11ea-b291-40b076dccfad",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Flags",
+                "<img src=\"flag_de.svg\">"
+            ],
+            "flags": 0,
+            "guid": "x1`[__G&7E",
             "note_model_uuid": "3d263d1c-b7ae-11ea-b976-40b076dccfad",
             "tags": []
         }
