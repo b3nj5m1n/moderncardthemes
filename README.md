@@ -14,6 +14,7 @@ I've made some major changes to the available note types in this deck. (I remove
 * prettyWord - A card for memorizing vocabulary
 * prettyPerson - A card for memorizing people
 * prettyList - A card for memorizing lists
+* prettyEvent - A card for memorizing an event
 
 # General Notes
 
