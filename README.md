@@ -13,6 +13,7 @@ I've made some major changes to the available note types in this deck. (I remove
 * prettyPoem - A card for memorizing poems or quotes
 * prettyWord - A card for memorizing vocabulary
 * prettyPerson - A card for memorizing people
+* prettyList - A card for memorizing lists
 
 # General Notes
 
@@ -45,6 +46,10 @@ Click on any of the elements that have audio (Word, WordTranslation, Sentence, S
 
 You can use this note type to memorize poems, quotes or lyrics. When you see the front of the card, tap on it to reveal the first word of the text. (Try to remember what it was beforehand) Continue to work you're way through the text like this. At the end, judge how well you were able to remember it.
 
+# prettyList
+
+You can use this note type to memorize lists. When you see the front of the card, tap on it to reveal the first element of the text. (Try to remember what it was beforehand) Continue to work you're way through the text like this. At the end, judge how well you were able to remember it.
+You need to put one (only one) <ul> or <ol> in the list field for the javascript to function correctly.
 ![](media/basicPrettyBack.jpg)
 ![](media/basicPrettyFront.jpg)
 ![](media/clozePrettyBack.jpg)
