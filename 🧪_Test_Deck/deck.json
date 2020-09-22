@@ -2,7 +2,7 @@
     "__type__": "Deck",
     "children": [],
     "crowdanki_uuid": "3d2479f0-b7ae-11ea-b976-40b076dccfad",
-    "deck_config_uuid": "5fe5ea66-fc26-11ea-a67d-40b076dccfad",
+    "deck_config_uuid": "cc7b989c-fcee-11ea-8526-40b076dccfad",
     "deck_configurations": [
         {
             "__type__": "DeckConfig",
@@ -10,7 +10,7 @@
             "autoAlert": 0,
             "autoAnswer": 0,
             "autoplay": false,
-            "crowdanki_uuid": "5fe5ea66-fc26-11ea-a67d-40b076dccfad",
+            "crowdanki_uuid": "cc7b989c-fcee-11ea-8526-40b076dccfad",
             "dyn": false,
             "lapse": {
                 "delays": [
@@ -70,7 +70,7 @@
         "En-us-help.ogg",
         "_flag_de.svg"
     ],
-    "mid": "1600704644052",
+    "mid": 1584744468371,
     "name": "🧪 Test Deck",
     "note_models": [
         {
@@ -301,7 +301,7 @@
                     "ord": 10,
                     "rtl": false,
                     "size": 20,
-                    "sticky": false
+                    "sticky": true
                 },
                 {
                     "font": "Nimbus Sans",
@@ -643,6 +643,25 @@
             "flags": 0,
             "guid": "h[~4Y~,IMG",
             "note_model_uuid": "7012404a-fb4c-11ea-b291-40b076dccfad",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "hacer | Present",
+                "hacer",
+                "hago",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "Present"
+            ],
+            "flags": 0,
+            "guid": "GdqcFY(|7X",
+            "note_model_uuid": "3d263d1c-b7ae-11ea-b976-40b076dccfad",
             "tags": []
         }
     ]
