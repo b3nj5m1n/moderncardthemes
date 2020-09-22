@@ -15,6 +15,7 @@ I've made some major changes to the available note types in this deck. (I remove
 * prettyPerson - A card for memorizing people
 * prettyList - A card for memorizing lists
 * prettyEvent - A card for memorizing an event
+* prettyConjugation - A card for memorizing the conjugated forms of a word
 
 # General Notes
 
@@ -35,10 +36,12 @@ This card has a lot of fields, so here is a brief explanation of which ones you 
 * SentenceTranslation - A translation of the example sentence in your native language.
 * AudioSentenceTranslation - An audio of the translation of the example sentence in your native language.
 * Note/Mnemonic - A note about the word, or a mnemonic to make remembering the word easier.
-* Language - ISO 3166-1 alpha-2 code of the country the language of the word you want to learn is used in; For example: de (Germany), es (Spain); (This will be used to show the flag of that card on the card)
+* Picture - A picture representative of the word.
+* CountryISO - ISO 3166-1 alpha-2 code of the country the language of the word you want to learn is used in; For example: de (Germany), es (Spain); (This will be used to show the flag of that card on the card)
 * Level - For example HSK1
 * Word-Symbol - For example the simplified chinese character
 * Word-Symbol-2 - For example the traditional chinese character
+* Language - An extra field in case you want to specify the language seperately from the country
 
 By default, upon seeing the front of the card, the audio of the word you're trying to memorize is played in the language the word is in, upon seeing the back of the card you'll hear the audio of the word in your native language.
 Click on any of the elements that have audio (Word, WordTranslation, Sentence, SentenceTranslation) to play the audio for that.
