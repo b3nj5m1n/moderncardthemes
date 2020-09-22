@@ -2,7 +2,7 @@
     "__type__": "Deck",
     "children": [],
     "crowdanki_uuid": "3d2479f0-b7ae-11ea-b976-40b076dccfad",
-    "deck_config_uuid": "cc7b989c-fcee-11ea-8526-40b076dccfad",
+    "deck_config_uuid": "9aeea7c2-fcf0-11ea-939c-40b076dccfad",
     "deck_configurations": [
         {
             "__type__": "DeckConfig",
@@ -10,7 +10,7 @@
             "autoAlert": 0,
             "autoAnswer": 0,
             "autoplay": false,
-            "crowdanki_uuid": "cc7b989c-fcee-11ea-8526-40b076dccfad",
+            "crowdanki_uuid": "9aeea7c2-fcf0-11ea-939c-40b076dccfad",
             "dyn": false,
             "lapse": {
                 "delays": [
@@ -297,8 +297,17 @@
                 {
                     "font": "Nimbus Sans",
                     "media": [],
-                    "name": "Language",
+                    "name": "Picture",
                     "ord": 10,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "CountryISO",
+                    "ord": 11,
                     "rtl": false,
                     "size": 20,
                     "sticky": true
@@ -307,15 +316,6 @@
                     "font": "Nimbus Sans",
                     "media": [],
                     "name": "Level",
-                    "ord": 11,
-                    "rtl": false,
-                    "size": 20,
-                    "sticky": false
-                },
-                {
-                    "font": "Nimbus Sans",
-                    "media": [],
-                    "name": "Word-Symbol",
                     "ord": 12,
                     "rtl": false,
                     "size": 20,
@@ -324,8 +324,26 @@
                 {
                     "font": "Nimbus Sans",
                     "media": [],
-                    "name": "Word-Symbol-2",
+                    "name": "Word-Symbol",
                     "ord": 13,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "Word-Symbol-2",
+                    "ord": 14,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "Language",
+                    "ord": 15,
                     "rtl": false,
                     "size": 20,
                     "sticky": false
@@ -346,7 +364,8 @@
                         6,
                         8,
                         10,
-                        11
+                        11,
+                        12
                     ]
                 ],
                 [
@@ -359,7 +378,8 @@
                         6,
                         8,
                         10,
-                        11
+                        11,
+                        12
                     ]
                 ]
             ],
@@ -369,7 +389,7 @@
             ],
             "tmpls": [
                 {
-                    "afmt": "<div class=\"hidden autoplay\" id=\"AudioWord\">{{AudioWord}}</div>\n<div class=\"hidden\" id=\"AudioWordTranslation\">{{AudioWordTranslation}}</div>\n<div class=\"hidden\" id=\"AudioSentence\">{{AudioSentence}}</div>\n<div class=\"hidden\" id=\"AudioSentenceTranslation\">{{AudioSentenceTranslation}}</div>\n\n<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\">\n        <div class=\"main-top\" onClick=\"playAudio('AudioWordTranslation')\">{{WordTranslation}}</div>\n        <div style=\"height: 5px;\"></div>\n\n        <div class=\"top-container\" style=\"display: flex; justify-content: center; font-size: 75%; width: 100%;\">\n            {{#Level}}\n            <div class=\"extra-top-left\" style=\"\">\n                {{Level}}\n            </div>\n            {{/Level}} {{#Language}}\n            <div class=\"extra-top-right\" style=\"\">\n                <img id=\"languageImg\" />\n            </div>\n            {{/Language}}\n        </div>\n    </div>\n\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n            {{#Word-Symbol}}\n            <div class=\"symbol-container\">\n                {{Word-Symbol}}\n            </div>\n            <hr />\n            {{/Word-Symbol}}\n            <div id=\"answer\" onClick=\"playAudio('AudioWord')\">{{Word}}</div>\n        </div>\n\n        {{#Sentence}}\n        <div class=\"extra_toggle\" id=\"extra_toggle_on_button\" onClick=\"showextra();\">\n            Show Extra\n        </div>\n        <div class=\"extra\" id=\"extrafield\">\n            {{#Note/Mnemonic}}\n\t\t\t<div class=\"extra mnemonic\">\n                <h2>{{Note/Mnemonic}}</h2>\n            </div>\n\t\t\t{{/Note/Mnemonic}}\n            <h1 style=\"margin-bottom: 2%;\">Example Sentence:</h1>\n            <div onClick=\"playAudio('AudioSentence')\"><h3>{{Sentence}}</h3></div>\n            {{#SentenceTranslation}}\n            <hr />\n            <div onClick=\"playAudio('AudioSentenceTranslation')\"><h4>{{SentenceTranslation}}</h4></div>\n            {{/SentenceTranslation}}\n            <div class=\"extra_toggle\" id=\"extra_toggle_off_button\" onClick=\"hideextra();\">\n                Hide Extra\n            </div>\n        </div>\n        {{/Sentence}}\n    </div>\n</div>\n\n<div style=\"display: none;\" id=\"languageText\">{{Language}}</div>\n\n<script>\n    /* Convert the language field to a flag */\n    var lang = document.getElementById(\"languageText\").innerText;\n    var flag = \"_flag_\" + lang + \".svg\";\n    document.getElementById(\"languageImg\").src = flag;\n\n    /* Play audio when clicking the respective element */\n    function playAudio(fieldToPlay) {\n        var elem = document.querySelector(\"#\" + fieldToPlay + \" .soundLink, #\" + fieldToPlay + \" .replaybutton\");\n        if (elem) {\n            elem.click();\n        }\n    }\n    /* Autoplay some elements */\n    var elem = document.querySelector(\".autoplay .soundLink, .autoplay .replaybutton\");\n    if (elem) {\n        elem.click();\n    }\n\n    /* Functions to show/hide the extra information */\n    function showextra() {\n        document.getElementById(\"extrafield\").style.display = \"block\";\n        document.getElementById(\"extra_toggle_on_button\").style.display = \"none\";\n    }\n    function hideextra() {\n        document.getElementById(\"extrafield\").style.display = \"none\";\n        document.getElementById(\"extra_toggle_on_button\").style.display = \"block\";\n    }\n</script>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n",
+                    "afmt": "<div class=\"hidden autoplay\" id=\"AudioWord\">{{AudioWord}}</div>\n<div class=\"hidden\" id=\"AudioWordTranslation\">{{AudioWordTranslation}}</div>\n<div class=\"hidden\" id=\"AudioSentence\">{{AudioSentence}}</div>\n<div class=\"hidden\" id=\"AudioSentenceTranslation\">{{AudioSentenceTranslation}}</div>\n\n<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\">\n        <div class=\"main-top\" onClick=\"playAudio('AudioWordTranslation')\">{{WordTranslation}}</div>\n        <div style=\"height: 5px;\"></div>\n\n        <div class=\"top-container\" style=\"display: flex; justify-content: center; font-size: 75%; width: 100%;\">\n            {{#Level}}\n            <div class=\"extra-top-left\" style=\"\">\n                {{Level}}\n            </div>\n            {{/Level}} {{#CountryISO}}\n            <div class=\"extra-top-right\" style=\"\">\n                <img id=\"languageImg\" />\n            </div>\n            {{/CountryISO}}\n        </div>\n    </div>\n\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n\t\t\t{{#Picture}}\n\t\t\t<div>{{Picture}}</div>\n\t\t\t{{/Picture}}\n            {{#Word-Symbol}}\n            <div class=\"symbol-container\">\n                {{Word-Symbol}}\n            </div>\n            <hr />\n            {{/Word-Symbol}}\n            <div id=\"answer\" onClick=\"playAudio('AudioWord')\">{{Word}}</div>\n        </div>\n\n        {{#Sentence}}\n        <div class=\"extra_toggle\" id=\"extra_toggle_on_button\" onClick=\"showextra();\">\n            Show Extra\n        </div>\n        <div class=\"extra\" id=\"extrafield\">\n            {{#Note/Mnemonic}}\n\t\t\t<div class=\"extra mnemonic\">\n                <h2>{{Note/Mnemonic}}</h2>\n            </div>\n\t\t\t{{/Note/Mnemonic}}\n            <h1 style=\"margin-bottom: 2%;\">Example Sentence:</h1>\n            <div onClick=\"playAudio('AudioSentence')\"><h3>{{Sentence}}</h3></div>\n            {{#SentenceTranslation}}\n            <hr />\n            <div onClick=\"playAudio('AudioSentenceTranslation')\"><h4>{{SentenceTranslation}}</h4></div>\n            {{/SentenceTranslation}}\n            <div class=\"extra_toggle\" id=\"extra_toggle_off_button\" onClick=\"hideextra();\">\n                Hide Extra\n            </div>\n        </div>\n        {{/Sentence}}\n    </div>\n</div>\n\n<div style=\"display: none;\" id=\"languageText\">{{CountryISO}}</div>\n\n<script>\n\t/* {{#CountryISO}}} */\n    /* Convert the language field to a flag */\n    var lang = document.getElementById(\"languageText\").innerText;\n    var flag = \"_flag_\" + lang + \".svg\";\n    document.getElementById(\"languageImg\").src = flag;\n\t/* {{/CountryISO}}} */\n\n    /* Play audio when clicking the respective element */\n    function playAudio(fieldToPlay) {\n        var elem = document.querySelector(\"#\" + fieldToPlay + \" .soundLink, #\" + fieldToPlay + \" .replaybutton\");\n        if (elem) {\n            elem.click();\n        }\n    }\n    /* Autoplay some elements */\n    var elem = document.querySelector(\".autoplay .soundLink, .autoplay .replaybutton\");\n    if (elem) {\n        elem.click();\n    }\n\n    /* Functions to show/hide the extra information */\n    function showextra() {\n        document.getElementById(\"extrafield\").style.display = \"block\";\n        document.getElementById(\"extra_toggle_on_button\").style.display = \"none\";\n    }\n    function hideextra() {\n        document.getElementById(\"extrafield\").style.display = \"none\";\n        document.getElementById(\"extra_toggle_on_button\").style.display = \"block\";\n    }\n</script>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n",
                     "bafmt": "",
                     "bfont": "Arial",
                     "bqfmt": "",
@@ -377,10 +397,10 @@
                     "did": null,
                     "name": "Native -> Target",
                     "ord": 0,
-                    "qfmt": "<div class=\"hidden\" id=\"AudioWord\">{{AudioWord}}</div>\n<div class=\"hidden autoplay\" id=\"AudioWordTranslation\">{{AudioWordTranslation}}</div>\n<div class=\"hidden\" id=\"AudioSentence\">{{AudioSentence}}</div>\n<div class=\"hidden\" id=\"AudioSentenceTranslation\">{{AudioSentenceTranslation}}</div>\n\n<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\">\n        <div class=\"main-top\" onClick=\"playAudio('AudioWordTranslation')\">{{WordTranslation}}</div>\n        <div style=\"height: 5px;\"></div>\n\n        <div class=\"top-container\" style=\"display: flex; justify-content: center; font-size: 75%; width: 100%;\">\n            {{#Level}}\n            <div class=\"extra-top-left\" style=\"\">\n                {{Level}}\n            </div>\n            {{/Level}} {{#Language}}\n            <div class=\"extra-top-right\" style=\"\">\n                <img id=\"languageImg\" />\n            </div>\n            {{/Language}}\n        </div>\n    </div>\n\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n            {{#Word-Symbol}} ?\n            <hr />\n            {{/Word-Symbol}}\n            <div id=\"answer\">?</div>\n        </div>\n    </div>\n</div>\n\n<div style=\"display: none;\" id=\"languageText\">{{Language}}</div>\n\n<script>\n    /* Convert the language field to a flag */\n    var lang = document.getElementById(\"languageText\").innerText;\n    var flag = \"_flag_\" + lang + \".svg\";\n    document.getElementById(\"languageImg\").src = flag;\n\n    /* Play audio when clicking the respective element */\n    function playAudio(fieldToPlay) {\n        var elem = document.querySelector(\"#\" + fieldToPlay + \" .soundLink, #\" + fieldToPlay + \" .replaybutton\");\n        if (elem) {\n            elem.click();\n        }\n    }\n    /* Autoplay some elements */\n    var elem = document.querySelector(\".autoplay .soundLink, .autoplay .replaybutton\");\n    if (elem) {\n        elem.click();\n    }\n</script>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n"
+                    "qfmt": "<div class=\"hidden\" id=\"AudioWord\">{{AudioWord}}</div>\n<div class=\"hidden autoplay\" id=\"AudioWordTranslation\">{{AudioWordTranslation}}</div>\n<div class=\"hidden\" id=\"AudioSentence\">{{AudioSentence}}</div>\n<div class=\"hidden\" id=\"AudioSentenceTranslation\">{{AudioSentenceTranslation}}</div>\n\n<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\">\n        <div class=\"main-top\" onClick=\"playAudio('AudioWordTranslation')\">{{WordTranslation}}</div>\n        <div style=\"height: 5px;\"></div>\n\n        <div class=\"top-container\" style=\"display: flex; justify-content: center; font-size: 75%; width: 100%;\">\n            {{#Level}}\n            <div class=\"extra-top-left\" style=\"\">\n                {{Level}}\n            </div>\n            {{/Level}} {{#CountryISO}}\n            <div class=\"extra-top-right\" style=\"\">\n                <img id=\"languageImg\" />\n            </div>\n            {{/CountryISO}}\n        </div>\n    </div>\n\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n\t\t\t{{#Picture}}\n\t\t\t<div>{{Picture}}</div>\n\t\t\t{{/Picture}}\n            {{#Word-Symbol}} ?\n            <hr />\n            {{/Word-Symbol}}\n            <div id=\"answer\">?</div>\n        </div>\n    </div>\n</div>\n\n<div style=\"display: none;\" id=\"languageText\">{{CountryISO}}</div>\n\n<script>\n\t/* {{#CountryISO}}} */\n    /* Convert the language field to a flag */\n    var lang = document.getElementById(\"languageText\").innerText;\n    var flag = \"_flag_\" + lang + \".svg\";\n    document.getElementById(\"languageImg\").src = flag;\n\t/* {{/CountryISO}}} */\n\n    /* Play audio when clicking the respective element */\n    function playAudio(fieldToPlay) {\n        var elem = document.querySelector(\"#\" + fieldToPlay + \" .soundLink, #\" + fieldToPlay + \" .replaybutton\");\n        if (elem) {\n            elem.click();\n        }\n    }\n    /* Autoplay some elements */\n    var elem = document.querySelector(\".autoplay .soundLink, .autoplay .replaybutton\");\n    if (elem) {\n        elem.click();\n    }\n</script>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n"
                 },
                 {
-                    "afmt": "<div class=\"hidden\" id=\"AudioWord\">{{AudioWord}}</div>\n<div class=\"hidden autoplay\" id=\"AudioWordTranslation\">{{AudioWordTranslation}}</div>\n<div class=\"hidden\" id=\"AudioSentence\">{{AudioSentence}}</div>\n<div class=\"hidden\" id=\"AudioSentenceTranslation\">{{AudioSentenceTranslation}}</div>\n\n<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\">\n        <div class=\"main-top\" onClick=\"playAudio('AudioWord')\">{{Word}}</div>\n        <div style=\"height: 5px;\"></div>\n\n        <div class=\"top-container\" style=\"display: flex; justify-content: center; font-size: 75%; width: 100%;\">\n            {{#Level}}\n            <div class=\"extra-top-left\" style=\"\">\n                {{Level}}\n            </div>\n            {{/Level}} {{#Language}}\n            <div class=\"extra-top-right\" style=\"\">\n                <img id=\"languageImg\" />\n            </div>\n            {{/Language}}\n        </div>\n    </div>\n\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n            {{#Word-Symbol}}\n            <div class=\"symbol-container\">\n                {{Word-Symbol}}\n            </div>\n            <hr />\n            {{/Word-Symbol}}\n            <div id=\"answer\" onClick=\"playAudio('AudioWordTranslation')\">{{WordTranslation}}</div>\n        </div>\n\n        {{#Sentence}}\n        <div class=\"extra_toggle\" id=\"extra_toggle_on_button\" onClick=\"showextra();\">\n            Show Extra\n        </div>\n        <div class=\"extra\" id=\"extrafield\">\n            {{#Note/Mnemonic}}\n\t\t\t<div class=\"extra mnemonic\">\n                <h2>{{Note/Mnemonic}}</h2>\n            </div>\n\t\t\t{{/Note/Mnemonic}}\n            <h1 style=\"margin-bottom: 2%;\">Example Sentence:</h1>\n            <div onClick=\"playAudio('AudioSentence')\"><h3>{{Sentence}}</h3></div>\n            {{#SentenceTranslation}}\n            <hr />\n            <div onClick=\"playAudio('AudioSentenceTranslation')\"><h4>{{SentenceTranslation}}</h4></div>\n            {{/SentenceTranslation}}\n            <div class=\"extra_toggle\" id=\"extra_toggle_off_button\" onClick=\"hideextra();\">\n                Hide Extra\n            </div>\n        </div>\n        {{/Sentence}}\n    </div>\n</div>\n\n<div style=\"display: none;\" id=\"languageText\">{{Language}}</div>\n\n<script>\n    /* Convert the language field to a flag */\n    var lang = document.getElementById(\"languageText\").innerText;\n    var flag = \"_flag_\" + lang + \".svg\";\n    document.getElementById(\"languageImg\").src = flag;\n\n    /* Play audio when clicking the respective element */\n    function playAudio(fieldToPlay) {\n        var elem = document.querySelector(\"#\" + fieldToPlay + \" .soundLink, #\" + fieldToPlay + \" .replaybutton\");\n        if (elem) {\n            elem.click();\n        }\n    }\n    /* Autoplay some elements */\n    var elem = document.querySelector(\".autoplay .soundLink, .autoplay .replaybutton\");\n    if (elem) {\n        elem.click();\n    }\n\n    /* Functions to show/hide the extra information */\n    function showextra() {\n        document.getElementById(\"extrafield\").style.display = \"block\";\n        document.getElementById(\"extra_toggle_on_button\").style.display = \"none\";\n    }\n    function hideextra() {\n        document.getElementById(\"extrafield\").style.display = \"none\";\n        document.getElementById(\"extra_toggle_on_button\").style.display = \"block\";\n    }\n</script>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n",
+                    "afmt": "<div class=\"hidden\" id=\"AudioWord\">{{AudioWord}}</div>\n<div class=\"hidden autoplay\" id=\"AudioWordTranslation\">{{AudioWordTranslation}}</div>\n<div class=\"hidden\" id=\"AudioSentence\">{{AudioSentence}}</div>\n<div class=\"hidden\" id=\"AudioSentenceTranslation\">{{AudioSentenceTranslation}}</div>\n\n<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\">\n        <div class=\"main-top\" onClick=\"playAudio('AudioWord')\">{{Word}}</div>\n        <div style=\"height: 5px;\"></div>\n\n        <div class=\"top-container\" style=\"display: flex; justify-content: center; font-size: 75%; width: 100%;\">\n            {{#Level}}\n            <div class=\"extra-top-left\" style=\"\">\n                {{Level}}\n            </div>\n            {{/Level}} {{#CountryISO}}\n            <div class=\"extra-top-right\" style=\"\">\n                <img id=\"languageImg\" />\n            </div>\n            {{/CountryISO}}\n        </div>\n    </div>\n\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n\t\t\t{{#Picture}}\n\t\t\t<div>{{Picture}}</div>\n\t\t\t{{/Picture}}\n            {{#Word-Symbol}}\n            <div class=\"symbol-container\">\n                {{Word-Symbol}}\n            </div>\n            <hr />\n            {{/Word-Symbol}}\n            <div id=\"answer\" onClick=\"playAudio('AudioWordTranslation')\">{{WordTranslation}}</div>\n        </div>\n\n        {{#Sentence}}\n        <div class=\"extra_toggle\" id=\"extra_toggle_on_button\" onClick=\"showextra();\">\n            Show Extra\n        </div>\n        <div class=\"extra\" id=\"extrafield\">\n            {{#Note/Mnemonic}}\n\t\t\t<div class=\"extra mnemonic\">\n                <h2>{{Note/Mnemonic}}</h2>\n            </div>\n\t\t\t{{/Note/Mnemonic}}\n            <h1 style=\"margin-bottom: 2%;\">Example Sentence:</h1>\n            <div onClick=\"playAudio('AudioSentence')\"><h3>{{Sentence}}</h3></div>\n            {{#SentenceTranslation}}\n            <hr />\n            <div onClick=\"playAudio('AudioSentenceTranslation')\"><h4>{{SentenceTranslation}}</h4></div>\n            {{/SentenceTranslation}}\n            <div class=\"extra_toggle\" id=\"extra_toggle_off_button\" onClick=\"hideextra();\">\n                Hide Extra\n            </div>\n        </div>\n        {{/Sentence}}\n    </div>\n</div>\n\n<div style=\"display: none;\" id=\"languageText\">{{CountryISO}}</div>\n\n<script>\n\t/* {{#CountryISO}}} */\n    /* Convert the language field to a flag */\n    var lang = document.getElementById(\"languageText\").innerText;\n    var flag = \"_flag_\" + lang + \".svg\";\n    document.getElementById(\"languageImg\").src = flag;\n\t/* {{/CountryISO}}} */\n    /* Play audio when clicking the respective element */\n    function playAudio(fieldToPlay) {\n        var elem = document.querySelector(\"#\" + fieldToPlay + \" .soundLink, #\" + fieldToPlay + \" .replaybutton\");\n        if (elem) {\n            elem.click();\n        }\n    }\n    /* Autoplay some elements */\n    var elem = document.querySelector(\".autoplay .soundLink, .autoplay .replaybutton\");\n    if (elem) {\n        elem.click();\n    }\n\n    /* Functions to show/hide the extra information */\n    function showextra() {\n        document.getElementById(\"extrafield\").style.display = \"block\";\n        document.getElementById(\"extra_toggle_on_button\").style.display = \"none\";\n    }\n    function hideextra() {\n        document.getElementById(\"extrafield\").style.display = \"none\";\n        document.getElementById(\"extra_toggle_on_button\").style.display = \"block\";\n    }\n</script>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n",
                     "bafmt": "",
                     "bfont": "",
                     "bqfmt": "",
@@ -388,7 +408,7 @@
                     "did": null,
                     "name": "Target -> Native",
                     "ord": 1,
-                    "qfmt": "<div class=\"hidden autoplay\" id=\"AudioWord\">{{AudioWord}}</div>\n<div class=\"hidden\" id=\"AudioWordTranslation\">{{AudioWordTranslation}}</div>\n<div class=\"hidden\" id=\"AudioSentence\">{{AudioSentence}}</div>\n<div class=\"hidden\" id=\"AudioSentenceTranslation\">{{AudioSentenceTranslation}}</div>\n\n<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\">\n        <div class=\"main-top\" onClick=\"playAudio('AudioWord')\">{{Word}}</div>\n        <div style=\"height: 5px;\"></div>\n\n        <div class=\"top-container\" style=\"display: flex; justify-content: center; font-size: 75%; width: 100%;\">\n            {{#Level}}\n            <div class=\"extra-top-left\" style=\"\">\n                {{Level}}\n            </div>\n            {{/Level}} {{#Language}}\n            <div class=\"extra-top-right\" style=\"\">\n                <img id=\"languageImg\" />\n            </div>\n            {{/Language}}\n        </div>\n    </div>\n\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n            {{#Word-Symbol}} ?\n            <hr />\n            {{/Word-Symbol}}\n            <div id=\"answer\">?</div>\n        </div>\n    </div>\n</div>\n\n<div style=\"display: none;\" id=\"languageText\">{{Language}}</div>\n\n<script>\n    /* Convert the language field to a flag */\n    var lang = document.getElementById(\"languageText\").innerText;\n    var flag = \"_flag_\" + lang + \".svg\";\n    document.getElementById(\"languageImg\").src = flag;\n\n    /* Play audio when clicking the respective element */\n    function playAudio(fieldToPlay) {\n        var elem = document.querySelector(\"#\" + fieldToPlay + \" .soundLink, #\" + fieldToPlay + \" .replaybutton\");\n        if (elem) {\n            elem.click();\n        }\n    }\n    /* Autoplay some elements */\n    var elem = document.querySelector(\".autoplay .soundLink, .autoplay .replaybutton\");\n    if (elem) {\n        elem.click();\n    }\n</script>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n"
+                    "qfmt": "<div class=\"hidden autoplay\" id=\"AudioWord\">{{AudioWord}}</div>\n<div class=\"hidden\" id=\"AudioWordTranslation\">{{AudioWordTranslation}}</div>\n<div class=\"hidden\" id=\"AudioSentence\">{{AudioSentence}}</div>\n<div class=\"hidden\" id=\"AudioSentenceTranslation\">{{AudioSentenceTranslation}}</div>\n\n<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\">\n        <div class=\"main-top\" onClick=\"playAudio('AudioWord')\">{{Word}}</div>\n        <div style=\"height: 5px;\"></div>\n\n        <div class=\"top-container\" style=\"display: flex; justify-content: center; font-size: 75%; width: 100%;\">\n            {{#Level}}\n            <div class=\"extra-top-left\" style=\"\">\n                {{Level}}\n            </div>\n            {{/Level}} {{#CountryISO}}\n            <div class=\"extra-top-right\" style=\"\">\n                <img id=\"languageImg\" />\n            </div>\n            {{/CountryISO}}\n        </div>\n    </div>\n\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n\t\t\t{{#Picture}}\n\t\t\t<div>{{Picture}}</div>\n\t\t\t{{/Picture}}\n            {{#Word-Symbol}} ?\n            <hr />\n            {{/Word-Symbol}}\n            <div id=\"answer\">?</div>\n        </div>\n    </div>\n</div>\n\n<div style=\"display: none;\" id=\"languageText\">{{CountryISO}}</div>\n\n<script>\n\t/* {{#CountryISO}}} */\n    /* Convert the language field to a flag */\n    var lang = document.getElementById(\"languageText\").innerText;\n    var flag = \"_flag_\" + lang + \".svg\";\n    document.getElementById(\"languageImg\").src = flag;\n\t/* {{/CountryISO}}} */\n\n    /* Play audio when clicking the respective element */\n    function playAudio(fieldToPlay) {\n        var elem = document.querySelector(\"#\" + fieldToPlay + \" .soundLink, #\" + fieldToPlay + \" .replaybutton\");\n        if (elem) {\n            elem.click();\n        }\n    }\n    /* Autoplay some elements */\n    var elem = document.querySelector(\".autoplay .soundLink, .autoplay .replaybutton\");\n    if (elem) {\n        elem.click();\n    }\n</script>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n"
                 }
             ],
             "type": 0,
@@ -566,10 +586,12 @@
                 "Help me.",
                 "[sound:266065.mp3]",
                 "Don't scream this one in public.",
+                "",
                 "de",
                 "A1",
                 "",
-                ""
+                "",
+                "de"
             ],
             "flags": 0,
             "guid": "P@Qj#?~kI@",
