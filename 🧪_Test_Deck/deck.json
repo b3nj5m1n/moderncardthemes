@@ -2,7 +2,7 @@
     "__type__": "Deck",
     "children": [],
     "crowdanki_uuid": "3d2479f0-b7ae-11ea-b976-40b076dccfad",
-    "deck_config_uuid": "db0a24a2-fcf1-11ea-939c-40b076dccfad",
+    "deck_config_uuid": "86d5a4f2-fda9-11ea-bb07-40b076dccfad",
     "deck_configurations": [
         {
             "__type__": "DeckConfig",
@@ -10,7 +10,7 @@
             "autoAlert": 0,
             "autoAnswer": 0,
             "autoplay": false,
-            "crowdanki_uuid": "db0a24a2-fcf1-11ea-939c-40b076dccfad",
+            "crowdanki_uuid": "86d5a4f2-fda9-11ea-bb07-40b076dccfad",
             "dyn": false,
             "lapse": {
                 "delays": [
@@ -112,6 +112,9 @@
             ],
             "sortf": 0,
             "tags": [
+                "",
+                "Allgemeinwissen::SIprefixes",
+                "Allgemeinwissen::SIprefixes::negative",
                 ""
             ],
             "tmpls": [
