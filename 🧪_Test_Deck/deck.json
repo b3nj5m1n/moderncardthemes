@@ -2,7 +2,7 @@
     "__type__": "Deck",
     "children": [],
     "crowdanki_uuid": "3d2479f0-b7ae-11ea-b976-40b076dccfad",
-    "deck_config_uuid": "c4b13122-fdc9-11ea-bb07-40b076dccfad",
+    "deck_config_uuid": "4eeeed20-064e-11eb-b145-40b076dccfad",
     "deck_configurations": [
         {
             "__type__": "DeckConfig",
@@ -10,7 +10,7 @@
             "autoAlert": 0,
             "autoAnswer": 0,
             "autoplay": false,
-            "crowdanki_uuid": "c4b13122-fdc9-11ea-bb07-40b076dccfad",
+            "crowdanki_uuid": "4eeeed20-064e-11eb-b145-40b076dccfad",
             "dyn": false,
             "lapse": {
                 "delays": [
@@ -112,6 +112,8 @@
             ],
             "sortf": 0,
             "tags": [
+                "",
+                "Mnemonics::Systems::NumberRhyme",
                 ""
             ],
             "tmpls": [
@@ -647,8 +649,8 @@
             "__type__": "Note",
             "data": "",
             "fields": [
-                "Planets of the solar system by size",
-                "<ul>\n<li>Jupiter</li>\n<li>Saturn</li>\n<li>Uranus</li>\n<li>Neptune</li>\n<li>Earth</li>\n<li>Venus</li>\n<li>Mars</li>\n<li>Mercury</li>\n</ul>"
+                "Positive SI prefixes, from lowest to highest",
+                "<ul>\n<li>deca</li><li>hecto</li><li>kilo</li><li>mega</li><li>giga</li><li>tera</li><li>peta</li><li>exa</li><li>zetta</li><li>yotta</li>\n</ul>"
             ],
             "flags": 0,
             "guid": "b.~X,zaT3b",
