@@ -2,7 +2,7 @@
     "__type__": "Deck",
     "children": [],
     "crowdanki_uuid": "3d2479f0-b7ae-11ea-b976-40b076dccfad",
-    "deck_config_uuid": "4eeeed20-064e-11eb-b145-40b076dccfad",
+    "deck_config_uuid": "8268219c-07d6-11eb-b557-40b076dccfad",
     "deck_configurations": [
         {
             "__type__": "DeckConfig",
@@ -10,7 +10,7 @@
             "autoAlert": 0,
             "autoAnswer": 0,
             "autoplay": false,
-            "crowdanki_uuid": "4eeeed20-064e-11eb-b145-40b076dccfad",
+            "crowdanki_uuid": "8268219c-07d6-11eb-b557-40b076dccfad",
             "dyn": false,
             "lapse": {
                 "delays": [
@@ -488,7 +488,7 @@
                     "ord": 16,
                     "rtl": false,
                     "size": 20,
-                    "sticky": false
+                    "sticky": true
                 }
             ],
             "latexPost": "\\end{document}",
@@ -520,6 +520,8 @@
             ],
             "sortf": 1,
             "tags": [
+                "",
+                "Spanish::Vocab::Swearword",
                 ""
             ],
             "tmpls": [
@@ -684,7 +686,10 @@
                 "",
                 "",
                 "",
-                "Present"
+                "Present",
+                "yo; tú; él/ella/ello, usted; nosotros/nosotras; vosotros/vosotras; ellos/ellas, ustedes;",
+                "es",
+                "es"
             ],
             "flags": 0,
             "guid": "GdqcFY(|7X",
