@@ -54,13 +54,14 @@ You can use this note type to memorize poems, quotes or lyrics. When you see the
 # prettyList
 
 You can use this note type to memorize lists. When you see the front of the card, tap on it to reveal the first element of the text. (Try to remember what it was beforehand) Continue to work you're way through the text like this. At the end, judge how well you were able to remember it.
-You need to put one (only one) <ul> or <ol> in the list field for the javascript to function correctly.
+You need to put one (only one) ul or ol tag in the list field for the javascript to function correctly.
 
 # prettyConjugation
 
 For conjugations, you can specify the pronouns in a ; separated list, here are some examples:
-Spanish: ´yo; tú; él/ella/ello, usted; nosotros/nosotras; vosotros/vosotras; ellos/ellas, ustedes;´
-German: ´ich; du; er, sie, es; wir; ihr; sie;´
+
+* Spanish: `yo; tú; él/ella/ello, usted; nosotros/nosotras; vosotros/vosotras; ellos/ellas, ustedes;`
+* German: `ich; du; er, sie, es; wir; ihr; sie;`
 
 ![](media/basicPrettyBack.jpg)
 ![](media/basicPrettyFront.jpg)
