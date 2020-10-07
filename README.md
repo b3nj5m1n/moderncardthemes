@@ -61,7 +61,10 @@ You need to put one (only one) ul or ol tag in the list field for the javascript
 For conjugations, you can specify the pronouns in a ; separated list, here are some examples:
 
 * Spanish: `yo; tú; él/ella/ello, usted; nosotros/nosotras; vosotros/vosotras; ellos/ellas, ustedes;`
-* German: `ich; du; er, sie, es; wir; ihr; sie;`
+* French: `je; tu; il, elle, on; nous; vous; ils, elles;`
+* Italian: `io; tu; lui, lei; noi; voi; loro;`
+* Portuguese: `eu; tu; ele, ela, você; nós; vós; eles, elas, vocês;`
+* Catalan: `jo; tu; ell, ella, vostè; nosaltres; vosaltres; ells, elles, vostès;`
 
 ![](media/basicPrettyBack.jpg)
 ![](media/basicPrettyFront.jpg)
