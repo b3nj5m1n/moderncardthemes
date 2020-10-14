@@ -2,7 +2,7 @@
     "__type__": "Deck",
     "children": [],
     "crowdanki_uuid": "3d2479f0-b7ae-11ea-b976-40b076dccfad",
-    "deck_config_uuid": "13dc9e02-0bcc-11eb-8839-40b076dccfad",
+    "deck_config_uuid": "8c75e2ba-0e10-11eb-8dce-40b076dccfad",
     "deck_configurations": [
         {
             "__type__": "DeckConfig",
@@ -10,7 +10,7 @@
             "autoAlert": 0,
             "autoAnswer": 0,
             "autoplay": false,
-            "crowdanki_uuid": "13dc9e02-0bcc-11eb-8839-40b076dccfad",
+            "crowdanki_uuid": "8c75e2ba-0e10-11eb-8dce-40b076dccfad",
             "dyn": false,
             "lapse": {
                 "delays": [
@@ -64,8 +64,10 @@
     "extendNew": 1,
     "extendRev": 50,
     "media_files": [
+        "1392633.mp3",
         "266065.mp3",
         "368205.mp3",
+        "693619.mp3",
         "De-Hilfe.ogg",
         "En-us-help.ogg",
         "_flag_de.svg"
@@ -162,7 +164,7 @@
                     "ord": 2,
                     "rtl": false,
                     "size": 20,
-                    "sticky": false
+                    "sticky": true
                 }
             ],
             "latexPost": "\\end{document}",
@@ -695,6 +697,29 @@
             "flags": 0,
             "guid": "GdqcFY(|7X",
             "note_model_uuid": "3d263d1c-b7ae-11ea-b976-40b076dccfad",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "71ba894a4fe475a1bed73125b80e9e3c5f47b08bb327fd6ddfd87efdb3cc18e4",
+                "กรุงเทพมหานครเป็นเมืองหลวงของประเทศไทย",
+                "[sound:1392633.mp3]",
+                "Bangkok is the capital of Thailand.",
+                "[sound:693619.mp3]",
+                "",
+                "",
+                "th",
+                "",
+                "",
+                "",
+                "th",
+                ""
+            ],
+            "flags": 0,
+            "guid": "^9=J&.m=h",
+            "note_model_uuid": "3d268c54-b7ae-11ea-b976-40b076dccfad",
             "tags": []
         }
     ]
