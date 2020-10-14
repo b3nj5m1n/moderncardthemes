@@ -12,6 +12,7 @@ I've made some major changes to the available note types in this deck. (I remove
 * prettyCloze - Pretty cloze card, also has a title and an extra field
 * prettyPoem - A card for memorizing poems or quotes
 * prettyWord - A card for memorizing vocabulary
+* prettySentence - A card for memorizing sentences in a foreign language
 * prettyPerson - A card for memorizing people
 * prettyList - A card for memorizing lists
 * prettyEvent - A card for memorizing an event
