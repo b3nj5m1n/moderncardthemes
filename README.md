@@ -107,6 +107,8 @@ This card has a lot of fields, so here is a brief explanation of which ones you 
 * Language - An extra field in case you want to specify the language seperately from the country
 * CreateReverse - Put something in this field if you want to have a reverse card created (Your target language -> your native language)
 
+You can specify the color of the stripe at the top by using the tag `Color::` with a color in hex format, for example to indicate the gender of a word. For example: `Color::#07BBFC`.
+
 By default, upon seeing the front of the card, the audio of the word you're trying to memorize is played in the language the word is in, upon seeing the back of the card you'll hear the audio of the word in your native language.
 Click on any of the elements that have audio (Word, WordTranslation, Sentence, SentenceTranslation) to play the audio for that.
 
