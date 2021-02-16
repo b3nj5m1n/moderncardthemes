@@ -2,7 +2,7 @@
     "__type__": "Deck",
     "children": [],
     "crowdanki_uuid": "3d2479f0-b7ae-11ea-b976-40b076dccfad",
-    "deck_config_uuid": "94199562-21ec-11eb-8a0f-40b076dccfad",
+    "deck_config_uuid": "73db78a0-705d-11eb-b1d1-ccb0dad26835",
     "deck_configurations": [
         {
             "__type__": "DeckConfig",
@@ -10,7 +10,7 @@
             "autoAlert": 0,
             "autoAnswer": 0,
             "autoplay": false,
-            "crowdanki_uuid": "94199562-21ec-11eb-8a0f-40b076dccfad",
+            "crowdanki_uuid": "73db78a0-705d-11eb-b1d1-ccb0dad26835",
             "dyn": false,
             "lapse": {
                 "delays": [
@@ -59,7 +59,7 @@
             "timer": 0
         }
     ],
-    "desc": "",
+    "desc": "<a href=\"https://github.com/b3nj5m1n/moderncardthemes\"><b>Github Page</b></a>\n\n<b>Included Note Types</b>\n\n<ul>\n    <li>pretttyBasic - A pretty basic card with front and back</li>\n    <li>prettyCloze - Pretty cloze card, also has a title and an extra field</li>\n    <li>prettyPoem - A card for memorizing poems or quotes</li>\n    <li>prettyWord - A card for memorizing vocabulary</li>\n    <li>prettySentence - A card for memorizing sentences in a foreign language</li>\n    <li>prettyPerson - A card for memorizing people</li>\n    <li>prettyList - A card for memorizing lists</li>\n    <li>prettyEvent - A card for memorizing an event</li>\n    <li>prettyConjugation - A card for memorizing the conjugated forms of a word</li>\n</ul>\n",
     "dyn": 0,
     "extendNew": 1,
     "extendRev": 50,

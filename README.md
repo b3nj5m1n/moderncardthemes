@@ -40,8 +40,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]]()
-
 A collection of anki note-types, with a matching modern design.
 
 
@@ -173,4 +171,3 @@ Distributed under the GNU General Public License v3.0. See `LICENSE` for more in
 [issues-url]: https://github.com/b3nj5m1n/moderncardthemes/issues
 [license-shield]: https://img.shields.io/github/license/b3nj5m1n/moderncardthemes.svg?style=flat-square
 [license-url]: https://github.com/b3nj5m1n/moderncardthemes/blob/master/LICENSE.txt
-[product-screenshot]: https://socialify.git.ci/b3nj5m1n/moderncardthemes/image?font=Inter&language=1&owner=1&pattern=Circuit%20Board&theme=Light
