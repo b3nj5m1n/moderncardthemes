@@ -91,7 +91,7 @@ This card has a lot of fields, so here is a brief explanation of which ones you 
 * Word - The word you want to memorize.
 * AudioWord - Audio of the pronounciation of the word you're trying to learn.
 * WordTranslation - Translation of the word you're trying to learn in your native language.
-* AudioWordTranslation - Audio of the word in you're native language.
+* AudioWordTranslation - Audio of the word in your native language.
 * Sentence - The word you're trying to learn used in an example sentence.
 * AudioSentence - An audio of the example sentence.
 * SentenceTranslation - A translation of the example sentence in your native language.
@@ -112,11 +112,11 @@ Click on any of the elements that have audio (Word, WordTranslation, Sentence, S
 
 ### prettyPoem
 
-You can use this note type to memorize poems, quotes or lyrics. When you see the front of the card, tap on it to reveal the first word of the text. (Try to remember what it was beforehand) Continue to work you're way through the text like this. At the end, judge how well you were able to remember it.
+You can use this note type to memorize poems, quotes or lyrics. When you see the front of the card, tap on it to reveal the first word of the text. (Try to remember what it was beforehand) Continue to work your way through the text like this. At the end, judge how well you were able to remember it.
 
 ### prettyList
 
-You can use this note type to memorize lists. When you see the front of the card, tap on it to reveal the first element of the text. (Try to remember what it was beforehand) Continue to work you're way through the text like this. At the end, judge how well you were able to remember it.
+You can use this note type to memorize lists. When you see the front of the card, tap on it to reveal the first element of the text. (Try to remember what it was beforehand) Continue to work your way through the text like this. At the end, judge how well you were able to remember it.
 You need to put one (only one) ul or ol tag in the list field for the javascript to function correctly.
 
 ### prettyConjugation
@@ -135,28 +135,6 @@ For conjugations, you can specify the pronouns in a ; separated list, here are s
 ![](media/clozePrettyBack.jpg)
 ![](media/clozePrettyExtra.jpg)
 ![](media/clozePrettyFront.jpg)
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the GNU General Public License v3.0. See `LICENSE` for more information.
-
-
-
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
