@@ -66,6 +66,8 @@ git clone https://github.com/b3nj5m1n/moderncardthemes.git
 
 * Some cards require you to turn off some gestures on AnkiDroid. Mainly, you need some space to click on the screen without revealing the answer. You can do this by unassigning touch-bottom for example in the gesture settings.
 
+* You can specify the color of the stripe at the top by using the tag `Color::` with a color in hex format, for example to indicate the gender of a word. For example: `Color::#07BBFC`.
+
 
 <!-- USAGE EXAMPLES -->
 ## Usage
@@ -83,6 +85,7 @@ I've made some major changes to the available note types in this deck. (I remove
 * prettyList - A card for memorizing lists
 * prettyEvent - A card for memorizing an event
 * prettyConjugation - A card for memorizing the conjugated forms of a word
+* prettyBook - A card for memorizing information about a book
 
 ### prettyWord
 
@@ -104,8 +107,6 @@ This card has a lot of fields, so here is a brief explanation of which ones you 
 * Word-Symbol-2 - For example the traditional chinese character
 * Language - An extra field in case you want to specify the language seperately from the country
 * CreateReverse - Put something in this field if you want to have a reverse card created (Your target language -> your native language)
-
-You can specify the color of the stripe at the top by using the tag `Color::` with a color in hex format, for example to indicate the gender of a word. For example: `Color::#07BBFC`.
 
 By default, upon seeing the front of the card, the audio of the word you're trying to memorize is played in the language the word is in, upon seeing the back of the card you'll hear the audio of the word in your native language.
 Click on any of the elements that have audio (Word, WordTranslation, Sentence, SentenceTranslation) to play the audio for that.
