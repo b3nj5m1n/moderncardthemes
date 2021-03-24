@@ -81,7 +81,7 @@
     "note_models": [
         {
             "__type__": "NoteModel",
-            "crowdanki_uuid": "3d263d1c-b7ae-11ea-b976-40b076dccfad",
+            "crowdanki_uuid": "6cb207c7-22d9-4c24-a7ce-f06652ccb288",
             "css": "/* Variables for frequently used values */\n:root {\n    /* Main background color of the card */\n    --main-bg-color: #434343;\n    --upper-bg-color: #555555;\n    --lower-bg-color: #434343;\n    --upper-fg-color: #eeeeee;\n    --lower-fg-color: #eeeeee;\n    /* Primary Accent Color, broken up into individual hsl values */\n    --colorPrimary-h: 260;\n    --colorPrimary-s: 60%;\n    --colorPrimary-l: 65%;\n    /* Set primary color variable from previously defined hsl values */\n    --primary-color: hsl(var(--colorPrimary-h), var(--colorPrimary-s), var(--colorPrimary-l));\n    /* Calculate Secondary and Tertiary Colors from the hsl values of the Primary Color */\n    --secondary-color: hsl(calc(var(--colorPrimary-h) + 240), var(--colorPrimary-s), var(--colorPrimary-l));\n    --tertiary-color: hsl(calc(var(--colorPrimary-h) + 120), var(--colorPrimary-s), var(--colorPrimary-l));\n    /* How big the stripe at the top should be */\n    --stripe-height: 5px;\n    /* How far elements such as flags should be away from the stripe */\n    --margin-from-stripe: 5px;\n}\n\nhtml,\nbody {\n    word-wrap: break-word;\n    background-color: var(--main-bg-color);\n    padding: 0;\n    margin: 0;\n}\nu {\n    text-decoration-style: wavy;\n    text-underline-position: under;\n    color: white;\n    padding: 1px;\n}\n\n/* Hide the default play button anki provides */\n.replay-button svg {\n    display: none;\n}\n.hidden {\n    display: none;\n}\n#answer {\n    font-size: 35px;\n}\n\n/* Main skeleton of an anki card */\n.card {\n    font-family: UD Digi Kyokasho N-R;\n    font-size: 0px;\n    text-align: center;\n}\n/* Div around all of the visible content of the card */\n.kard {\n    height: 100%;\n    background-color: var(--main-bg-color);\n}\n.kard.night_mode {\n    background-color: var(--main-bg-color);\n}\n/* Stripe at the top of the card */\n.stripe {\n    height: var(--stripe-height);\n    background-color: var(--primary-color);\n}\n.stripe.night_mode {\n    background-color: var(--primary-color);\n}\n\n/* Upper part of the card (Question) */\n.body-upper {\n    font-family: Noto Sans;\n    font-size: 30px;\n    color: var(--upper-fg-color);\n    background-color: var(--upper-bg-color);\n    padding: 30px 10px 30px;\n    border-radius: 0px 0px 0px 0px;\n}\n.body-upper.night_mode {\n    color: var(--upper-fg-color);\n    background-color: var(--upper-bg-color);\n}\n/* Lower part of the card (Answer) */\n.body-lower {\n    text-align: left;\n    color: var(--lower-fg-color);\n    height: 100%;\n    padding: 25px 10px 25px 10px;\n    border-radius: 0px 0px 0px 0px;\n}\n.body-lower.night_mode {\n    color: var(--lower-fg-color);\n    color: var(--lower-bg-color);\n}\n\n.notes {\n    font-family: Noto Sans Regular;\n    font-size: 20px;\n    text-align: center;\n    font-weight: bold;\n}\n\n/* Show extra information button */\n.extra_toggle {\n    display: block;\n    font-family: Noto Sans Regular;\n    font-size: 15px;\n    color: var(--upper-fg-color);\n    background-color: var(--upper-bg-color);\n    border-radius: 0px;\n    padding: 5px;\n    width: 50%;\n    text-align: center;\n    font-weight: 500;\n    margin: auto;\n    margin-top: 20px;\n    transition: all 0.15s ease-out;\n}\n.extra_toggle:hover {\n    filter: brightness(90%);\n}\n\n/* Div containing extra information, hidden by default */\n.extra {\n    display: none;\n    font-family: Noto Sans Regular;\n    font-size: 15px;\n    border: 3px dashed var(--primary-color);\n    color: var(--upper-fg-color);\n    padding: 20px;\n    margin: 30px 20px 3px 20px;\n    text-align: center;\n    font-weight: 500;\n}\n/* Div containing mnemonics or notes, situated inside the extra div */\n.mnemonic {\n    display: block;\n    margin-bottom: 2%;\n    border-color: var(--secondary-color);\n}\n\n/* Contains extra elements at the top, e.g. flags */\n.top-container {\n    width: 100%;\n    position: absolute;\n    top: calc(var(--stripe-height) + var(--margin-from-stripe));\n    left: 0;\n}\n.extra-top-right {\n    position: absolute;\n    right: var(--margin-from-stripe);\n}\n.extra-top-left {\n    position: absolute;\n    left: var(--margin-from-stripe);\n}\n.extra-top-right img {\n    float: right;\n    width: 55px;\n    border-radius: 10%;\n}\n.extra-top-left img {\n    float: left;\n    width: 55px;\n    border-radius: 10%;\n}\n\n/* Style cloze to use the primary color as the background color to make the cloze deletion easier to spot */\n.cloze {\n    background-color: var(--primary-color);\n}\n.cloze.night_mode {\n    background-color: var(--primary-color);\n}\n\n/* Highlighting classes */\n.hightlight-1 {\n    background-color: var(--primary-color);\n\tdisplay: inline;\n}\n\n.hightlight-2 {\n    background-color: var(--secondary-color);\n\tdisplay: inline;\n}\n\n.hightlight-3 {\n    background-color: var(--tertiary-color);\n\tdisplay: inline;\n}\n\n.hightlight-1.night_mode {\n    background-color: var(--primary-color);\n\tdisplay: inline;\n}\n\n.hightlight-2.night_mode {\n    background-color: var(--secondary-color);\n\tdisplay: inline;\n}\n\n.hightlight-3.night_mode {\n    background-color: var(--tertiary-color);\n\tdisplay: inline;\n}\n",
             "flds": [
                 {
@@ -138,7 +138,7 @@
         },
         {
             "__type__": "NoteModel",
-            "crowdanki_uuid": "3d2653d8-b7ae-11ea-b976-40b076dccfad",
+            "crowdanki_uuid": "673ddbaf-13f2-46ef-a669-9a3637a52f26",
             "css": "/* Variables for frequently used values */\n:root {\n    /* Main background color of the card */\n    --main-bg-color: #434343;\n    --upper-bg-color: #555555;\n    --lower-bg-color: #434343;\n    --upper-fg-color: #eeeeee;\n    --lower-fg-color: #eeeeee;\n    /* Primary Accent Color, broken up into individual hsl values */\n    --colorPrimary-h: 260;\n    --colorPrimary-s: 60%;\n    --colorPrimary-l: 65%;\n    /* Set primary color variable from previously defined hsl values */\n    --primary-color: hsl(var(--colorPrimary-h), var(--colorPrimary-s), var(--colorPrimary-l));\n    /* Calculate Secondary and Tertiary Colors from the hsl values of the Primary Color */\n    --secondary-color: hsl(calc(var(--colorPrimary-h) + 240), var(--colorPrimary-s), var(--colorPrimary-l));\n    --tertiary-color: hsl(calc(var(--colorPrimary-h) + 120), var(--colorPrimary-s), var(--colorPrimary-l));\n    /* How big the stripe at the top should be */\n    --stripe-height: 5px;\n    /* How far elements such as flags should be away from the stripe */\n    --margin-from-stripe: 5px;\n}\n\nhtml,\nbody {\n    word-wrap: break-word;\n    background-color: var(--main-bg-color);\n    padding: 0;\n    margin: 0;\n}\nu {\n    text-decoration-style: wavy;\n    text-underline-position: under;\n    color: white;\n    padding: 1px;\n}\n\n/* Hide the default play button anki provides */\n.replay-button svg {\n    display: none;\n}\n.hidden {\n    display: none;\n}\n#answer {\n    font-size: 35px;\n}\n\n/* Main skeleton of an anki card */\n.card {\n    font-family: UD Digi Kyokasho N-R;\n    font-size: 0px;\n    text-align: center;\n}\n/* Div around all of the visible content of the card */\n.kard {\n    height: 100%;\n    background-color: var(--main-bg-color);\n}\n.kard.night_mode {\n    background-color: var(--main-bg-color);\n}\n/* Stripe at the top of the card */\n.stripe {\n    height: var(--stripe-height);\n    background-color: var(--primary-color);\n}\n.stripe.night_mode {\n    background-color: var(--primary-color);\n}\n\n/* Upper part of the card (Question) */\n.body-upper {\n    font-family: Noto Sans;\n    font-size: 30px;\n    color: var(--upper-fg-color);\n    background-color: var(--upper-bg-color);\n    padding: 30px 10px 30px;\n    border-radius: 0px 0px 0px 0px;\n}\n.body-upper.night_mode {\n    color: var(--upper-fg-color);\n    background-color: var(--upper-bg-color);\n}\n/* Lower part of the card (Answer) */\n.body-lower {\n    text-align: left;\n    color: var(--lower-fg-color);\n    height: 100%;\n    padding: 25px 10px 25px 10px;\n    border-radius: 0px 0px 0px 0px;\n}\n.body-lower.night_mode {\n    color: var(--lower-fg-color);\n    color: var(--lower-bg-color);\n}\n\n.notes {\n    font-family: Noto Sans Regular;\n    font-size: 20px;\n    text-align: center;\n    font-weight: bold;\n}\n\n/* Show extra information button */\n.extra_toggle {\n    display: block;\n    font-family: Noto Sans Regular;\n    font-size: 15px;\n    color: var(--upper-fg-color);\n    background-color: var(--upper-bg-color);\n    border-radius: 0px;\n    padding: 5px;\n    width: 50%;\n    text-align: center;\n    font-weight: 500;\n    margin: auto;\n    margin-top: 20px;\n    transition: all 0.15s ease-out;\n}\n.extra_toggle:hover {\n    filter: brightness(90%);\n}\n\n/* Div containing extra information, hidden by default */\n.extra {\n    display: none;\n    font-family: Noto Sans Regular;\n    font-size: 15px;\n    border: 3px dashed var(--primary-color);\n    color: var(--upper-fg-color);\n    padding: 20px;\n    margin: 30px 20px 3px 20px;\n    text-align: center;\n    font-weight: 500;\n}\n/* Div containing mnemonics or notes, situated inside the extra div */\n.mnemonic {\n    display: block;\n    margin-bottom: 2%;\n    border-color: var(--secondary-color);\n}\n\n/* Contains extra elements at the top, e.g. flags */\n.top-container {\n    width: 100%;\n    position: absolute;\n    top: calc(var(--stripe-height) + var(--margin-from-stripe));\n    left: 0;\n}\n.extra-top-right {\n    position: absolute;\n    right: var(--margin-from-stripe);\n}\n.extra-top-left {\n    position: absolute;\n    left: var(--margin-from-stripe);\n}\n.extra-top-right img {\n    float: right;\n    width: 55px;\n    border-radius: 10%;\n}\n.extra-top-left img {\n    float: left;\n    width: 55px;\n    border-radius: 10%;\n}\n\n/* Style cloze to use the primary color as the background color to make the cloze deletion easier to spot */\n.cloze {\n    background-color: var(--primary-color);\n}\n.cloze.night_mode {\n    background-color: var(--primary-color);\n}\n\n/* Highlighting classes */\n.hightlight-1 {\n    background-color: var(--primary-color);\n\tdisplay: inline;\n}\n\n.hightlight-2 {\n    background-color: var(--secondary-color);\n\tdisplay: inline;\n}\n\n.hightlight-3 {\n    background-color: var(--tertiary-color);\n\tdisplay: inline;\n}\n\n.hightlight-1.night_mode {\n    background-color: var(--primary-color);\n\tdisplay: inline;\n}\n\n.hightlight-2.night_mode {\n    background-color: var(--secondary-color);\n\tdisplay: inline;\n}\n\n.hightlight-3.night_mode {\n    background-color: var(--tertiary-color);\n\tdisplay: inline;\n}\n",
             "flds": [
                 {
@@ -207,7 +207,87 @@
         },
         {
             "__type__": "NoteModel",
-            "crowdanki_uuid": "7012404a-fb4c-11ea-b291-40b076dccfad",
+            "crowdanki_uuid": "90a49382-4c6e-4ad9-854d-f2402978230e",
+            "css": "/* Variables for frequently used values */\n:root {\n    /* Main background color of the card */\n    --main-bg-color: #434343;\n    --upper-bg-color: #555555;\n    --lower-bg-color: #434343;\n    --upper-fg-color: #eeeeee;\n    --lower-fg-color: #eeeeee;\n    /* Primary Accent Color, broken up into individual hsl values */\n    --colorPrimary-h: 260;\n    --colorPrimary-s: 60%;\n    --colorPrimary-l: 65%;\n    /* Set primary color variable from previously defined hsl values */\n    --primary-color: hsl(var(--colorPrimary-h), var(--colorPrimary-s), var(--colorPrimary-l));\n    /* Calculate Secondary and Tertiary Colors from the hsl values of the Primary Color */\n    --secondary-color: hsl(calc(var(--colorPrimary-h) + 240), var(--colorPrimary-s), var(--colorPrimary-l));\n    --tertiary-color: hsl(calc(var(--colorPrimary-h) + 120), var(--colorPrimary-s), var(--colorPrimary-l));\n    /* How big the stripe at the top should be */\n    --stripe-height: 5px;\n    /* How far elements such as flags should be away from the stripe */\n    --margin-from-stripe: 5px;\n}\n\nhtml,\nbody {\n    word-wrap: break-word;\n    background-color: var(--main-bg-color);\n    padding: 0;\n    margin: 0;\n}\nu {\n    text-decoration-style: wavy;\n    text-underline-position: under;\n    color: white;\n    padding: 1px;\n}\n\n/* Hide the default play button anki provides */\n.replay-button svg {\n    display: none;\n}\n.hidden {\n    display: none;\n}\n#answer {\n    font-size: 35px;\n}\n\n/* Main skeleton of an anki card */\n.card {\n    font-family: UD Digi Kyokasho N-R;\n    font-size: 0px;\n    text-align: center;\n}\n/* Div around all of the visible content of the card */\n.kard {\n    height: 100%;\n    background-color: var(--main-bg-color);\n}\n.kard.night_mode {\n    background-color: var(--main-bg-color);\n}\n/* Stripe at the top of the card */\n.stripe {\n    height: var(--stripe-height);\n    background-color: var(--primary-color);\n}\n.stripe.night_mode {\n    background-color: var(--primary-color);\n}\n\n/* Upper part of the card (Question) */\n.body-upper {\n    font-family: Noto Sans;\n    font-size: 30px;\n    color: var(--upper-fg-color);\n    background-color: var(--upper-bg-color);\n    padding: 30px 10px 30px;\n    border-radius: 0px 0px 0px 0px;\n}\n.body-upper.night_mode {\n    color: var(--upper-fg-color);\n    background-color: var(--upper-bg-color);\n}\n/* Lower part of the card (Answer) */\n.body-lower {\n    text-align: left;\n    color: var(--lower-fg-color);\n    height: 100%;\n    padding: 25px 10px 25px 10px;\n    border-radius: 0px 0px 0px 0px;\n}\n.body-lower.night_mode {\n    color: var(--lower-fg-color);\n    color: var(--lower-bg-color);\n}\n\n.notes {\n    font-family: Noto Sans Regular;\n    font-size: 20px;\n    text-align: center;\n    font-weight: bold;\n}\n\n/* Show extra information button */\n.extra_toggle {\n    display: block;\n    font-family: Noto Sans Regular;\n    font-size: 15px;\n    color: var(--upper-fg-color);\n    background-color: var(--upper-bg-color);\n    border-radius: 0px;\n    padding: 5px;\n    width: 50%;\n    text-align: center;\n    font-weight: 500;\n    margin: auto;\n    margin-top: 20px;\n    transition: all 0.15s ease-out;\n}\n.extra_toggle:hover {\n    filter: brightness(90%);\n}\n\n/* Div containing extra information, hidden by default */\n.extra {\n    display: none;\n    font-family: Noto Sans Regular;\n    font-size: 15px;\n    border: 3px dashed var(--primary-color);\n    color: var(--upper-fg-color);\n    padding: 20px;\n    margin: 30px 20px 3px 20px;\n    text-align: center;\n    font-weight: 500;\n}\n/* Div containing mnemonics or notes, situated inside the extra div */\n.mnemonic {\n    display: block;\n    margin-bottom: 2%;\n    border-color: var(--secondary-color);\n}\n\n/* Contains extra elements at the top, e.g. flags */\n.top-container {\n    width: 100%;\n    position: absolute;\n    top: calc(var(--stripe-height) + var(--margin-from-stripe));\n    left: 0;\n}\n.extra-top-right {\n    position: absolute;\n    right: var(--margin-from-stripe);\n}\n.extra-top-left {\n    position: absolute;\n    left: var(--margin-from-stripe);\n}\n.extra-top-right img {\n    float: right;\n    width: 55px;\n    border-radius: 10%;\n}\n.extra-top-left img {\n    float: left;\n    width: 55px;\n    border-radius: 10%;\n}\n\n/* Style cloze to use the primary color as the background color to make the cloze deletion easier to spot */\n.cloze {\n    background-color: var(--primary-color);\n}\n.cloze.night_mode {\n    background-color: var(--primary-color);\n}\n\n/* Highlighting classes */\n.hightlight-1 {\n    background-color: var(--primary-color);\n\tdisplay: inline;\n}\n\n.hightlight-2 {\n    background-color: var(--secondary-color);\n\tdisplay: inline;\n}\n\n.hightlight-3 {\n    background-color: var(--tertiary-color);\n\tdisplay: inline;\n}\n\n.hightlight-1.night_mode {\n    background-color: var(--primary-color);\n\tdisplay: inline;\n}\n\n.hightlight-2.night_mode {\n    background-color: var(--secondary-color);\n\tdisplay: inline;\n}\n\n.hightlight-3.night_mode {\n    background-color: var(--tertiary-color);\n\tdisplay: inline;\n}\n",
+            "flds": [
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "Title",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": true
+                },
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "Text",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "Author",
+                    "ord": 2,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "Year",
+                    "ord": 3,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "prettyPoem",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0,
+                        1,
+                        2,
+                        3
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tags": [
+                "",
+                "Poems::Goethe",
+                ""
+            ],
+            "tmpls": [
+                {
+                    "afmt": "<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\">\n        {{Title}} - {{Author}} ({{Year}})\n    </div>\n\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n            {{Text}}\n        </div>\n    </div>\n</div>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n\n<script>\n\t/* Set the primary color based on tag */\n    var tags = document.getElementById(\"tags\").innerText.split(\" \");\n    tags.forEach(function (tag) {\n        var split = tag.split(\"::\");\n        if (split[0] == \"Color\") {\n            var r = document.querySelector(\":root\");\n            r.style.setProperty(\"--primary-color\", split[1]);\n        }\n    });\n    /* Play audio when clicking the respective element */\n    function playAudio(fieldToPlay) {\n        var elem = document.querySelector(\"#\" + fieldToPlay + \" .soundLink, #\" + fieldToPlay + \" .replaybutton\");\n        if (elem) {\n            elem.click();\n        }\n    }\n    /* Autoplay some elements */\n    var elem = document.querySelector(\".autoplay .soundLink, .autoplay .replaybutton\");\n    if (elem) {\n        elem.click();\n    }\n</script>\n",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Card 1",
+                    "ord": 0,
+                    "qfmt": "<div id=\"blanket\" style=\"height: 100%; width: 100%; position: fixed;\" onClick=\"extend();\"></div>\n<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\">\n        {{Title}} - {{#Author}}{{Author}}{{/Author}} {{#Year}}({{Year}}){{/Year}}\n    </div>\n\n    <div class=\"body-lower\">\n        <div style=\"display: none;\" id=\"text\">{{Text}}</div>\n        <div class=\"notes\">\n            <script>\n                notes = document.getElementsByClassName(\"notes\")[0];\n                notes.innerHTML = \"\";\n                wordsCurrent = [];\n                wordsLeft = [];\n                wordsLeft = wordsLeft.concat(document.getElementById(\"text\").innerHTML.split(/(?=[\\n\\r <])/));\n                function extend() {\n                    wordsCurrent = wordsCurrent.concat(wordsLeft.splice(0, 1));\n                    notes.innerHTML = wordsCurrent.join(\"\");\n                    window.scrollTo(0, document.querySelector(\".kard\").scrollHeight);\n\t\t\t\t\tif (wordsLeft.length < 1) {\n\t\t\t\t\t\tvar jsApi = {\"version\" : \"0.0.1\", \"developer\" : \"dev@mail.com\"};\n\t\t\t\t\t\tvar apiStatus = AnkiDroidJS.init(JSON.stringify(jsApi));\n\t\t\t\t\t\tshowAnswer();\n\t\t\t\t\t}\n                }\n            </script>\n            ?\n        </div>\n    </div>\n</div>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n\n<script>\n\t/* Set the primary color based on tag */\n    var tags = document.getElementById(\"tags\").innerText.split(\" \");\n    tags.forEach(function (tag) {\n        var split = tag.split(\"::\");\n        if (split[0] == \"Color\") {\n            var r = document.querySelector(\":root\");\n            r.style.setProperty(\"--primary-color\", split[1]);\n        }\n    });\n    /* Play audio when clicking the respective element */\n    function playAudio(fieldToPlay) {\n        var elem = document.querySelector(\"#\" + fieldToPlay + \" .soundLink, #\" + fieldToPlay + \" .replaybutton\");\n        if (elem) {\n            elem.click();\n        }\n    }\n    /* Autoplay some elements */\n    var elem = document.querySelector(\".autoplay .soundLink, .autoplay .replaybutton\");\n    if (elem) {\n        elem.click();\n    }\n</script>\n"
+                }
+            ],
+            "type": 0,
+            "vers": []
+        },
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "97555342-72c0-4718-a14e-9ea53d01da84",
             "css": "/* Variables for frequently used values */\n:root {\n    /* Main background color of the card */\n    --main-bg-color: #434343;\n    --upper-bg-color: #555555;\n    --lower-bg-color: #434343;\n    --upper-fg-color: #eeeeee;\n    --lower-fg-color: #eeeeee;\n    /* Primary Accent Color, broken up into individual hsl values */\n    --colorPrimary-h: 260;\n    --colorPrimary-s: 60%;\n    --colorPrimary-l: 65%;\n    /* Set primary color variable from previously defined hsl values */\n    --primary-color: hsl(var(--colorPrimary-h), var(--colorPrimary-s), var(--colorPrimary-l));\n    /* Calculate Secondary and Tertiary Colors from the hsl values of the Primary Color */\n    --secondary-color: hsl(calc(var(--colorPrimary-h) + 240), var(--colorPrimary-s), var(--colorPrimary-l));\n    --tertiary-color: hsl(calc(var(--colorPrimary-h) + 120), var(--colorPrimary-s), var(--colorPrimary-l));\n    /* How big the stripe at the top should be */\n    --stripe-height: 5px;\n    /* How far elements such as flags should be away from the stripe */\n    --margin-from-stripe: 5px;\n}\n\nhtml,\nbody {\n    word-wrap: break-word;\n    background-color: var(--main-bg-color);\n    padding: 0;\n    margin: 0;\n}\nu {\n    text-decoration-style: wavy;\n    text-underline-position: under;\n    color: white;\n    padding: 1px;\n}\n\n/* Hide the default play button anki provides */\n.replay-button svg {\n    display: none;\n}\n.hidden {\n    display: none;\n}\n#answer {\n    font-size: 35px;\n}\n\n/* Main skeleton of an anki card */\n.card {\n    font-family: UD Digi Kyokasho N-R;\n    font-size: 0px;\n    text-align: center;\n}\n/* Div around all of the visible content of the card */\n.kard {\n    height: 100%;\n    background-color: var(--main-bg-color);\n}\n.kard.night_mode {\n    background-color: var(--main-bg-color);\n}\n/* Stripe at the top of the card */\n.stripe {\n    height: var(--stripe-height);\n    background-color: var(--primary-color);\n}\n.stripe.night_mode {\n    background-color: var(--primary-color);\n}\n\n/* Upper part of the card (Question) */\n.body-upper {\n    font-family: Noto Sans;\n    font-size: 30px;\n    color: var(--upper-fg-color);\n    background-color: var(--upper-bg-color);\n    padding: 30px 10px 30px;\n    border-radius: 0px 0px 0px 0px;\n}\n.body-upper.night_mode {\n    color: var(--upper-fg-color);\n    background-color: var(--upper-bg-color);\n}\n/* Lower part of the card (Answer) */\n.body-lower {\n    text-align: left;\n    color: var(--lower-fg-color);\n    height: 100%;\n    padding: 25px 10px 25px 10px;\n    border-radius: 0px 0px 0px 0px;\n}\n.body-lower.night_mode {\n    color: var(--lower-fg-color);\n    color: var(--lower-bg-color);\n}\n\n.notes {\n    font-family: Noto Sans Regular;\n    font-size: 20px;\n    text-align: center;\n    font-weight: bold;\n}\n\n/* Show extra information button */\n.extra_toggle {\n    display: block;\n    font-family: Noto Sans Regular;\n    font-size: 15px;\n    color: var(--upper-fg-color);\n    background-color: var(--upper-bg-color);\n    border-radius: 0px;\n    padding: 5px;\n    width: 50%;\n    text-align: center;\n    font-weight: 500;\n    margin: auto;\n    margin-top: 20px;\n    transition: all 0.15s ease-out;\n}\n.extra_toggle:hover {\n    filter: brightness(90%);\n}\n\n/* Div containing extra information, hidden by default */\n.extra {\n    display: none;\n    font-family: Noto Sans Regular;\n    font-size: 15px;\n    border: 3px dashed var(--primary-color);\n    color: var(--upper-fg-color);\n    padding: 20px;\n    margin: 30px 20px 3px 20px;\n    text-align: center;\n    font-weight: 500;\n}\n/* Div containing mnemonics or notes, situated inside the extra div */\n.mnemonic {\n    display: block;\n    margin-bottom: 2%;\n    border-color: var(--secondary-color);\n}\n\n/* Contains extra elements at the top, e.g. flags */\n.top-container {\n    width: 100%;\n    position: absolute;\n    top: calc(var(--stripe-height) + var(--margin-from-stripe));\n    left: 0;\n}\n.extra-top-right {\n    position: absolute;\n    right: var(--margin-from-stripe);\n}\n.extra-top-left {\n    position: absolute;\n    left: var(--margin-from-stripe);\n}\n.extra-top-right img {\n    float: right;\n    width: 55px;\n    border-radius: 10%;\n}\n.extra-top-left img {\n    float: left;\n    width: 55px;\n    border-radius: 10%;\n}\n\n/* Style cloze to use the primary color as the background color to make the cloze deletion easier to spot */\n.cloze {\n    background-color: var(--primary-color);\n}\n.cloze.night_mode {\n    background-color: var(--primary-color);\n}\n\n/* Highlighting classes */\n.hightlight-1 {\n    background-color: var(--primary-color);\n\tdisplay: inline;\n}\n\n.hightlight-2 {\n    background-color: var(--secondary-color);\n\tdisplay: inline;\n}\n\n.hightlight-3 {\n    background-color: var(--tertiary-color);\n\tdisplay: inline;\n}\n\n.hightlight-1.night_mode {\n    background-color: var(--primary-color);\n\tdisplay: inline;\n}\n\n.hightlight-2.night_mode {\n    background-color: var(--secondary-color);\n\tdisplay: inline;\n}\n\n.hightlight-3.night_mode {\n    background-color: var(--tertiary-color);\n\tdisplay: inline;\n}\n",
             "flds": [
                 {
@@ -338,7 +418,7 @@
         },
         {
             "__type__": "NoteModel",
-            "crowdanki_uuid": "3d268c54-b7ae-11ea-b976-40b076dccfad",
+            "crowdanki_uuid": "d1049052-fc70-4c04-927b-5d65142cf7d8",
             "css": "/* Variables for frequently used values */\n:root {\n    /* Main background color of the card */\n    --main-bg-color: #434343;\n    --upper-bg-color: #555555;\n    --lower-bg-color: #434343;\n    --upper-fg-color: #eeeeee;\n    --lower-fg-color: #eeeeee;\n    /* Primary Accent Color, broken up into individual hsl values */\n    --colorPrimary-h: 260;\n    --colorPrimary-s: 60%;\n    --colorPrimary-l: 65%;\n    /* Set primary color variable from previously defined hsl values */\n    --primary-color: hsl(var(--colorPrimary-h), var(--colorPrimary-s), var(--colorPrimary-l));\n    /* Calculate Secondary and Tertiary Colors from the hsl values of the Primary Color */\n    --secondary-color: hsl(calc(var(--colorPrimary-h) + 240), var(--colorPrimary-s), var(--colorPrimary-l));\n    --tertiary-color: hsl(calc(var(--colorPrimary-h) + 120), var(--colorPrimary-s), var(--colorPrimary-l));\n    /* How big the stripe at the top should be */\n    --stripe-height: 5px;\n    /* How far elements such as flags should be away from the stripe */\n    --margin-from-stripe: 5px;\n}\n\nhtml,\nbody {\n    word-wrap: break-word;\n    background-color: var(--main-bg-color);\n    padding: 0;\n    margin: 0;\n}\nu {\n    text-decoration-style: wavy;\n    text-underline-position: under;\n    color: white;\n    padding: 1px;\n}\n\n/* Hide the default play button anki provides */\n.replay-button svg {\n    display: none;\n}\n.hidden {\n    display: none;\n}\n#answer {\n    font-size: 35px;\n}\n\n/* Main skeleton of an anki card */\n.card {\n    font-family: UD Digi Kyokasho N-R;\n    font-size: 0px;\n    text-align: center;\n}\n/* Div around all of the visible content of the card */\n.kard {\n    height: 100%;\n    background-color: var(--main-bg-color);\n}\n.kard.night_mode {\n    background-color: var(--main-bg-color);\n}\n/* Stripe at the top of the card */\n.stripe {\n    height: var(--stripe-height);\n    background-color: var(--primary-color);\n}\n.stripe.night_mode {\n    background-color: var(--primary-color);\n}\n\n/* Upper part of the card (Question) */\n.body-upper {\n    font-family: Noto Sans;\n    font-size: 30px;\n    color: var(--upper-fg-color);\n    background-color: var(--upper-bg-color);\n    padding: 30px 10px 30px;\n    border-radius: 0px 0px 0px 0px;\n}\n.body-upper.night_mode {\n    color: var(--upper-fg-color);\n    background-color: var(--upper-bg-color);\n}\n/* Lower part of the card (Answer) */\n.body-lower {\n    text-align: left;\n    color: var(--lower-fg-color);\n    height: 100%;\n    padding: 25px 10px 25px 10px;\n    border-radius: 0px 0px 0px 0px;\n}\n.body-lower.night_mode {\n    color: var(--lower-fg-color);\n    color: var(--lower-bg-color);\n}\n\n.notes {\n    font-family: Noto Sans Regular;\n    font-size: 20px;\n    text-align: center;\n    font-weight: bold;\n}\n\n/* Show extra information button */\n.extra_toggle {\n    display: block;\n    font-family: Noto Sans Regular;\n    font-size: 15px;\n    color: var(--upper-fg-color);\n    background-color: var(--upper-bg-color);\n    border-radius: 0px;\n    padding: 5px;\n    width: 50%;\n    text-align: center;\n    font-weight: 500;\n    margin: auto;\n    margin-top: 20px;\n    transition: all 0.15s ease-out;\n}\n.extra_toggle:hover {\n    filter: brightness(90%);\n}\n\n/* Div containing extra information, hidden by default */\n.extra {\n    display: none;\n    font-family: Noto Sans Regular;\n    font-size: 15px;\n    border: 3px dashed var(--primary-color);\n    color: var(--upper-fg-color);\n    padding: 20px;\n    margin: 30px 20px 3px 20px;\n    text-align: center;\n    font-weight: 500;\n}\n/* Div containing mnemonics or notes, situated inside the extra div */\n.mnemonic {\n    display: block;\n    margin-bottom: 2%;\n    border-color: var(--secondary-color);\n}\n\n/* Contains extra elements at the top, e.g. flags */\n.top-container {\n    width: 100%;\n    position: absolute;\n    top: calc(var(--stripe-height) + var(--margin-from-stripe));\n    left: 0;\n}\n.extra-top-right {\n    position: absolute;\n    right: var(--margin-from-stripe);\n}\n.extra-top-left {\n    position: absolute;\n    left: var(--margin-from-stripe);\n}\n.extra-top-right img {\n    float: right;\n    width: 55px;\n    border-radius: 10%;\n}\n.extra-top-left img {\n    float: left;\n    width: 55px;\n    border-radius: 10%;\n}\n\n/* Style cloze to use the primary color as the background color to make the cloze deletion easier to spot */\n.cloze {\n    background-color: var(--primary-color);\n}\n.cloze.night_mode {\n    background-color: var(--primary-color);\n}\n\n/* Highlighting classes */\n.hightlight-1 {\n    background-color: var(--primary-color);\n\tdisplay: inline;\n}\n\n.hightlight-2 {\n    background-color: var(--secondary-color);\n\tdisplay: inline;\n}\n\n.hightlight-3 {\n    background-color: var(--tertiary-color);\n\tdisplay: inline;\n}\n\n.hightlight-1.night_mode {\n    background-color: var(--primary-color);\n\tdisplay: inline;\n}\n\n.hightlight-2.night_mode {\n    background-color: var(--secondary-color);\n\tdisplay: inline;\n}\n\n.hightlight-3.night_mode {\n    background-color: var(--tertiary-color);\n\tdisplay: inline;\n}\n",
             "flds": [
                 {
@@ -555,6 +635,746 @@
             ],
             "type": 0,
             "vers": []
+        },
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "9adc7a52-1c3a-473a-848d-b04509be9cbc",
+            "css": "/* Variables for frequently used values */\n:root {\n    /* Main background color of the card */\n    --main-bg-color: #434343;\n    --upper-bg-color: #555555;\n    --lower-bg-color: #434343;\n    --upper-fg-color: #eeeeee;\n    --lower-fg-color: #eeeeee;\n    /* Primary Accent Color, broken up into individual hsl values */\n    --colorPrimary-h: 260;\n    --colorPrimary-s: 60%;\n    --colorPrimary-l: 65%;\n    /* Set primary color variable from previously defined hsl values */\n    --primary-color: hsl(var(--colorPrimary-h), var(--colorPrimary-s), var(--colorPrimary-l));\n    /* Calculate Secondary and Tertiary Colors from the hsl values of the Primary Color */\n    --secondary-color: hsl(calc(var(--colorPrimary-h) + 240), var(--colorPrimary-s), var(--colorPrimary-l));\n    --tertiary-color: hsl(calc(var(--colorPrimary-h) + 120), var(--colorPrimary-s), var(--colorPrimary-l));\n    /* How big the stripe at the top should be */\n    --stripe-height: 5px;\n    /* How far elements such as flags should be away from the stripe */\n    --margin-from-stripe: 5px;\n}\n\nhtml,\nbody {\n    word-wrap: break-word;\n    background-color: var(--main-bg-color);\n    padding: 0;\n    margin: 0;\n}\nu {\n    text-decoration-style: wavy;\n    text-underline-position: under;\n    color: white;\n    padding: 1px;\n}\n\n/* Hide the default play button anki provides */\n.replay-button svg {\n    display: none;\n}\n.hidden {\n    display: none;\n}\n#answer {\n    font-size: 35px;\n}\n\n/* Main skeleton of an anki card */\n.card {\n    font-family: UD Digi Kyokasho N-R;\n    font-size: 0px;\n    text-align: center;\n}\n/* Div around all of the visible content of the card */\n.kard {\n    height: 100%;\n    background-color: var(--main-bg-color);\n}\n.kard.night_mode {\n    background-color: var(--main-bg-color);\n}\n/* Stripe at the top of the card */\n.stripe {\n    height: var(--stripe-height);\n    background-color: var(--primary-color);\n}\n.stripe.night_mode {\n    background-color: var(--primary-color);\n}\n\n/* Upper part of the card (Question) */\n.body-upper {\n    font-family: Noto Sans;\n    font-size: 30px;\n    color: var(--upper-fg-color);\n    background-color: var(--upper-bg-color);\n    padding: 30px 10px 30px;\n    border-radius: 0px 0px 0px 0px;\n}\n.body-upper.night_mode {\n    color: var(--upper-fg-color);\n    background-color: var(--upper-bg-color);\n}\n/* Lower part of the card (Answer) */\n.body-lower {\n    text-align: left;\n    color: var(--lower-fg-color);\n    height: 100%;\n    padding: 25px 10px 25px 10px;\n    border-radius: 0px 0px 0px 0px;\n}\n.body-lower.night_mode {\n    color: var(--lower-fg-color);\n    color: var(--lower-bg-color);\n}\n\n.notes {\n    font-family: Noto Sans Regular;\n    font-size: 20px;\n    text-align: center;\n    font-weight: bold;\n}\n\n/* Show extra information button */\n.extra_toggle {\n    display: block;\n    font-family: Noto Sans Regular;\n    font-size: 15px;\n    color: var(--upper-fg-color);\n    background-color: var(--upper-bg-color);\n    border-radius: 0px;\n    padding: 5px;\n    width: 50%;\n    text-align: center;\n    font-weight: 500;\n    margin: auto;\n    margin-top: 20px;\n    transition: all 0.15s ease-out;\n}\n.extra_toggle:hover {\n    filter: brightness(90%);\n}\n\n/* Div containing extra information, hidden by default */\n.extra {\n    display: none;\n    font-family: Noto Sans Regular;\n    font-size: 15px;\n    border: 3px dashed var(--primary-color);\n    color: var(--upper-fg-color);\n    padding: 20px;\n    margin: 30px 20px 3px 20px;\n    text-align: center;\n    font-weight: 500;\n}\n/* Div containing mnemonics or notes, situated inside the extra div */\n.mnemonic {\n    display: block;\n    margin-bottom: 2%;\n    border-color: var(--secondary-color);\n}\n\n/* Contains extra elements at the top, e.g. flags */\n.top-container {\n    width: 100%;\n    position: absolute;\n    top: calc(var(--stripe-height) + var(--margin-from-stripe));\n    left: 0;\n}\n.extra-top-right {\n    position: absolute;\n    right: var(--margin-from-stripe);\n}\n.extra-top-left {\n    position: absolute;\n    left: var(--margin-from-stripe);\n}\n.extra-top-right img {\n    float: right;\n    width: 55px;\n    border-radius: 10%;\n}\n.extra-top-left img {\n    float: left;\n    width: 55px;\n    border-radius: 10%;\n}\n\n/* Style cloze to use the primary color as the background color to make the cloze deletion easier to spot */\n.cloze {\n    background-color: var(--primary-color);\n}\n.cloze.night_mode {\n    background-color: var(--primary-color);\n}\n\n/* Highlighting classes */\n.hightlight-1 {\n    background-color: var(--primary-color);\n\tdisplay: inline;\n}\n\n.hightlight-2 {\n    background-color: var(--secondary-color);\n\tdisplay: inline;\n}\n\n.hightlight-3 {\n    background-color: var(--tertiary-color);\n\tdisplay: inline;\n}\n\n.hightlight-1.night_mode {\n    background-color: var(--primary-color);\n\tdisplay: inline;\n}\n\n.hightlight-2.night_mode {\n    background-color: var(--secondary-color);\n\tdisplay: inline;\n}\n\n.hightlight-3.night_mode {\n    background-color: var(--tertiary-color);\n\tdisplay: inline;\n}\n",
+            "flds": [
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "Title",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": true
+                },
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "List",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": true
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "prettyList",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0,
+                        1
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tags": [
+                "",
+                "Spanish::Grammar::Accents",
+                ""
+            ],
+            "tmpls": [
+                {
+                    "afmt": "<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\">\n        {{Title}}\n    </div>\n\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n            {{List}}\n        </div>\n    </div>\n</div>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n\n<script>\n\t/* Set the primary color based on tag */\n    var tags = document.getElementById(\"tags\").innerText.split(\" \");\n    tags.forEach(function (tag) {\n        var split = tag.split(\"::\");\n        if (split[0] == \"Color\") {\n            var r = document.querySelector(\":root\");\n            r.style.setProperty(\"--primary-color\", split[1]);\n        }\n    });\n    /* Play audio when clicking the respective element */\n    function playAudio(fieldToPlay) {\n        var elem = document.querySelector(\"#\" + fieldToPlay + \" .soundLink, #\" + fieldToPlay + \" .replaybutton\");\n        if (elem) {\n            elem.click();\n        }\n    }\n    /* Autoplay some elements */\n    var elem = document.querySelector(\".autoplay .soundLink, .autoplay .replaybutton\");\n    if (elem) {\n        elem.click();\n    }\n</script>\n\n",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Card 1",
+                    "ord": 0,
+                    "qfmt": "<div id=\"blanket\" style=\"height: 100%; width: 100%; position: fixed;\" onClick=\"extend();\"></div>\n<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\">\n        {{Title}}\n    </div>\n\n    <div class=\"body-lower\">\n        <div style=\"display: none;\" id=\"text\">{{List}}</div>\n        <div class=\"notes\">\n        </div>\n    </div>\n</div>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n\n<script>\n\t/* Set the primary color based on tag */\n    var tags = document.getElementById(\"tags\").innerText.split(\" \");\n    tags.forEach(function (tag) {\n        var split = tag.split(\"::\");\n        if (split[0] == \"Color\") {\n            var r = document.querySelector(\":root\");\n            r.style.setProperty(\"--primary-color\", split[1]);\n        }\n    });\n    /* Play audio when clicking the respective element */\n    function playAudio(fieldToPlay) {\n        var elem = document.querySelector(\"#\" + fieldToPlay + \" .soundLink, #\" + fieldToPlay + \" .replaybutton\");\n        if (elem) {\n            elem.click();\n        }\n    }\n    /* Autoplay some elements */\n    var elem = document.querySelector(\".autoplay .soundLink, .autoplay .replaybutton\");\n    if (elem) {\n        elem.click();\n    }\n\n    notes = document.getElementsByClassName(\"notes\")[0];\n    listFull = document.getElementById(\"text\").childNodes[0];\n    notes.innerHTML = \"\";\n    notes.appendChild(listFull.cloneNode(false));\n    function extend() {\n        var item = listFull.removeChild(listFull.childNodes[0]);\n        notes.childNodes[0].appendChild(item);\n        window.scrollTo(0, document.querySelector(\".kard\").scrollHeight);\n\t\tif (listFull.childElementCount < 1) {\n\t\t\t\t\t\tvar jsApi = {\"version\" : \"0.0.1\", \"developer\" : \"dev@mail.com\"};\n\t\t\t\t\t\tvar apiStatus = AnkiDroidJS.init(JSON.stringify(jsApi));\n\t\t\t\t\t\tshowAnswer();\n\t\t}\n    }\n</script>\n"
+                }
+            ],
+            "type": 0,
+            "vers": []
+        },
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "a3b68cea-479a-4538-9336-21288105bf43",
+            "css": "/* Variables for frequently used values */\n:root {\n    /* Main background color of the card */\n    --main-bg-color: #434343;\n    --upper-bg-color: #555555;\n    --lower-bg-color: #434343;\n    --upper-fg-color: #eeeeee;\n    --lower-fg-color: #eeeeee;\n    /* Primary Accent Color, broken up into individual hsl values */\n    --colorPrimary-h: 260;\n    --colorPrimary-s: 60%;\n    --colorPrimary-l: 65%;\n    /* Set primary color variable from previously defined hsl values */\n    --primary-color: hsl(var(--colorPrimary-h), var(--colorPrimary-s), var(--colorPrimary-l));\n    /* Calculate Secondary and Tertiary Colors from the hsl values of the Primary Color */\n    --secondary-color: hsl(calc(var(--colorPrimary-h) + 240), var(--colorPrimary-s), var(--colorPrimary-l));\n    --tertiary-color: hsl(calc(var(--colorPrimary-h) + 120), var(--colorPrimary-s), var(--colorPrimary-l));\n    /* How big the stripe at the top should be */\n    --stripe-height: 5px;\n    /* How far elements such as flags should be away from the stripe */\n    --margin-from-stripe: 5px;\n}\n\nhtml,\nbody {\n    word-wrap: break-word;\n    background-color: var(--main-bg-color);\n    padding: 0;\n    margin: 0;\n}\nu {\n    text-decoration-style: wavy;\n    text-underline-position: under;\n    color: white;\n    padding: 1px;\n}\n\n/* Hide the default play button anki provides */\n.replay-button svg {\n    display: none;\n}\n.hidden {\n    display: none;\n}\n#answer {\n    font-size: 35px;\n}\n\n/* Main skeleton of an anki card */\n.card {\n    font-family: UD Digi Kyokasho N-R;\n    font-size: 0px;\n    text-align: center;\n}\n/* Div around all of the visible content of the card */\n.kard {\n    height: 100%;\n    background-color: var(--main-bg-color);\n}\n.kard.night_mode {\n    background-color: var(--main-bg-color);\n}\n/* Stripe at the top of the card */\n.stripe {\n    height: var(--stripe-height);\n    background-color: var(--primary-color);\n}\n.stripe.night_mode {\n    background-color: var(--primary-color);\n}\n\n/* Upper part of the card (Question) */\n.body-upper {\n    font-family: Noto Sans;\n    font-size: 30px;\n    color: var(--upper-fg-color);\n    background-color: var(--upper-bg-color);\n    padding: 30px 10px 30px;\n    border-radius: 0px 0px 0px 0px;\n}\n.body-upper.night_mode {\n    color: var(--upper-fg-color);\n    background-color: var(--upper-bg-color);\n}\n/* Lower part of the card (Answer) */\n.body-lower {\n    text-align: left;\n    color: var(--lower-fg-color);\n    height: 100%;\n    padding: 25px 10px 25px 10px;\n    border-radius: 0px 0px 0px 0px;\n}\n.body-lower.night_mode {\n    color: var(--lower-fg-color);\n    color: var(--lower-bg-color);\n}\n\n.notes {\n    font-family: Noto Sans Regular;\n    font-size: 20px;\n    text-align: center;\n    font-weight: bold;\n}\n\n/* Show extra information button */\n.extra_toggle {\n    display: block;\n    font-family: Noto Sans Regular;\n    font-size: 15px;\n    color: var(--upper-fg-color);\n    background-color: var(--upper-bg-color);\n    border-radius: 0px;\n    padding: 5px;\n    width: 50%;\n    text-align: center;\n    font-weight: 500;\n    margin: auto;\n    margin-top: 20px;\n    transition: all 0.15s ease-out;\n}\n.extra_toggle:hover {\n    filter: brightness(90%);\n}\n\n/* Div containing extra information, hidden by default */\n.extra {\n    display: none;\n    font-family: Noto Sans Regular;\n    font-size: 15px;\n    border: 3px dashed var(--primary-color);\n    color: var(--upper-fg-color);\n    padding: 20px;\n    margin: 30px 20px 3px 20px;\n    text-align: center;\n    font-weight: 500;\n}\n/* Div containing mnemonics or notes, situated inside the extra div */\n.mnemonic {\n    display: block;\n    margin-bottom: 2%;\n    border-color: var(--secondary-color);\n}\n\n/* Contains extra elements at the top, e.g. flags */\n.top-container {\n    width: 100%;\n    position: absolute;\n    top: calc(var(--stripe-height) + var(--margin-from-stripe));\n    left: 0;\n}\n.extra-top-right {\n    position: absolute;\n    right: var(--margin-from-stripe);\n}\n.extra-top-left {\n    position: absolute;\n    left: var(--margin-from-stripe);\n}\n.extra-top-right img {\n    float: right;\n    width: 55px;\n    border-radius: 10%;\n}\n.extra-top-left img {\n    float: left;\n    width: 55px;\n    border-radius: 10%;\n}\n\n/* Style cloze to use the primary color as the background color to make the cloze deletion easier to spot */\n.cloze {\n    background-color: var(--primary-color);\n}\n.cloze.night_mode {\n    background-color: var(--primary-color);\n}\n\n/* Highlighting classes */\n.hightlight-1 {\n    background-color: var(--primary-color);\n\tdisplay: inline;\n}\n\n.hightlight-2 {\n    background-color: var(--secondary-color);\n\tdisplay: inline;\n}\n\n.hightlight-3 {\n    background-color: var(--tertiary-color);\n\tdisplay: inline;\n}\n\n.hightlight-1.night_mode {\n    background-color: var(--primary-color);\n\tdisplay: inline;\n}\n\n.hightlight-2.night_mode {\n    background-color: var(--secondary-color);\n\tdisplay: inline;\n}\n\n.hightlight-3.night_mode {\n    background-color: var(--tertiary-color);\n\tdisplay: inline;\n}\n",
+            "flds": [
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "Title",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "Starting Date",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "Ending Date",
+                    "ord": 2,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "Explanation",
+                    "ord": 3,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "DatesMnemonic",
+                    "ord": 4,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "prettyEvent",
+            "req": [
+                [
+                    0,
+                    "all",
+                    [
+                        0,
+                        1
+                    ]
+                ],
+                [
+                    1,
+                    "all",
+                    [
+                        0,
+                        3
+                    ]
+                ]
+            ],
+            "sortf": 1,
+            "tags": [
+                ""
+            ],
+            "tmpls": [
+                {
+                    "afmt": "<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\"> <b class=\"hightlight-1\">{{Title}}</b> - Date of Beginning{{#Ending Date}}/End{{/Ending Date}}</div>\n\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n            <b class=\"hightlight-3\">{{Starting Date}}</b>{{#Ending Date}} - <b class=\"hightlight-3\">{{Ending Date}}</b>{{/Ending Date}}\n            <br />\n            <p style=\"margin-top: 40px; font-style: italic; font-size: 18px;\">{{DatesMnemonic}}</p>\n        </div>\n    </div>\n</div>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n\n<script>\n\t/* Set the primary color based on tag */\n    var tags = document.getElementById(\"tags\").innerText.split(\" \");\n    tags.forEach(function (tag) {\n        var split = tag.split(\"::\");\n        if (split[0] == \"Color\") {\n            var r = document.querySelector(\":root\");\n            r.style.setProperty(\"--primary-color\", split[1]);\n        }\n    });\n    /* Play audio when clicking the respective element */\n    function playAudio(fieldToPlay) {\n        var elem = document.querySelector(\"#\" + fieldToPlay + \" .soundLink, #\" + fieldToPlay + \" .replaybutton\");\n        if (elem) {\n            elem.click();\n        }\n    }\n    /* Autoplay some elements */\n    var elem = document.querySelector(\".autoplay .soundLink, .autoplay .replaybutton\");\n    if (elem) {\n        elem.click();\n    }\n</script>\n",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Title -> Dates",
+                    "ord": 0,
+                    "qfmt": "{{#Starting Date}}\n<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\">\n        <b class=\"hightlight-1\">{{Title}}</b> - Date of Beginning{{#Ending Date}}/End{{/Ending Date}}\n    </div>\n\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n            <b class=\"hightlight-3\">?</b>{{#Ending Date}} - <b class=\"hightlight-3\">?</b>{{/Ending Date}}\n        </div>\n    </div>\n</div>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n\n<script>\n\t/* Set the primary color based on tag */\n    var tags = document.getElementById(\"tags\").innerText.split(\" \");\n    tags.forEach(function (tag) {\n        var split = tag.split(\"::\");\n        if (split[0] == \"Color\") {\n            var r = document.querySelector(\":root\");\n            r.style.setProperty(\"--primary-color\", split[1]);\n        }\n    });\n    /* Play audio when clicking the respective element */\n    function playAudio(fieldToPlay) {\n        var elem = document.querySelector(\"#\" + fieldToPlay + \" .soundLink, #\" + fieldToPlay + \" .replaybutton\");\n        if (elem) {\n            elem.click();\n        }\n    }\n    /* Autoplay some elements */\n    var elem = document.querySelector(\".autoplay .soundLink, .autoplay .replaybutton\");\n    if (elem) {\n        elem.click();\n    }\n</script>\n{{/Starting Date}}"
+                },
+                {
+                    "afmt": "<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\">\n        <b class=\"hightlight-1\">{{Title}}</b> - Explanation\n    </div>\n\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n            <b>{{Explanation}}</b>\n        </div>\n    </div>\n</div>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n\n<script>\n\t/* Set the primary color based on tag */\n    var tags = document.getElementById(\"tags\").innerText.split(\" \");\n    tags.forEach(function (tag) {\n        var split = tag.split(\"::\");\n        if (split[0] == \"Color\") {\n            var r = document.querySelector(\":root\");\n            r.style.setProperty(\"--primary-color\", split[1]);\n        }\n    });\n    /* Play audio when clicking the respective element */\n    function playAudio(fieldToPlay) {\n        var elem = document.querySelector(\"#\" + fieldToPlay + \" .soundLink, #\" + fieldToPlay + \" .replaybutton\");\n        if (elem) {\n            elem.click();\n        }\n    }\n    /* Autoplay some elements */\n    var elem = document.querySelector(\".autoplay .soundLink, .autoplay .replaybutton\");\n    if (elem) {\n        elem.click();\n    }\n</script>\n\n",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Name - Legacy",
+                    "ord": 1,
+                    "qfmt": "{{#Explanation}}\n<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\">\n        <b class=\"hightlight-1\">{{Title}}</b> - Explanation\n    </div>\n\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n            <b>?</b>\n        </div>\n    </div>\n</div>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n\n<script>\n\t/* Set the primary color based on tag */\n    var tags = document.getElementById(\"tags\").innerText.split(\" \");\n    tags.forEach(function (tag) {\n        var split = tag.split(\"::\");\n        if (split[0] == \"Color\") {\n            var r = document.querySelector(\":root\");\n            r.style.setProperty(\"--primary-color\", split[1]);\n        }\n    });\n    /* Play audio when clicking the respective element */\n    function playAudio(fieldToPlay) {\n        var elem = document.querySelector(\"#\" + fieldToPlay + \" .soundLink, #\" + fieldToPlay + \" .replaybutton\");\n        if (elem) {\n            elem.click();\n        }\n    }\n    /* Autoplay some elements */\n    var elem = document.querySelector(\".autoplay .soundLink, .autoplay .replaybutton\");\n    if (elem) {\n        elem.click();\n    }\n</script>\n{{/Explanation}}"
+                }
+            ],
+            "type": 0,
+            "vers": []
+        },
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "8f62895b-c508-4e8b-95d6-17fa64f7df03",
+            "css": "/* Variables for frequently used values */\n:root {\n    /* Main background color of the card */\n    --main-bg-color: #434343;\n    --upper-bg-color: #555555;\n    --lower-bg-color: #434343;\n    --upper-fg-color: #eeeeee;\n    --lower-fg-color: #eeeeee;\n    /* Primary Accent Color, broken up into individual hsl values */\n    --colorPrimary-h: 260;\n    --colorPrimary-s: 60%;\n    --colorPrimary-l: 65%;\n    /* Set primary color variable from previously defined hsl values */\n    --primary-color: hsl(var(--colorPrimary-h), var(--colorPrimary-s), var(--colorPrimary-l));\n    /* Calculate Secondary and Tertiary Colors from the hsl values of the Primary Color */\n    --secondary-color: hsl(calc(var(--colorPrimary-h) + 240), var(--colorPrimary-s), var(--colorPrimary-l));\n    --tertiary-color: hsl(calc(var(--colorPrimary-h) + 120), var(--colorPrimary-s), var(--colorPrimary-l));\n    /* How big the stripe at the top should be */\n    --stripe-height: 5px;\n    /* How far elements such as flags should be away from the stripe */\n    --margin-from-stripe: 5px;\n}\n\nhtml,\nbody {\n    word-wrap: break-word;\n    background-color: var(--main-bg-color);\n    padding: 0;\n    margin: 0;\n}\nu {\n    text-decoration-style: wavy;\n    text-underline-position: under;\n    color: white;\n    padding: 1px;\n}\n\n/* Hide the default play button anki provides */\n.replay-button svg {\n    display: none;\n}\n.hidden {\n    display: none;\n}\n#answer {\n    font-size: 35px;\n}\n\n/* Main skeleton of an anki card */\n.card {\n    font-family: UD Digi Kyokasho N-R;\n    font-size: 0px;\n    text-align: center;\n}\n/* Div around all of the visible content of the card */\n.kard {\n    height: 100%;\n    background-color: var(--main-bg-color);\n}\n.kard.night_mode {\n    background-color: var(--main-bg-color);\n}\n/* Stripe at the top of the card */\n.stripe {\n    height: var(--stripe-height);\n    background-color: var(--primary-color);\n}\n.stripe.night_mode {\n    background-color: var(--primary-color);\n}\n\n/* Upper part of the card (Question) */\n.body-upper {\n    font-family: Noto Sans;\n    font-size: 30px;\n    color: var(--upper-fg-color);\n    background-color: var(--upper-bg-color);\n    padding: 30px 10px 30px;\n    border-radius: 0px 0px 0px 0px;\n}\n.body-upper.night_mode {\n    color: var(--upper-fg-color);\n    background-color: var(--upper-bg-color);\n}\n/* Lower part of the card (Answer) */\n.body-lower {\n    text-align: left;\n    color: var(--lower-fg-color);\n    height: 100%;\n    padding: 25px 10px 25px 10px;\n    border-radius: 0px 0px 0px 0px;\n}\n.body-lower.night_mode {\n    color: var(--lower-fg-color);\n    color: var(--lower-bg-color);\n}\n\n.notes {\n    font-family: Noto Sans Regular;\n    font-size: 20px;\n    text-align: center;\n    font-weight: bold;\n}\n\n/* Show extra information button */\n.extra_toggle {\n    display: block;\n    font-family: Noto Sans Regular;\n    font-size: 15px;\n    color: var(--upper-fg-color);\n    background-color: var(--upper-bg-color);\n    border-radius: 0px;\n    padding: 5px;\n    width: 50%;\n    text-align: center;\n    font-weight: 500;\n    margin: auto;\n    margin-top: 20px;\n    transition: all 0.15s ease-out;\n}\n.extra_toggle:hover {\n    filter: brightness(90%);\n}\n\n/* Div containing extra information, hidden by default */\n.extra {\n    display: none;\n    font-family: Noto Sans Regular;\n    font-size: 15px;\n    border: 3px dashed var(--primary-color);\n    color: var(--upper-fg-color);\n    padding: 20px;\n    margin: 30px 20px 3px 20px;\n    text-align: center;\n    font-weight: 500;\n}\n/* Div containing mnemonics or notes, situated inside the extra div */\n.mnemonic {\n    display: block;\n    margin-bottom: 2%;\n    border-color: var(--secondary-color);\n}\n\n/* Contains extra elements at the top, e.g. flags */\n.top-container {\n    width: 100%;\n    position: absolute;\n    top: calc(var(--stripe-height) + var(--margin-from-stripe));\n    left: 0;\n}\n.extra-top-right {\n    position: absolute;\n    right: var(--margin-from-stripe);\n}\n.extra-top-left {\n    position: absolute;\n    left: var(--margin-from-stripe);\n}\n.extra-top-right img {\n    float: right;\n    width: 55px;\n    border-radius: 10%;\n}\n.extra-top-left img {\n    float: left;\n    width: 55px;\n    border-radius: 10%;\n}\n\n/* Style cloze to use the primary color as the background color to make the cloze deletion easier to spot */\n.cloze {\n    background-color: var(--primary-color);\n}\n.cloze.night_mode {\n    background-color: var(--primary-color);\n}\n\n/* Highlighting classes */\n.hightlight-1 {\n    background-color: var(--primary-color);\n\tdisplay: inline;\n}\n\n.hightlight-2 {\n    background-color: var(--secondary-color);\n\tdisplay: inline;\n}\n\n.hightlight-3 {\n    background-color: var(--tertiary-color);\n\tdisplay: inline;\n}\n\n.hightlight-1.night_mode {\n    background-color: var(--primary-color);\n\tdisplay: inline;\n}\n\n.hightlight-2.night_mode {\n    background-color: var(--secondary-color);\n\tdisplay: inline;\n}\n\n.hightlight-3.night_mode {\n    background-color: var(--tertiary-color);\n\tdisplay: inline;\n}\n",
+            "flds": [
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "Title",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": true
+                },
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "Infinitive",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": true
+                },
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "sing1",
+                    "ord": 2,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "sing2",
+                    "ord": 3,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "sing3",
+                    "ord": 4,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "plur1",
+                    "ord": 5,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "plur2",
+                    "ord": 6,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "plur3",
+                    "ord": 7,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "Tense",
+                    "ord": 8,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": true
+                },
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "Pronouns",
+                    "ord": 9,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": true
+                },
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "CountryISO",
+                    "ord": 10,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": true
+                },
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "Language",
+                    "ord": 11,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": true
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "prettyConjugation",
+            "req": [
+                [
+                    0,
+                    "all",
+                    [
+                        2
+                    ]
+                ],
+                [
+                    1,
+                    "all",
+                    [
+                        3
+                    ]
+                ],
+                [
+                    2,
+                    "all",
+                    [
+                        4
+                    ]
+                ],
+                [
+                    3,
+                    "all",
+                    [
+                        5
+                    ]
+                ],
+                [
+                    4,
+                    "all",
+                    [
+                        5
+                    ]
+                ],
+                [
+                    5,
+                    "all",
+                    [
+                        5
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tags": [
+                "",
+                "::Grammar::Conjugations::Ending::ar",
+                "::Grammar::Conjugations::Ending::ir",
+                "Spanish::Grammar::Conjugations::regular",
+                "Spanish::Grammar::Conjugations::tense::imperfectoSubjunctive",
+                "SpanishSpanish::Grammar::Conjugations::Ending::er",
+                ""
+            ],
+            "tmpls": [
+                {
+                    "afmt": "<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\" style=\"border-radius: 5px 5px 0px 0px;\">\n        <div class=\"soundFront\" onclick=\"playAudio()\"></div>\n        <b class=\"hightlight-1\">{{Tense}}</b><br>\n        <b id=\"pronoun\" class=\"hightlight-2\">1. Singular</b><br>\n        <b class=\"hightlight-3\">{{Infinitive}}</b><br>\n    </div>\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n            <div id=\"answer\">{{sing1}}</div>\n        </div>\n    </div>\n</div>\n<div id=\"pronouns\">{{Pronouns}}</div>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n\n<script>\n\t/* Inject correct pronoun */\n\tpronouns = document.getElementById(\"pronouns\").innerText.split(\";\");\n    if (pronouns[0]) {\n    \tdocument.getElementById(\"pronoun\").innerText = pronouns[0];\n\t}\n    \n\t/* Set the primary color based on tag */\n    var tags = document.getElementById(\"tags\").innerText.split(\" \");\n    tags.forEach(function (tag) {\n        var split = tag.split(\"::\");\n        if (split[0] == \"Color\") {\n            var r = document.querySelector(\":root\");\n            r.style.setProperty(\"--primary-color\", split[1]);\n        }\n    });\n    /* Play audio when clicking the respective element */\n    function playAudio(fieldToPlay) {\n        var elem = document.querySelector(\"#\" + fieldToPlay + \" .soundLink, #\" + fieldToPlay + \" .replaybutton\");\n        if (elem) {\n            elem.click();\n        }\n    }\n    /* Autoplay some elements */\n    var elem = document.querySelector(\".autoplay .soundLink, .autoplay .replaybutton\");\n    if (elem) {\n        elem.click();\n    }\n</script>\n\n",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Sing1",
+                    "ord": 0,
+                    "qfmt": "{{#sing1}}\n<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\" style=\"border-radius: 5px 5px 0px 0px;\">\n        <b class=\"hightlight-1\">{{Tense}}</b><br />\n        <b id=\"pronoun\" class=\"hightlight-2\">1. Singular</b><br />\n        <b class=\"hightlight-3\">{{Infinitive}}</b><br />\n    </div>\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n            <div id=\"answer\">?</div>\n        </div>\n    </div>\n</div>\n<div id=\"pronouns\">{{Pronouns}}</div>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n\n<script>\n\t/* Inject correct pronoun */\n\tpronouns = document.getElementById(\"pronouns\").innerText.split(\";\");\n    if (pronouns[0]) {\n    \tdocument.getElementById(\"pronoun\").innerText = pronouns[0];\n\t}\n    \n\t/* Set the primary color based on tag */\n    var tags = document.getElementById(\"tags\").innerText.split(\" \");\n    tags.forEach(function (tag) {\n        var split = tag.split(\"::\");\n        if (split[0] == \"Color\") {\n            var r = document.querySelector(\":root\");\n            r.style.setProperty(\"--primary-color\", split[1]);\n        }\n    });\n\t/* Play audio when clicking the respective element */\n    function playAudio(fieldToPlay) {\n        var elem = document.querySelector(\"#\" + fieldToPlay + \" .soundLink, #\" + fieldToPlay + \" .replaybutton\");\n        if (elem) {\n            elem.click();\n        }\n    }\n    /* Autoplay some elements */\n    var elem = document.querySelector(\".autoplay .soundLink, .autoplay .replaybutton\");\n    if (elem) {\n        elem.click();\n    }\n</script>\n{{/sing1}}\n"
+                },
+                {
+                    "afmt": "<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\" style=\"border-radius: 5px 5px 0px 0px;\">\n        <div class=\"soundFront\" onclick=\"playAudio()\"></div>\n        <b class=\"hightlight-1\">{{Tense}}</b><br>\n        <b id=\"pronoun\" class=\"hightlight-2\">2. Singular</b><br>\n        <b class=\"hightlight-3\">{{Infinitive}}</b><br>\n    </div>\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n            <div id=\"answer\">{{sing2}}</div>\n        </div>\n    </div>\n</div>\n<div id=\"pronouns\">{{Pronouns}}</div>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n\n<script>\n\t/* Inject correct pronoun */\n\tpronouns = document.getElementById(\"pronouns\").innerText.split(\";\");\n    if (pronouns[1]) {\n    \tdocument.getElementById(\"pronoun\").innerText = pronouns[1];\n\t}\n    \n\t/* Set the primary color based on tag */\n    var tags = document.getElementById(\"tags\").innerText.split(\" \");\n    tags.forEach(function (tag) {\n        var split = tag.split(\"::\");\n        if (split[0] == \"Color\") {\n            var r = document.querySelector(\":root\");\n            r.style.setProperty(\"--primary-color\", split[1]);\n        }\n    });\n    /* Play audio when clicking the respective element */\n    function playAudio(fieldToPlay) {\n        var elem = document.querySelector(\"#\" + fieldToPlay + \" .soundLink, #\" + fieldToPlay + \" .replaybutton\");\n        if (elem) {\n            elem.click();\n        }\n    }\n    /* Autoplay some elements */\n    var elem = document.querySelector(\".autoplay .soundLink, .autoplay .replaybutton\");\n    if (elem) {\n        elem.click();\n    }\n</script>\n\n",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Sing2",
+                    "ord": 1,
+                    "qfmt": "{{#sing2}}\n<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\" style=\"border-radius: 5px 5px 0px 0px;\">\n        <b class=\"hightlight-1\">{{Tense}}</b><br>\n        <b id=\"pronoun\" class=\"hightlight-2\">2. Singular</b><br>\n        <b class=\"hightlight-3\">{{Infinitive}}</b><br>\n    </div>\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n            <div id=\"answer\">?</div>\n        </div>\n    </div>\n</div>\n<div id=\"pronouns\">{{Pronouns}}</div>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n\n<script>\n\t/* Inject correct pronoun */\n\tpronouns = document.getElementById(\"pronouns\").innerText.split(\";\");\n    if (pronouns[1]) {\n    \tdocument.getElementById(\"pronoun\").innerText = pronouns[1];\n\t}\n    \n\t/* Set the primary color based on tag */\n    var tags = document.getElementById(\"tags\").innerText.split(\" \");\n    tags.forEach(function (tag) {\n        var split = tag.split(\"::\");\n        if (split[0] == \"Color\") {\n            var r = document.querySelector(\":root\");\n            r.style.setProperty(\"--primary-color\", split[1]);\n        }\n    });\n    /* Play audio when clicking the respective element */\n    function playAudio(fieldToPlay) {\n        var elem = document.querySelector(\"#\" + fieldToPlay + \" .soundLink, #\" + fieldToPlay + \" .replaybutton\");\n        if (elem) {\n            elem.click();\n        }\n    }\n    /* Autoplay some elements */\n    var elem = document.querySelector(\".autoplay .soundLink, .autoplay .replaybutton\");\n    if (elem) {\n        elem.click();\n    }\n</script>\n{{/sing2}}"
+                },
+                {
+                    "afmt": "<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\" style=\"border-radius: 5px 5px 0px 0px;\">\n        <div class=\"soundFront\" onclick=\"playAudio()\"></div>\n        <b class=\"hightlight-1\">{{Tense}}</b><br>\n        <b id=\"pronoun\" class=\"hightlight-2\">3. Singular</b><br>\n        <b class=\"hightlight-3\">{{Infinitive}}</b><br>\n    </div>\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n            <div id=\"answer\">{{sing3}}</div>\n        </div>\n    </div>\n</div>\n<div id=\"pronouns\">{{Pronouns}}</div>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n\n<script>\n\t/* Inject correct pronoun */\n\tpronouns = document.getElementById(\"pronouns\").innerText.split(\";\");\n    if (pronouns[2]) {\n    \tdocument.getElementById(\"pronoun\").innerText = pronouns[2];\n\t}\n    \n\t/* Set the primary color based on tag */\n    var tags = document.getElementById(\"tags\").innerText.split(\" \");\n    tags.forEach(function (tag) {\n        var split = tag.split(\"::\");\n        if (split[0] == \"Color\") {\n            var r = document.querySelector(\":root\");\n            r.style.setProperty(\"--primary-color\", split[1]);\n        }\n    });\n    /* Play audio when clicking the respective element */\n    function playAudio(fieldToPlay) {\n        var elem = document.querySelector(\"#\" + fieldToPlay + \" .soundLink, #\" + fieldToPlay + \" .replaybutton\");\n        if (elem) {\n            elem.click();\n        }\n    }\n    /* Autoplay some elements */\n    var elem = document.querySelector(\".autoplay .soundLink, .autoplay .replaybutton\");\n    if (elem) {\n        elem.click();\n    }\n</script>\n\n",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Sing3",
+                    "ord": 2,
+                    "qfmt": "{{#sing3}}\n<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\" style=\"border-radius: 5px 5px 0px 0px;\">\n        <b class=\"hightlight-1\">{{Tense}}</b><br>\n        <b id=\"pronoun\" class=\"hightlight-2\">3. Singular</b><br>\n        <b class=\"hightlight-3\">{{Infinitive}}</b><br>\n    </div>\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n            <div id=\"answer\">?</div>\n        </div>\n    </div>\n</div>\n<div id=\"pronouns\">{{Pronouns}}</div>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n\n<script>\n\t/* Inject correct pronoun */\n\tpronouns = document.getElementById(\"pronouns\").innerText.split(\";\");\n    if (pronouns[2]) {\n    \tdocument.getElementById(\"pronoun\").innerText = pronouns[2];\n\t}\n    \n\t/* Set the primary color based on tag */\n    var tags = document.getElementById(\"tags\").innerText.split(\" \");\n    tags.forEach(function (tag) {\n        var split = tag.split(\"::\");\n        if (split[0] == \"Color\") {\n            var r = document.querySelector(\":root\");\n            r.style.setProperty(\"--primary-color\", split[1]);\n        }\n    });\n    /* Play audio when clicking the respective element */\n    function playAudio(fieldToPlay) {\n        var elem = document.querySelector(\"#\" + fieldToPlay + \" .soundLink, #\" + fieldToPlay + \" .replaybutton\");\n        if (elem) {\n            elem.click();\n        }\n    }\n    /* Autoplay some elements */\n    var elem = document.querySelector(\".autoplay .soundLink, .autoplay .replaybutton\");\n    if (elem) {\n        elem.click();\n    }\n</script>\n{{/sing3}}"
+                },
+                {
+                    "afmt": "<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\" style=\"border-radius: 5px 5px 0px 0px;\">\n        <div class=\"soundFront\" onclick=\"playAudio()\"></div>\n        <b class=\"hightlight-1\">{{Tense}}</b><br>\n        <b id=\"pronoun\" class=\"hightlight-2\">1. Plural</b><br>\n        <b class=\"hightlight-3\">{{Infinitive}}</b><br>\n    </div>\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n            <div id=\"answer\">{{plur1}}</div>\n        </div>\n    </div>\n</div>\n<div id=\"pronouns\">{{Pronouns}}</div>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n\n<script>\n\t/* Inject correct pronoun */\n\tpronouns = document.getElementById(\"pronouns\").innerText.split(\";\");\n    if (pronouns[3]) {\n    \tdocument.getElementById(\"pronoun\").innerText = pronouns[3];\n\t}\n    \n\t/* Set the primary color based on tag */\n    var tags = document.getElementById(\"tags\").innerText.split(\" \");\n    tags.forEach(function (tag) {\n        var split = tag.split(\"::\");\n        if (split[0] == \"Color\") {\n            var r = document.querySelector(\":root\");\n            r.style.setProperty(\"--primary-color\", split[1]);\n        }\n    });\n    /* Play audio when clicking the respective element */\n    function playAudio(fieldToPlay) {\n        var elem = document.querySelector(\"#\" + fieldToPlay + \" .soundLink, #\" + fieldToPlay + \" .replaybutton\");\n        if (elem) {\n            elem.click();\n        }\n    }\n    /* Autoplay some elements */\n    var elem = document.querySelector(\".autoplay .soundLink, .autoplay .replaybutton\");\n    if (elem) {\n        elem.click();\n    }\n</script>\n\n",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Plur1",
+                    "ord": 3,
+                    "qfmt": "{{#plur1}}\n<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\" style=\"border-radius: 5px 5px 0px 0px;\">\n        <b class=\"hightlight-1\">{{Tense}}</b><br>\n        <b id=\"pronoun\" class=\"hightlight-2\">1. Plural</b><br>\n        <b class=\"hightlight-3\">{{Infinitive}}</b><br>\n    </div>\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n            <div id=\"answer\">?</div>\n        </div>\n    </div>\n</div>\n<div id=\"pronouns\">{{Pronouns}}</div>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n\n<script>\n\t/* Inject correct pronoun */\n\tpronouns = document.getElementById(\"pronouns\").innerText.split(\";\");\n    if (pronouns[3]) {\n    \tdocument.getElementById(\"pronoun\").innerText = pronouns[3];\n\t}\n    \n\t/* Set the primary color based on tag */\n    var tags = document.getElementById(\"tags\").innerText.split(\" \");\n    tags.forEach(function (tag) {\n        var split = tag.split(\"::\");\n        if (split[0] == \"Color\") {\n            var r = document.querySelector(\":root\");\n            r.style.setProperty(\"--primary-color\", split[1]);\n        }\n    });\n    /* Play audio when clicking the respective element */\n    function playAudio(fieldToPlay) {\n        var elem = document.querySelector(\"#\" + fieldToPlay + \" .soundLink, #\" + fieldToPlay + \" .replaybutton\");\n        if (elem) {\n            elem.click();\n        }\n    }\n    /* Autoplay some elements */\n    var elem = document.querySelector(\".autoplay .soundLink, .autoplay .replaybutton\");\n    if (elem) {\n        elem.click();\n    }\n</script>\n{{/plur1}}"
+                },
+                {
+                    "afmt": "<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\" style=\"border-radius: 5px 5px 0px 0px;\">\n        <div class=\"soundFront\" onclick=\"playAudio()\"></div>\n        <b class=\"hightlight-1\">{{Tense}}</b><br>\n        <b id=\"pronoun\" class=\"hightlight-2\">2. Plural</b><br>\n        <b class=\"hightlight-3\">{{Infinitive}}</b><br>\n    </div>\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n            <div id=\"answer\">{{plur2}}</div>\n        </div>\n    </div>\n</div>\n<div id=\"pronouns\">{{Pronouns}}</div>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n\n<script>\n\t/* Inject correct pronoun */\n\tpronouns = document.getElementById(\"pronouns\").innerText.split(\";\");\n    if (pronouns[4]) {\n    \tdocument.getElementById(\"pronoun\").innerText = pronouns[4];\n\t}\n    \n\t/* Set the primary color based on tag */\n    var tags = document.getElementById(\"tags\").innerText.split(\" \");\n    tags.forEach(function (tag) {\n        var split = tag.split(\"::\");\n        if (split[0] == \"Color\") {\n            var r = document.querySelector(\":root\");\n            r.style.setProperty(\"--primary-color\", split[1]);\n        }\n    });\n    /* Play audio when clicking the respective element */\n    function playAudio(fieldToPlay) {\n        var elem = document.querySelector(\"#\" + fieldToPlay + \" .soundLink, #\" + fieldToPlay + \" .replaybutton\");\n        if (elem) {\n            elem.click();\n        }\n    }\n    /* Autoplay some elements */\n    var elem = document.querySelector(\".autoplay .soundLink, .autoplay .replaybutton\");\n    if (elem) {\n        elem.click();\n    }\n</script>\n\n",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Plur2",
+                    "ord": 4,
+                    "qfmt": "{{#plur1}}\n<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\" style=\"border-radius: 5px 5px 0px 0px;\">\n        <b class=\"hightlight-1\">{{Tense}}</b><br>\n        <b id=\"pronoun\" class=\"hightlight-2\">2. Plural</b><br>\n        <b class=\"hightlight-3\">{{Infinitive}}</b><br>\n    </div>\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n            <div id=\"answer\">?</div>\n        </div>\n    </div>\n</div>\n<div id=\"pronouns\">{{Pronouns}}</div>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n\n<script>\n\t/* Inject correct pronoun */\n\tpronouns = document.getElementById(\"pronouns\").innerText.split(\";\");\n\tif (pronouns[4]) {\n    \tdocument.getElementById(\"pronoun\").innerText = pronouns[4];\n\t}\n    \n\t/* Set the primary color based on tag */\n    var tags = document.getElementById(\"tags\").innerText.split(\" \");\n    tags.forEach(function (tag) {\n        var split = tag.split(\"::\");\n        if (split[0] == \"Color\") {\n            var r = document.querySelector(\":root\");\n            r.style.setProperty(\"--primary-color\", split[1]);\n        }\n    });\n    /* Play audio when clicking the respective element */\n    function playAudio(fieldToPlay) {\n        var elem = document.querySelector(\"#\" + fieldToPlay + \" .soundLink, #\" + fieldToPlay + \" .replaybutton\");\n        if (elem) {\n            elem.click();\n        }\n    }\n    /* Autoplay some elements */\n    var elem = document.querySelector(\".autoplay .soundLink, .autoplay .replaybutton\");\n    if (elem) {\n        elem.click();\n    }\n</script>\n{{/plur1}}"
+                },
+                {
+                    "afmt": "<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\" style=\"border-radius: 5px 5px 0px 0px;\">\n        <div class=\"soundFront\" onclick=\"playAudio()\"></div>\n        <b class=\"hightlight-1\">{{Tense}}</b><br>\n        <b id=\"pronoun\" class=\"hightlight-2\">3. Plural</b><br>\n        <b class=\"hightlight-3\">{{Infinitive}}</b><br>\n    </div>\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n            <div id=\"answer\">{{plur3}}</div>\n        </div>\n    </div>\n</div>\n<div id=\"pronouns\">{{Pronouns}}</div>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n\n<script>\n\t/* Inject correct pronoun */\n\tpronouns = document.getElementById(\"pronouns\").innerText.split(\";\");\n    if (pronouns[5]) {\n    \tdocument.getElementById(\"pronoun\").innerText = pronouns[5];\n\t}\n    \n    /* Play audio when clicking the respective element */\n    function playAudio(fieldToPlay) {\n        var elem = document.querySelector(\"#\" + fieldToPlay + \" .soundLink, #\" + fieldToPlay + \" .replaybutton\");\n        if (elem) {\n            elem.click();\n        }\n    }\n    /* Autoplay some elements */\n    var elem = document.querySelector(\".autoplay .soundLink, .autoplay .replaybutton\");\n    if (elem) {\n        elem.click();\n    }\n</script>\n",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Plur3",
+                    "ord": 5,
+                    "qfmt": "{{#plur1}}\n<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\" style=\"border-radius: 5px 5px 0px 0px;\">\n        <b class=\"hightlight-1\">{{Tense}}</b><br>\n        <b id=\"pronoun\" class=\"hightlight-2\">3. Plural</b><br>\n        <b class=\"hightlight-3\">{{Infinitive}}</b><br>\n    </div>\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n            <div id=\"answer\">?</div>\n        </div>\n    </div>\n</div>\n<div id=\"pronouns\">{{Pronouns}}</div>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n\n<script>\n\t/* Inject correct pronoun */\n\tpronouns = document.getElementById(\"pronouns\").innerText.split(\";\");\n    if (pronouns[5]) {\n    \tdocument.getElementById(\"pronoun\").innerText = pronouns[5];\n\t}\n    \n\t/* Set the primary color based on tag */\n    var tags = document.getElementById(\"tags\").innerText.split(\" \");\n    tags.forEach(function (tag) {\n        var split = tag.split(\"::\");\n        if (split[0] == \"Color\") {\n            var r = document.querySelector(\":root\");\n            r.style.setProperty(\"--primary-color\", split[1]);\n        }\n    });\n    /* Play audio when clicking the respective element */\n    function playAudio(fieldToPlay) {\n        var elem = document.querySelector(\"#\" + fieldToPlay + \" .soundLink, #\" + fieldToPlay + \" .replaybutton\");\n        if (elem) {\n            elem.click();\n        }\n    }\n    /* Autoplay some elements */\n    var elem = document.querySelector(\".autoplay .soundLink, .autoplay .replaybutton\");\n    if (elem) {\n        elem.click();\n    }\n</script>\n{{/plur1}}"
+                }
+            ],
+            "type": 0,
+            "vers": []
+        },
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "78f5753d-5bf5-4a67-978d-b40e649c7263",
+            "css": "/* Variables for frequently used values */\n:root {\n    /* Main background color of the card */\n    --main-bg-color: #434343;\n    --upper-bg-color: #555555;\n    --lower-bg-color: #434343;\n    --upper-fg-color: #eeeeee;\n    --lower-fg-color: #eeeeee;\n    /* Primary Accent Color, broken up into individual hsl values */\n    --colorPrimary-h: 260;\n    --colorPrimary-s: 60%;\n    --colorPrimary-l: 65%;\n    /* Set primary color variable from previously defined hsl values */\n    --primary-color: hsl(var(--colorPrimary-h), var(--colorPrimary-s), var(--colorPrimary-l));\n    /* Calculate Secondary and Tertiary Colors from the hsl values of the Primary Color */\n    --secondary-color: hsl(calc(var(--colorPrimary-h) + 240), var(--colorPrimary-s), var(--colorPrimary-l));\n    --tertiary-color: hsl(calc(var(--colorPrimary-h) + 120), var(--colorPrimary-s), var(--colorPrimary-l));\n    /* How big the stripe at the top should be */\n    --stripe-height: 5px;\n    /* How far elements such as flags should be away from the stripe */\n    --margin-from-stripe: 5px;\n}\n\nhtml,\nbody {\n    word-wrap: break-word;\n    background-color: var(--main-bg-color);\n    padding: 0;\n    margin: 0;\n}\nu {\n    text-decoration-style: wavy;\n    text-underline-position: under;\n    color: white;\n    padding: 1px;\n}\n\n/* Hide the default play button anki provides */\n.replay-button svg {\n    display: none;\n}\n.hidden {\n    display: none;\n}\n#answer {\n    font-size: 35px;\n}\n\n/* Main skeleton of an anki card */\n.card {\n    font-family: UD Digi Kyokasho N-R;\n    font-size: 0px;\n    text-align: center;\n}\n/* Div around all of the visible content of the card */\n.kard {\n    height: 100%;\n    background-color: var(--main-bg-color);\n}\n.kard.night_mode {\n    background-color: var(--main-bg-color);\n}\n/* Stripe at the top of the card */\n.stripe {\n    height: var(--stripe-height);\n    background-color: var(--primary-color);\n}\n.stripe.night_mode {\n    background-color: var(--primary-color);\n}\n\n/* Upper part of the card (Question) */\n.body-upper {\n    font-family: Noto Sans;\n    font-size: 30px;\n    color: var(--upper-fg-color);\n    background-color: var(--upper-bg-color);\n    padding: 30px 10px 30px;\n    border-radius: 0px 0px 0px 0px;\n}\n.body-upper.night_mode {\n    color: var(--upper-fg-color);\n    background-color: var(--upper-bg-color);\n}\n/* Lower part of the card (Answer) */\n.body-lower {\n    text-align: left;\n    color: var(--lower-fg-color);\n    height: 100%;\n    padding: 25px 10px 25px 10px;\n    border-radius: 0px 0px 0px 0px;\n}\n.body-lower.night_mode {\n    color: var(--lower-fg-color);\n    color: var(--lower-bg-color);\n}\n\n.notes {\n    font-family: Noto Sans Regular;\n    font-size: 20px;\n    text-align: center;\n    font-weight: bold;\n}\n\n/* Show extra information button */\n.extra_toggle {\n    display: block;\n    font-family: Noto Sans Regular;\n    font-size: 15px;\n    color: var(--upper-fg-color);\n    background-color: var(--upper-bg-color);\n    border-radius: 0px;\n    padding: 5px;\n    width: 50%;\n    text-align: center;\n    font-weight: 500;\n    margin: auto;\n    margin-top: 20px;\n    transition: all 0.15s ease-out;\n}\n.extra_toggle:hover {\n    filter: brightness(90%);\n}\n\n/* Div containing extra information, hidden by default */\n.extra {\n    display: none;\n    font-family: Noto Sans Regular;\n    font-size: 15px;\n    border: 3px dashed var(--primary-color);\n    color: var(--upper-fg-color);\n    padding: 20px;\n    margin: 30px 20px 3px 20px;\n    text-align: center;\n    font-weight: 500;\n}\n/* Div containing mnemonics or notes, situated inside the extra div */\n.mnemonic {\n    display: block;\n    margin-bottom: 2%;\n    border-color: var(--secondary-color);\n}\n\n/* Contains extra elements at the top, e.g. flags */\n.top-container {\n    width: 100%;\n    position: absolute;\n    top: calc(var(--stripe-height) + var(--margin-from-stripe));\n    left: 0;\n}\n.extra-top-right {\n    position: absolute;\n    right: var(--margin-from-stripe);\n}\n.extra-top-left {\n    position: absolute;\n    left: var(--margin-from-stripe);\n}\n.extra-top-right img {\n    float: right;\n    width: 55px;\n    border-radius: 10%;\n}\n.extra-top-left img {\n    float: left;\n    width: 55px;\n    border-radius: 10%;\n}\n\n/* Style cloze to use the primary color as the background color to make the cloze deletion easier to spot */\n.cloze {\n    background-color: var(--primary-color);\n}\n.cloze.night_mode {\n    background-color: var(--primary-color);\n}\n\n/* Highlighting classes */\n.hightlight-1 {\n    background-color: var(--primary-color);\n\tdisplay: inline;\n}\n\n.hightlight-2 {\n    background-color: var(--secondary-color);\n\tdisplay: inline;\n}\n\n.hightlight-3 {\n    background-color: var(--tertiary-color);\n\tdisplay: inline;\n}\n\n.hightlight-1.night_mode {\n    background-color: var(--primary-color);\n\tdisplay: inline;\n}\n\n.hightlight-2.night_mode {\n    background-color: var(--secondary-color);\n\tdisplay: inline;\n}\n\n.hightlight-3.night_mode {\n    background-color: var(--tertiary-color);\n\tdisplay: inline;\n}\n",
+            "flds": [
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "Id",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Sentence",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "AudioSentence",
+                    "ord": 2,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "SentenceTranslation",
+                    "ord": 3,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "AudioSentenceTranslation",
+                    "ord": 4,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "Note/Mnemonic",
+                    "ord": 5,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "Picture",
+                    "ord": 6,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "CountryISO",
+                    "ord": 7,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": true
+                },
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "Level",
+                    "ord": 8,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "Word-Symbol",
+                    "ord": 9,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "Word-Symbol-2",
+                    "ord": 10,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "Language",
+                    "ord": 11,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": true
+                },
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "CreateReversed",
+                    "ord": 12,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": true
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "prettySentence",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        2,
+                        3,
+                        4,
+                        6,
+                        7,
+                        8
+                    ]
+                ],
+                [
+                    1,
+                    "all",
+                    [
+                        12
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tags": [
+                ""
+            ],
+            "tmpls": [
+                {
+                    "afmt": "<div class=\"hidden autoplay\" id=\"AudioSentence\">{{AudioSentence}}</div>\n<div class=\"hidden\" id=\"AudioSentenceTranslation\">{{AudioSentenceTranslation}}</div>\n\n<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\">\n        <div class=\"main-top\" onClick=\"playAudio('AudioSentenceTranslation')\">{{SentenceTranslation}}</div>\n        <div style=\"height: 5px;\"></div>\n\n        <div class=\"top-container\" style=\"display: flex; justify-content: center; font-size: 75%; width: 100%;\">\n            {{#Level}}\n            <div class=\"extra-top-left\" style=\"\">\n                {{Level}}\n            </div>\n            {{/Level}} {{#CountryISO}}\n            <div class=\"extra-top-right\" style=\"\">\n                <img id=\"languageImg\" />\n            </div>\n            {{/CountryISO}}\n        </div>\n    </div>\n\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n\t\t\t{{#Picture}}\n\t\t\t<div>{{Picture}}</div>\n\t\t\t{{/Picture}}\n            <div id=\"answer\" onClick=\"playAudio('AudioSentence')\">{{Sentence}}</div>\n        </div>\n\n        {{#Note/Mnemonic}}\n        <div class=\"extra_toggle\" id=\"extra_toggle_on_button\" onClick=\"showextra();\">\n            Show Extra\n        </div>\n        <div class=\"extra\" id=\"extrafield\">\n            {{#Note/Mnemonic}}\n                <h2>{{Note/Mnemonic}}</h2>\n\t\t\t{{/Note/Mnemonic}}\n            \n            <div class=\"extra_toggle\" id=\"extra_toggle_off_button\" onClick=\"hideextra();\">\n                Hide Extra\n            </div>\n        </div>\n        {{/Note/Mnemonic}}\n    </div>\n</div>\n\n<div style=\"display: none;\" id=\"languageText\">{{CountryISO}}</div>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n\n<script>\n\t/* Set the primary color based on tag */\n    var tags = document.getElementById(\"tags\").innerText.split(\" \");\n    tags.forEach(function (tag) {\n        var split = tag.split(\"::\");\n        if (split[0] == \"Color\") {\n            var r = document.querySelector(\":root\");\n            r.style.setProperty(\"--primary-color\", split[1]);\n        }\n    });\n\t/* {{#CountryISO}}} */\n    /* Convert the language field to a flag */\n    var lang = document.getElementById(\"languageText\").innerText;\n    var flag = \"_flag_\" + lang + \".svg\";\n    document.getElementById(\"languageImg\").src = flag;\n\t/* {{/CountryISO}}} */\n\n    /* Play audio when clicking the respective element */\n    function playAudio(fieldToPlay) {\n        var elem = document.querySelector(\"#\" + fieldToPlay + \" .soundLink, #\" + fieldToPlay + \" .replaybutton\");\n        if (elem) {\n            elem.click();\n        }\n    }\n    /* Autoplay some elements */\n    var elem = document.querySelector(\".autoplay .soundLink, .autoplay .replaybutton\");\n    if (elem) {\n        elem.click();\n    }\n\n    /* Functions to show/hide the extra information */\n    function showextra() {\n        document.getElementById(\"extrafield\").style.display = \"block\";\n        document.getElementById(\"extra_toggle_on_button\").style.display = \"none\";\n    }\n    function hideextra() {\n        document.getElementById(\"extrafield\").style.display = \"none\";\n        document.getElementById(\"extra_toggle_on_button\").style.display = \"block\";\n    }\n</script>\n",
+                    "bafmt": "",
+                    "bfont": "Arial",
+                    "bqfmt": "",
+                    "bsize": 12,
+                    "did": null,
+                    "name": "Native -> Target",
+                    "ord": 0,
+                    "qfmt": "<div class=\"hidden\" id=\"AudioSentence\">{{AudioSentence}}</div>\n<div class=\"hidden autoplay\" id=\"AudioSentenceTranslation\">{{AudioSentenceTranslation}}</div>\n\n<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\">\n        <div class=\"main-top\" onClick=\"playAudio('AudioSentenceTranslation')\">{{SentenceTranslation}}</div>\n        <div style=\"height: 5px;\"></div>\n\n        <div class=\"top-container\" style=\"display: flex; justify-content: center; font-size: 75%; width: 100%;\">\n            {{#Level}}\n            <div class=\"extra-top-left\" style=\"\">\n                {{Level}}\n            </div>\n            {{/Level}} {{#CountryISO}}\n            <div class=\"extra-top-right\" style=\"\">\n                <img id=\"languageImg\" />\n            </div>\n            {{/CountryISO}}\n        </div>\n    </div>\n\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n\t\t\t{{#Picture}}\n\t\t\t<div>{{Picture}}</div>\n\t\t\t{{/Picture}}\n            <div id=\"answer\">?</div>\n        </div>\n    </div>\n</div>\n\n<div style=\"display: none;\" id=\"languageText\">{{CountryISO}}</div>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n\n<script>\n\t/* Set the primary color based on tag */\n    var tags = document.getElementById(\"tags\").innerText.split(\" \");\n    tags.forEach(function (tag) {\n        var split = tag.split(\"::\");\n        if (split[0] == \"Color\") {\n            var r = document.querySelector(\":root\");\n            r.style.setProperty(\"--primary-color\", split[1]);\n        }\n    });\n\t/* {{#CountryISO}}} */\n    /* Convert the language field to a flag */\n    var lang = document.getElementById(\"languageText\").innerText;\n    var flag = \"_flag_\" + lang + \".svg\";\n    document.getElementById(\"languageImg\").src = flag;\n\t/* {{/CountryISO}}} */\n\n    /* Play audio when clicking the respective element */\n    function playAudio(fieldToPlay) {\n        var elem = document.querySelector(\"#\" + fieldToPlay + \" .soundLink, #\" + fieldToPlay + \" .replaybutton\");\n        if (elem) {\n            elem.click();\n        }\n    }\n    /* Autoplay some elements */\n    var elem = document.querySelector(\".autoplay .soundLink, .autoplay .replaybutton\");\n    if (elem) {\n        elem.click();\n    }\n</script>\n\n"
+                },
+                {
+                    "afmt": "<div class=\"hidden\" id=\"AudioSentence\">{{AudioSentence}}</div>\n<div class=\"hidden autoplay\" id=\"AudioSentenceTranslation\">{{AudioSentenceTranslation}}</div>\n\n<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\">\n        <div class=\"main-top\" onClick=\"playAudio('AudioSentence')\">{{Sentence}}</div>\n        <div style=\"height: 5px;\"></div>\n\n        <div class=\"top-container\" style=\"display: flex; justify-content: center; font-size: 75%; width: 100%;\">\n            {{#Level}}\n            <div class=\"extra-top-left\" style=\"\">\n                {{Level}}\n            </div>\n            {{/Level}} {{#CountryISO}}\n            <div class=\"extra-top-right\" style=\"\">\n                <img id=\"languageImg\" />\n            </div>\n            {{/CountryISO}}\n        </div>\n    </div>\n\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n\t\t\t{{#Picture}}\n\t\t\t<div>{{Picture}}</div>\n\t\t\t{{/Picture}}\n            <div id=\"answer\" onClick=\"playAudio('AudioSentenceTranslation')\">{{SentenceTranslation}}</div>\n        </div>\n\n        {{#Note/Mnemonic}}\n        <div class=\"extra_toggle\" id=\"extra_toggle_on_button\" onClick=\"showextra();\">\n            Show Extra\n        </div>\n        <div class=\"extra\" id=\"extrafield\">\n            {{#Note/Mnemonic}}\n                <h2>{{Note/Mnemonic}}</h2>\n\t\t\t{{/Note/Mnemonic}}\n            \n            <div class=\"extra_toggle\" id=\"extra_toggle_off_button\" onClick=\"hideextra();\">\n                Hide Extra\n            </div>\n        </div>\n        {{/Note/Mnemonic}}\n    </div>\n</div>\n\n<div style=\"display: none;\" id=\"languageText\">{{CountryISO}}</div>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n\n<script>\n\t/* Set the primary color based on tag */\n    var tags = document.getElementById(\"tags\").innerText.split(\" \");\n    tags.forEach(function (tag) {\n        var split = tag.split(\"::\");\n        if (split[0] == \"Color\") {\n            var r = document.querySelector(\":root\");\n            r.style.setProperty(\"--primary-color\", split[1]);\n        }\n    });\n\t/* {{#CountryISO}}} */\n    /* Convert the language field to a flag */\n    var lang = document.getElementById(\"languageText\").innerText;\n    var flag = \"_flag_\" + lang + \".svg\";\n    document.getElementById(\"languageImg\").src = flag;\n\t/* {{/CountryISO}}} */\n\n    /* Play audio when clicking the respective element */\n    function playAudio(fieldToPlay) {\n        var elem = document.querySelector(\"#\" + fieldToPlay + \" .soundLink, #\" + fieldToPlay + \" .replaybutton\");\n        if (elem) {\n            elem.click();\n        }\n    }\n    /* Autoplay some elements */\n    var elem = document.querySelector(\".autoplay .soundLink, .autoplay .replaybutton\");\n    if (elem) {\n        elem.click();\n    }\n\n    /* Functions to show/hide the extra information */\n    function showextra() {\n        document.getElementById(\"extrafield\").style.display = \"block\";\n        document.getElementById(\"extra_toggle_on_button\").style.display = \"none\";\n    }\n    function hideextra() {\n        document.getElementById(\"extrafield\").style.display = \"none\";\n        document.getElementById(\"extra_toggle_on_button\").style.display = \"block\";\n    }\n</script>\n",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Target -> Native",
+                    "ord": 1,
+                    "qfmt": "{{#CreateReversed}}\n<div class=\"hidden autoplay\" id=\"AudioSentence\">{{AudioSentence}}</div>\n<div class=\"hidden\" id=\"AudioSentenceTranslation\">{{AudioSentenceTranslation}}</div>\n\n<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\">\n        <div class=\"main-top\" onClick=\"playAudio('AudioSentence')\">{{Sentence}}</div>\n        <div style=\"height: 5px;\"></div>\n\n        <div class=\"top-container\" style=\"display: flex; justify-content: center; font-size: 75%; width: 100%;\">\n            {{#Level}}\n            <div class=\"extra-top-left\" style=\"\">\n                {{Level}}\n            </div>\n            {{/Level}} {{#CountryISO}}\n            <div class=\"extra-top-right\" style=\"\">\n                <img id=\"languageImg\" />\n            </div>\n            {{/CountryISO}}\n        </div>\n    </div>\n\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n\t\t\t{{#Picture}}\n\t\t\t<div>{{Picture}}</div>\n\t\t\t{{/Picture}}\n            <div id=\"answer\">?</div>\n        </div>\n    </div>\n</div>\n\n<div style=\"display: none;\" id=\"languageText\">{{CountryISO}}</div>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n\n<script>\n\t/* Set the primary color based on tag */\n    var tags = document.getElementById(\"tags\").innerText.split(\" \");\n    tags.forEach(function (tag) {\n        var split = tag.split(\"::\");\n        if (split[0] == \"Color\") {\n            var r = document.querySelector(\":root\");\n            r.style.setProperty(\"--primary-color\", split[1]);\n        }\n    });\n\t/* {{#CountryISO}}} */\n    /* Convert the language field to a flag */\n    var lang = document.getElementById(\"languageText\").innerText;\n    var flag = \"_flag_\" + lang + \".svg\";\n    document.getElementById(\"languageImg\").src = flag;\n\t/* {{/CountryISO}}} */\n\n    /* Play audio when clicking the respective element */\n    function playAudio(fieldToPlay) {\n        var elem = document.querySelector(\"#\" + fieldToPlay + \" .soundLink, #\" + fieldToPlay + \" .replaybutton\");\n        if (elem) {\n            elem.click();\n        }\n    }\n    /* Autoplay some elements */\n    var elem = document.querySelector(\".autoplay .soundLink, .autoplay .replaybutton\");\n    if (elem) {\n        elem.click();\n    }\n</script>\n{{/CreateReversed}}"
+                }
+            ],
+            "type": 0,
+            "vers": []
+        },
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "425f9772-6a2c-4912-a65b-f1e373fec4d0",
+            "css": "/* Variables for frequently used values */\n:root {\n    /* Main background color of the card */\n    --main-bg-color: #434343;\n    --upper-bg-color: #555555;\n    --lower-bg-color: #434343;\n    --upper-fg-color: #eeeeee;\n    --lower-fg-color: #eeeeee;\n    /* Primary Accent Color, broken up into individual hsl values */\n    --colorPrimary-h: 260;\n    --colorPrimary-s: 60%;\n    --colorPrimary-l: 65%;\n    /* Set primary color variable from previously defined hsl values */\n    --primary-color: hsl(var(--colorPrimary-h), var(--colorPrimary-s), var(--colorPrimary-l));\n    /* Calculate Secondary and Tertiary Colors from the hsl values of the Primary Color */\n    --secondary-color: hsl(calc(var(--colorPrimary-h) + 240), var(--colorPrimary-s), var(--colorPrimary-l));\n    --tertiary-color: hsl(calc(var(--colorPrimary-h) + 120), var(--colorPrimary-s), var(--colorPrimary-l));\n    /* How big the stripe at the top should be */\n    --stripe-height: 5px;\n    /* How far elements such as flags should be away from the stripe */\n    --margin-from-stripe: 5px;\n}\n\nhtml,\nbody {\n    word-wrap: break-word;\n    background-color: var(--main-bg-color);\n    padding: 0;\n    margin: 0;\n}\nu {\n    text-decoration-style: wavy;\n    text-underline-position: under;\n    color: white;\n    padding: 1px;\n}\n\n/* Hide the default play button anki provides */\n.replay-button svg {\n    display: none;\n}\n.hidden {\n    display: none;\n}\n#answer {\n    font-size: 35px;\n}\n\n/* Main skeleton of an anki card */\n.card {\n    font-family: UD Digi Kyokasho N-R;\n    font-size: 0px;\n    text-align: center;\n}\n/* Div around all of the visible content of the card */\n.kard {\n    height: 100%;\n    background-color: var(--main-bg-color);\n}\n.kard.night_mode {\n    background-color: var(--main-bg-color);\n}\n/* Stripe at the top of the card */\n.stripe {\n    height: var(--stripe-height);\n    background-color: var(--primary-color);\n}\n.stripe.night_mode {\n    background-color: var(--primary-color);\n}\n\n/* Upper part of the card (Question) */\n.body-upper {\n    font-family: Noto Sans;\n    font-size: 30px;\n    color: var(--upper-fg-color);\n    background-color: var(--upper-bg-color);\n    padding: 30px 10px 30px;\n    border-radius: 0px 0px 0px 0px;\n}\n.body-upper.night_mode {\n    color: var(--upper-fg-color);\n    background-color: var(--upper-bg-color);\n}\n/* Lower part of the card (Answer) */\n.body-lower {\n    text-align: left;\n    color: var(--lower-fg-color);\n    height: 100%;\n    padding: 25px 10px 25px 10px;\n    border-radius: 0px 0px 0px 0px;\n}\n.body-lower.night_mode {\n    color: var(--lower-fg-color);\n    color: var(--lower-bg-color);\n}\n\n.notes {\n    font-family: Noto Sans Regular;\n    font-size: 20px;\n    text-align: center;\n    font-weight: bold;\n}\n\n/* Show extra information button */\n.extra_toggle {\n    display: block;\n    font-family: Noto Sans Regular;\n    font-size: 15px;\n    color: var(--upper-fg-color);\n    background-color: var(--upper-bg-color);\n    border-radius: 0px;\n    padding: 5px;\n    width: 50%;\n    text-align: center;\n    font-weight: 500;\n    margin: auto;\n    margin-top: 20px;\n    transition: all 0.15s ease-out;\n}\n.extra_toggle:hover {\n    filter: brightness(90%);\n}\n\n/* Div containing extra information, hidden by default */\n.extra {\n    display: none;\n    font-family: Noto Sans Regular;\n    font-size: 15px;\n    border: 3px dashed var(--primary-color);\n    color: var(--upper-fg-color);\n    padding: 20px;\n    margin: 30px 20px 3px 20px;\n    text-align: center;\n    font-weight: 500;\n}\n/* Div containing mnemonics or notes, situated inside the extra div */\n.mnemonic {\n    display: block;\n    margin-bottom: 2%;\n    border-color: var(--secondary-color);\n}\n\n/* Contains extra elements at the top, e.g. flags */\n.top-container {\n    width: 100%;\n    position: absolute;\n    top: calc(var(--stripe-height) + var(--margin-from-stripe));\n    left: 0;\n}\n.extra-top-right {\n    position: absolute;\n    right: var(--margin-from-stripe);\n}\n.extra-top-left {\n    position: absolute;\n    left: var(--margin-from-stripe);\n}\n.extra-top-right img {\n    float: right;\n    width: 55px;\n    border-radius: 10%;\n}\n.extra-top-left img {\n    float: left;\n    width: 55px;\n    border-radius: 10%;\n}\n\n/* Style cloze to use the primary color as the background color to make the cloze deletion easier to spot */\n.cloze {\n    background-color: var(--primary-color);\n}\n.cloze.night_mode {\n    background-color: var(--primary-color);\n}\n\n/* Highlighting classes */\n.hightlight-1 {\n    background-color: var(--primary-color);\n\tdisplay: inline;\n}\n\n.hightlight-2 {\n    background-color: var(--secondary-color);\n\tdisplay: inline;\n}\n\n.hightlight-3 {\n    background-color: var(--tertiary-color);\n\tdisplay: inline;\n}\n\n.hightlight-1.night_mode {\n    background-color: var(--primary-color);\n\tdisplay: inline;\n}\n\n.hightlight-2.night_mode {\n    background-color: var(--secondary-color);\n\tdisplay: inline;\n}\n\n.hightlight-3.night_mode {\n    background-color: var(--tertiary-color);\n\tdisplay: inline;\n}\n",
+            "flds": [
+                {
+                    "font": "Nimbus Sans [UKWN]",
+                    "media": [],
+                    "name": "Title",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": true
+                },
+                {
+                    "font": "Nimbus Sans [UKWN]",
+                    "media": [],
+                    "name": "Date",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": true
+                },
+                {
+                    "font": "Nimbus Sans [UKWN]",
+                    "media": [],
+                    "name": "Author",
+                    "ord": 2,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": true
+                },
+                {
+                    "font": "Liberation Sans",
+                    "name": "Summary",
+                    "ord": 3,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "name": "SeriesName",
+                    "ord": 4,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": true
+                },
+                {
+                    "font": "Liberation Sans",
+                    "name": "SeriesIndex",
+                    "ord": 5,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": true
+                },
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "DatesMnemonic",
+                    "ord": 6,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": true
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "prettyBook",
+            "req": [
+                [
+                    0,
+                    "all",
+                    [
+                        0,
+                        1
+                    ]
+                ],
+                [
+                    1,
+                    "all",
+                    [
+                        0,
+                        2
+                    ]
+                ],
+                [
+                    2,
+                    "any",
+                    [
+                        4
+                    ]
+                ],
+                [
+                    3,
+                    "all",
+                    [
+                        0,
+                        3
+                    ]
+                ]
+            ],
+            "sortf": 1,
+            "tags": [],
+            "tmpls": [
+                {
+                    "afmt": "<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\"> <b class=\"hightlight-1\">{{Title}}</b> - Date of Publication</div>\n\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n            <b class=\"hightlight-3\">{{Date}}</b>\n            <br />\n            <p style=\"margin-top: 40px; font-style: italic; font-size: 18px;\">{{DatesMnemonic}}</p>\n        </div>\n    </div>\n</div>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n\n<script>\n\t/* Set the primary color based on tag */\n    var tags = document.getElementById(\"tags\").innerText.split(\" \");\n    tags.forEach(function (tag) {\n        var split = tag.split(\"::\");\n        if (split[0] == \"Color\") {\n            var r = document.querySelector(\":root\");\n            r.style.setProperty(\"--primary-color\", split[1]);\n        }\n    });\n    /* Play audio when clicking the respective element */\n    function playAudio(fieldToPlay) {\n        var elem = document.querySelector(\"#\" + fieldToPlay + \" .soundLink, #\" + fieldToPlay + \" .replaybutton\");\n        if (elem) {\n            elem.click();\n        }\n    }\n    /* Autoplay some elements */\n    var elem = document.querySelector(\".autoplay .soundLink, .autoplay .replaybutton\");\n    if (elem) {\n        elem.click();\n    }\n</script>",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Title -> Date",
+                    "ord": 0,
+                    "qfmt": "{{#Date}}\n<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\">\n        <b class=\"hightlight-1\">{{Title}}</b> - Date of Publication\n    </div>\n\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n            <b class=\"hightlight-3\">?</b>\n        </div>\n    </div>\n</div>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n\n<script>\n\t/* Set the primary color based on tag */\n    var tags = document.getElementById(\"tags\").innerText.split(\" \");\n    tags.forEach(function (tag) {\n        var split = tag.split(\"::\");\n        if (split[0] == \"Color\") {\n            var r = document.querySelector(\":root\");\n            r.style.setProperty(\"--primary-color\", split[1]);\n        }\n    });\n    /* Play audio when clicking the respective element */\n    function playAudio(fieldToPlay) {\n        var elem = document.querySelector(\"#\" + fieldToPlay + \" .soundLink, #\" + fieldToPlay + \" .replaybutton\");\n        if (elem) {\n            elem.click();\n        }\n    }\n    /* Autoplay some elements */\n    var elem = document.querySelector(\".autoplay .soundLink, .autoplay .replaybutton\");\n    if (elem) {\n        elem.click();\n    }\n</script>\n{{/Date}}"
+                },
+                {
+                    "afmt": "<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\">\n        <b class=\"hightlight-1\">{{Title}}</b> - Author\n    </div>\n\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n            <b>{{Author}}</b>\n        </div>\n    </div>\n</div>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n\n<script>\n\t/* Set the primary color based on tag */\n    var tags = document.getElementById(\"tags\").innerText.split(\" \");\n    tags.forEach(function (tag) {\n        var split = tag.split(\"::\");\n        if (split[0] == \"Color\") {\n            var r = document.querySelector(\":root\");\n            r.style.setProperty(\"--primary-color\", split[1]);\n        }\n    });\n    /* Play audio when clicking the respective element */\n    function playAudio(fieldToPlay) {\n        var elem = document.querySelector(\"#\" + fieldToPlay + \" .soundLink, #\" + fieldToPlay + \" .replaybutton\");\n        if (elem) {\n            elem.click();\n        }\n    }\n    /* Autoplay some elements */\n    var elem = document.querySelector(\".autoplay .soundLink, .autoplay .replaybutton\");\n    if (elem) {\n        elem.click();\n    }\n</script>\n",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Title -> Author",
+                    "ord": 1,
+                    "qfmt": "{{#Author}}\n<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\">\n        <b class=\"hightlight-1\">{{Title}}</b> - Author\n    </div>\n\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n            <b>?</b>\n        </div>\n    </div>\n</div>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n\n<script>\n\t/* Set the primary color based on tag */\n    var tags = document.getElementById(\"tags\").innerText.split(\" \");\n    tags.forEach(function (tag) {\n        var split = tag.split(\"::\");\n        if (split[0] == \"Color\") {\n            var r = document.querySelector(\":root\");\n            r.style.setProperty(\"--primary-color\", split[1]);\n        }\n    });\n    /* Play audio when clicking the respective element */\n    function playAudio(fieldToPlay) {\n        var elem = document.querySelector(\"#\" + fieldToPlay + \" .soundLink, #\" + fieldToPlay + \" .replaybutton\");\n        if (elem) {\n            elem.click();\n        }\n    }\n    /* Autoplay some elements */\n    var elem = document.querySelector(\".autoplay .soundLink, .autoplay .replaybutton\");\n    if (elem) {\n        elem.click();\n    }\n</script>\n{{/Author}}"
+                },
+                {
+                    "afmt": "<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\"> <b class=\"hightlight-1\">{{Title}}</b> - Series Index</div>\n\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n            <b class=\"hightlight-3\">{{SeriesName}} #{{SeriesIndex}}</b>\n        </div>\n    </div>\n</div>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n\n<script>\n\t/* Set the primary color based on tag */\n    var tags = document.getElementById(\"tags\").innerText.split(\" \");\n    tags.forEach(function (tag) {\n        var split = tag.split(\"::\");\n        if (split[0] == \"Color\") {\n            var r = document.querySelector(\":root\");\n            r.style.setProperty(\"--primary-color\", split[1]);\n        }\n    });\n    /* Play audio when clicking the respective element */\n    function playAudio(fieldToPlay) {\n        var elem = document.querySelector(\"#\" + fieldToPlay + \" .soundLink, #\" + fieldToPlay + \" .replaybutton\");\n        if (elem) {\n            elem.click();\n        }\n    }\n    /* Autoplay some elements */\n    var elem = document.querySelector(\".autoplay .soundLink, .autoplay .replaybutton\");\n    if (elem) {\n        elem.click();\n    }\n</script>",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Title -> Series",
+                    "ord": 2,
+                    "qfmt": "{{#SeriesName}}\n<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\">\n        <b class=\"hightlight-1\">{{Title}}</b> - Series Index\n    </div>\n\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n            <b class=\"hightlight-3\">{{SeriesName}} #?</b>\n        </div>\n    </div>\n</div>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n\n<script>\n\t/* Set the primary color based on tag */\n    var tags = document.getElementById(\"tags\").innerText.split(\" \");\n    tags.forEach(function (tag) {\n        var split = tag.split(\"::\");\n        if (split[0] == \"Color\") {\n            var r = document.querySelector(\":root\");\n            r.style.setProperty(\"--primary-color\", split[1]);\n        }\n    });\n    /* Play audio when clicking the respective element */\n    function playAudio(fieldToPlay) {\n        var elem = document.querySelector(\"#\" + fieldToPlay + \" .soundLink, #\" + fieldToPlay + \" .replaybutton\");\n        if (elem) {\n            elem.click();\n        }\n    }\n    /* Autoplay some elements */\n    var elem = document.querySelector(\".autoplay .soundLink, .autoplay .replaybutton\");\n    if (elem) {\n        elem.click();\n    }\n</script>\n{{/SeriesName}}"
+                },
+                {
+                    "afmt": "<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\"> <b class=\"hightlight-1\">{{Title}}</b> - Summary</div>\n\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n            <b class=\"hightlight-3\">{{Summary}}</b>\n        </div>\n    </div>\n</div>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n\n<script>\n\t/* Set the primary color based on tag */\n    var tags = document.getElementById(\"tags\").innerText.split(\" \");\n    tags.forEach(function (tag) {\n        var split = tag.split(\"::\");\n        if (split[0] == \"Color\") {\n            var r = document.querySelector(\":root\");\n            r.style.setProperty(\"--primary-color\", split[1]);\n        }\n    });\n    /* Play audio when clicking the respective element */\n    function playAudio(fieldToPlay) {\n        var elem = document.querySelector(\"#\" + fieldToPlay + \" .soundLink, #\" + fieldToPlay + \" .replaybutton\");\n        if (elem) {\n            elem.click();\n        }\n    }\n    /* Autoplay some elements */\n    var elem = document.querySelector(\".autoplay .soundLink, .autoplay .replaybutton\");\n    if (elem) {\n        elem.click();\n    }\n</script>",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Title -> Summary",
+                    "ord": 3,
+                    "qfmt": "{{#Summary}}\n<div class=\"kard\">\n    <div class=\"stripe\"></div>\n    <div class=\"body-upper\">\n        <b class=\"hightlight-1\">{{Title}}</b> - Summary\n    </div>\n\n    <div class=\"body-lower\">\n        <div class=\"notes\">\n            <b class=\"hightlight-3\">?</b>\n        </div>\n    </div>\n</div>\n\n<div id=\"tags\" style=\"display: none;\">{{Tags}}</div>\n\n<script>\n\t/* Set the primary color based on tag */\n    var tags = document.getElementById(\"tags\").innerText.split(\" \");\n    tags.forEach(function (tag) {\n        var split = tag.split(\"::\");\n        if (split[0] == \"Color\") {\n            var r = document.querySelector(\":root\");\n            r.style.setProperty(\"--primary-color\", split[1]);\n        }\n    });\n    /* Play audio when clicking the respective element */\n    function playAudio(fieldToPlay) {\n        var elem = document.querySelector(\"#\" + fieldToPlay + \" .soundLink, #\" + fieldToPlay + \" .replaybutton\");\n        if (elem) {\n            elem.click();\n        }\n    }\n    /* Autoplay some elements */\n    var elem = document.querySelector(\".autoplay .soundLink, .autoplay .replaybutton\");\n    if (elem) {\n        elem.click();\n    }\n</script>\n{{/Summary}}"
+                }
+            ],
+            "type": 0,
+            "vers": []
         }
     ],
     "notes": [
@@ -565,7 +1385,7 @@
                 "It has a front and a back."
             ],
             "guid": "pu<#FaIs(U",
-            "note_model_uuid": "3d263d1c-b7ae-11ea-b976-40b076dccfad",
+            "note_model_uuid": "6cb207c7-22d9-4c24-a7ce-f06652ccb288",
             "tags": []
         },
         {
@@ -576,7 +1396,7 @@
                 "And provide extra information."
             ],
             "guid": "tQZr+J]XgJ",
-            "note_model_uuid": "3d2653d8-b7ae-11ea-b976-40b076dccfad",
+            "note_model_uuid": "673ddbaf-13f2-46ef-a669-9a3637a52f26",
             "tags": []
         },
         {
@@ -588,7 +1408,7 @@
                 "1774"
             ],
             "guid": "O35TUpdD=_",
-            "note_model_uuid": "3d263d1c-b7ae-11ea-b976-40b076dccfad",
+            "note_model_uuid": "90a49382-4c6e-4ad9-854d-f2402978230e",
             "tags": []
         },
         {
@@ -602,7 +1422,7 @@
                 ""
             ],
             "guid": "Nnjd?p;z17",
-            "note_model_uuid": "7012404a-fb4c-11ea-b291-40b076dccfad",
+            "note_model_uuid": "97555342-72c0-4718-a14e-9ea53d01da84",
             "tags": []
         },
         {
@@ -612,7 +1432,7 @@
                 "<img src=\"_flag_de.svg\">"
             ],
             "guid": "x1`[__G&7E",
-            "note_model_uuid": "3d263d1c-b7ae-11ea-b976-40b076dccfad",
+            "note_model_uuid": "6cb207c7-22d9-4c24-a7ce-f06652ccb288",
             "tags": []
         },
         {
@@ -637,7 +1457,7 @@
                 ""
             ],
             "guid": "P@Qj#?~kI@",
-            "note_model_uuid": "3d268c54-b7ae-11ea-b976-40b076dccfad",
+            "note_model_uuid": "d1049052-fc70-4c04-927b-5d65142cf7d8",
             "tags": [
                 "Color::#FF7785"
             ]
@@ -649,7 +1469,7 @@
                 "<ul>\n<li>deca</li><li>hecto</li><li>kilo</li><li>mega</li><li>giga</li><li>tera</li><li>peta</li><li>exa</li><li>zetta</li><li>yotta</li>\n</ul>"
             ],
             "guid": "b.~X,zaT3b",
-            "note_model_uuid": "3d263d1c-b7ae-11ea-b976-40b076dccfad",
+            "note_model_uuid": "9adc7a52-1c3a-473a-848d-b04509be9cbc",
             "tags": []
         },
         {
@@ -662,7 +1482,7 @@
                 ""
             ],
             "guid": "h[~4Y~,IMG",
-            "note_model_uuid": "7012404a-fb4c-11ea-b291-40b076dccfad",
+            "note_model_uuid": "a3b68cea-479a-4538-9336-21288105bf43",
             "tags": []
         },
         {
@@ -682,7 +1502,7 @@
                 "es"
             ],
             "guid": "GdqcFY(|7X",
-            "note_model_uuid": "3d263d1c-b7ae-11ea-b976-40b076dccfad",
+            "note_model_uuid": "8f62895b-c508-4e8b-95d6-17fa64f7df03",
             "tags": []
         },
         {
@@ -703,7 +1523,7 @@
                 ""
             ],
             "guid": "^9=J&.m=h",
-            "note_model_uuid": "3d268c54-b7ae-11ea-b976-40b076dccfad",
+            "note_model_uuid": "78f5753d-5bf5-4a67-978d-b40e649c7263",
             "tags": []
         },
         {
@@ -718,7 +1538,7 @@
                 ""
             ],
             "guid": "xDT:~(*z,F",
-            "note_model_uuid": "7012404a-fb4c-11ea-b291-40b076dccfad",
+            "note_model_uuid": "425f9772-6a2c-4912-a65b-f1e373fec4d0",
             "tags": []
         }
     ]
