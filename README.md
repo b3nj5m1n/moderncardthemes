@@ -35,6 +35,7 @@ I've made some major changes to the available note types in this deck. (I remove
 
 * pretttyBasic - A pretty basic card with front and back
 * prettyCloze - Pretty cloze card, also has a title and an extra field
+* pretttyBasicMaths - A pretty basic card which features KaTeX integration (LaTeX maths rendering, but wayyy faster than MathJax) and automatically adjusts the font size of the equations to fit
 * prettyPoem - A card for memorizing poems or quotes
 * prettyWord - A card for memorizing vocabulary
 * prettySentence - A card for memorizing sentences in a foreign language
@@ -86,6 +87,12 @@ For conjugations, you can specify the pronouns in a ; separated list, here are s
 * Italian: `io; tu; lui, lei; noi; voi; loro;`
 * Portuguese: `eu; tu; ele, ela, você; nós; vós; eles, elas, vocês;`
 * Catalan: `jo; tu; ell, ella, vostè; nosaltres; vosaltres; ells, elles, vostès;`
+
+## Acknowledgements
+
+[u/TrainOfPotatoes](https://www.reddit.com/user/TrainOfPotatoes/), and [this](https://www.reddit.com/r/Anki/comments/ffs0ir/theme_an_update_to_my_previous_anki_template/) post of them was what originally inspired me to start this project. Early versions were also based on their code, although this is not really the case anymore.
+
+When I originally wanted to integrate KaTeX with anki, there didn't seem to be any projects doing it. I then found [this repo](https://github.com/Jwrede/Anki-KaTeX-Markdown), which includes KaTex, the original code for my KaTeX integration was also based on their code.
 
 
 ![](media/basicPrettyBack.jpg)
