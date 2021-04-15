@@ -20,7 +20,7 @@ git clone https://github.com/b3nj5m1n/moderncardthemes.git
 
 ### Configuration
 
-* You should turn of autoplaying audio.
+* You should turn off autoplaying audio. (in "Deck Options" > "General") 
 
 * Some cards require you to turn off some gestures on AnkiDroid. Mainly, you need some space to click on the screen without revealing the answer. You can do this by unassigning touch-bottom for example in the gesture settings.
 
