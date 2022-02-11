@@ -1503,6 +1503,57 @@
                 }
             ],
             "type": 0
+        },
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "a136459c-8b7c-11ec-8288-40b076dccfad",
+            "css": ".card {\n  font-family: arial;\n  font-size: 20px;\n  text-align: center;\n  color: black;\n  background-color: white;\n}\n",
+            "flds": [
+                {
+                    "font": "Arial",
+                    "name": "Front",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "name": "Back",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "prettyPersistence",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tmpls": [
+                {
+                    "afmt": "<div id=\"display\">{{Back}}</div>\n<div id=\"user-input\"></div>\n\n<script>\nfunction store(key, value) {\n\tlet elCard = document.querySelector(\".card\");\n\telCard.setAttribute(\"__var_\" + key, value);\n\n}\nfunction retrieve(key) {\n\tlet elCard = document.querySelector(\".card\");\n\tlet myVar = elCard.getAttribute(\"__var_\" + key);\n\treturn myVar;\n}\nfunction go() {\n\tvar input = retrieve(\"input\");\n\tdocument.querySelector(\"#user-input\").innerHTML = input;\n}\ngo();\n</script>",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Card 1",
+                    "ord": 0,
+                    "qfmt": "<div id=\"display\">{{Front}}</div>\n<input id=\"user-input\" />\n\n<script>\nfunction store(key, value) {\n\tlet elCard = document.querySelector(\".card\");\n\telCard.setAttribute(\"__var_\" + key, value);\n}\nfunction retrieve(key) {\n\tlet elCard = document.querySelector(\".card\");\n\tlet myVar = elCard.getAttribute(\"__var_\" + key);\n\treturn myVar;\n}\nfunction saveInput(e) {\n\tvalue = e.target.value;\n\tstore(\"input\", value);\n}\nfunction go() {\t\t\t   \n\tdocument.getElementById('user-input').addEventListener('input', saveInput);\n}\nwaitForElementToDisplay(\".card\",go,100,100);\n\nfunction waitForElementToDisplay(selector, callback, checkFrequencyInMs, timeoutInMs) {\n  var startTimeInMs = Date.now();\n  (function loopSearch() {\n    if (document.querySelector(selector) != null) {\n      callback();\n      return;\n    }\n    else {\n      setTimeout(function () {\n        if (timeoutInMs && Date.now() - startTimeInMs > timeoutInMs)\n          return;\n        loopSearch();\n      }, checkFrequencyInMs);\n    }\n  })();\n}\n</script>"
+                }
+            ],
+            "type": 0
         }
     ],
     "notes": [
@@ -1677,6 +1728,16 @@
             ],
             "guid": "z9CB2xzwH5",
             "note_model_uuid": "7e9cd600-9c34-11eb-94d5-40b076dccfad",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "123",
+                "123"
+            ],
+            "guid": "dVf/@xni;(",
+            "note_model_uuid": "a136459c-8b7c-11ec-8288-40b076dccfad",
             "tags": []
         }
     ]
